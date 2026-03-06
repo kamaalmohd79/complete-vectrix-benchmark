@@ -1,0 +1,166 @@
+{
+  "channel": {
+    "id": "C07VECTRIX07",
+    "name": "design",
+    "purpose": "Design reviews, Figma shares",
+    "topic": "Dashboard v2 — targeting Mar 7 launch"
+  },
+  "messages": [
+    {
+      "ts": "1762891200.000100",
+      "user": { "id": "U_RAJ", "handle": "raj", "name": "Raj Sundaram" },
+      "text": "first week in. sharing early dashboard v2 explorations — mostly vibes at this point, not final. feedback welcome, especially on the nav structure 🎨",
+      "thread_ts": null,
+      "reply_count": 2,
+      "reactions": [
+        { "emoji": "art", "users": ["U_DANA", "U_SOFIA"], "count": 2 },
+        { "emoji": "eyes", "users": ["U_MARCUS"], "count": 1 }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [
+        {
+          "service_name": "Figma",
+          "title": "Dashboard v2 — Early Explorations",
+          "title_link": "https://www.figma.com/file/abc123/Dashboard-v2?node-id=0:1",
+          "text": "8 frames · Work in progress",
+          "author_name": "raj@vectrix.io",
+          "color": "#F24E1E"
+        }
+      ],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1762894800.000100",
+      "user": { "id": "U_DANA", "handle": "dana", "name": "Dana Reeves" },
+      "text": "nav structure feels right — the endpoint list as primary nav object makes sense for how users actually work. my main comment: the filter panel (frame 3) feels too buried. can we make it a persistent sidebar instead of a modal? tracking this as VEC-84 feedback.",
+      "thread_ts": "1762891200.000100",
+      "reply_count": 0,
+      "reactions": [{ "emoji": "+1", "users": ["U_RAJ"], "count": 1 }],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1762898400.000100",
+      "user": { "id": "U_SOFIA", "handle": "sofia", "name": "Sofia Gutierrez" },
+      "text": "frame 5 — the latency chart — really clean. the percentile toggle (P50/P95/P99) is exactly what we talked about. one implementation note: on mobile the chart clips. might want to add a min-width constraint in the component spec 🙏",
+      "thread_ts": "1762891200.000100",
+      "reply_count": 0,
+      "reactions": [{ "emoji": "+1", "users": ["U_RAJ"], "count": 1 }],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1769897600.000100",
+      "user": { "id": "U_RAJ", "handle": "raj", "name": "Raj Sundaram" },
+      "text": "design review prep — sharing all 12 v2 screens before tomorrow's call. frames 1-6 are core dashboard, 7-8 are endpoint detail, 9-11 are saved views, 12 is comparison mode. lmk if you want the component spec doc. 🎨",
+      "thread_ts": null,
+      "reply_count": 1,
+      "reactions": [
+        {
+          "emoji": "eyes",
+          "users": ["U_DANA", "U_SOFIA", "U_MARCUS"],
+          "count": 3
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [
+        {
+          "service_name": "Figma",
+          "title": "Dashboard v2 — All Screens (Final for Review)",
+          "title_link": "https://www.figma.com/file/abc123/Dashboard-v2?node-id=1:100",
+          "text": "12 frames · Vectrix Design System v1.2",
+          "author_name": "raj@vectrix.io",
+          "color": "#F24E1E"
+        }
+      ],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1769901200.000100",
+      "user": { "id": "U_DANA", "handle": "dana", "name": "Dana Reeves" },
+      "text": "core layout is approved ✅ frame 12 (comparison mode) is beautifully designed — there's a backend scoping question we need to resolve before we can build it. more on this in #product.",
+      "thread_ts": "1769897600.000100",
+      "reply_count": 0,
+      "reactions": [{ "emoji": "art", "users": ["U_RAJ"], "count": 1 }],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1771178400.000100",
+      "user": { "id": "U_RAJ", "handle": "raj", "name": "Raj Sundaram" },
+      "text": "updated the component library after dana's feedback from the sprint review. spacing on the alert cards was 4px off across 3 screens — fixed. also added the hover states that were missing on the endpoint rows. sharing updated file 🎨",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        {
+          "emoji": "white_check_mark",
+          "users": ["U_DANA", "U_SOFIA"],
+          "count": 2
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [
+        {
+          "service_name": "Figma",
+          "title": "Dashboard v2 — Updated Component Library",
+          "title_link": "https://www.figma.com/file/abc123/Dashboard-v2?node-id=42:1337",
+          "text": "Spacing fixes + hover states · Feb 17",
+          "author_name": "raj@vectrix.io",
+          "color": "#F24E1E"
+        }
+      ],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1771530000.000100",
+      "user": { "id": "U_SOFIA", "handle": "sofia", "name": "Sofia Gutierrez" },
+      "text": "raj question — for the saved views panel, do the tab states in frames 9-10 need separate active/hover/disabled variants or just active + default? about to build this component and want to make sure i match the spec",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": ["U_RAJ"],
+      "is_pinned": false
+    },
+    {
+      "ts": "1771622400.000100",
+      "user": { "id": "U_RAJ", "handle": "raj", "name": "Raj Sundaram" },
+      "text": "sofia — all four states: default, hover, active, disabled. i'll add the disabled variant to the component library tonight.",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        { "emoji": "white_check_mark", "users": ["U_SOFIA"], "count": 1 }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": ["U_SOFIA"],
+      "is_pinned": false
+    }
+  ]
+}

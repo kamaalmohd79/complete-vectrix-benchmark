@@ -1,0 +1,419 @@
+{
+  "channel": {
+    "id": "C07VECTRIX05",
+    "name": "random",
+    "purpose": "Off-topic, social",
+    "topic": "not everything needs a purpose"
+  },
+  "messages": [
+    {
+      "ts": "1758254400.000100",
+      "user": { "id": "U_SOFIA", "handle": "sofia", "name": "Sofia Gutierrez" },
+      "text": "ok what's everyone's go-to for video calls that aren't zoom? asking for a friend who's been in 6 hours of zooms today 💀",
+      "thread_ts": null,
+      "reply_count": 3,
+      "reactions": [
+        { "emoji": "tired_face", "users": ["U_NINA", "U_DANA"], "count": 2 }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1758258000.000100",
+      "user": { "id": "U_LIAM", "handle": "liam", "name": "Liam Nakamura" },
+      "text": "don't do calls",
+      "thread_ts": "1758254400.000100",
+      "reply_count": 0,
+      "reactions": [
+        {
+          "emoji": "joy",
+          "users": ["U_SOFIA", "U_MARCUS", "U_JORDAN"],
+          "count": 3
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1758261600.000100",
+      "user": { "id": "U_MARCUS", "handle": "marcus", "name": "Marcus Webb" },
+      "text": "Arc has a thing. also liam is correct.",
+      "thread_ts": "1758254400.000100",
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1758265200.000100",
+      "user": { "id": "U_NINA", "handle": "nina", "name": "Nina Kowalski" },
+      "text": "i like Around! camera quality is way better",
+      "thread_ts": "1758254400.000100",
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1760371200.000100",
+      "user": { "id": "U_MARCUS", "handle": "marcus", "name": "Marcus Webb" },
+      "text": "this piece on Cloudflare's architecture is worth 20 minutes of your saturday https://blog.cloudflare.com/how-we-built-it — relevant to some of the infra decisions we're making",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        { "emoji": "eyes", "users": ["U_LIAM", "U_JORDAN"], "count": 2 }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1761422400.000100",
+      "user": { "id": "U_TESSA", "handle": "tessa", "name": "Tessa Moreno" },
+      "text": "anyone been to that new ramen spot on Valencia? Noodle Theory? considering it for team lunch vibes",
+      "thread_ts": null,
+      "reply_count": 2,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1761427200.000100",
+      "user": { "id": "U_PRIYA", "handle": "priya", "name": "Priya Chandran" },
+      "text": "yes. broth is excellent. go.",
+      "thread_ts": "1761422400.000100",
+      "reply_count": 0,
+      "reactions": [
+        { "emoji": "ramen", "users": ["U_TESSA", "U_NINA"], "count": 2 }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1761432000.000100",
+      "user": { "id": "U_CALEB", "handle": "caleb", "name": "Caleb Whitford" },
+      "text": "seconded. got the tonkotsu last week it was unreal 🍜",
+      "thread_ts": "1761422400.000100",
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1762761600.000100",
+      "user": {
+        "id": "U_JORDAN",
+        "handle": "jordan.o",
+        "name": "Jordan Okafor"
+      },
+      "text": "hot take: VSCode > anything else and i will die on this hill",
+      "thread_ts": null,
+      "reply_count": 4,
+      "reactions": [
+        {
+          "emoji": "thinking_face",
+          "users": ["U_MARCUS", "U_LIAM"],
+          "count": 2
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1762765200.000100",
+      "user": { "id": "U_LIAM", "handle": "liam", "name": "Liam Nakamura" },
+      "text": "neovim is right there",
+      "thread_ts": "1762761600.000100",
+      "reply_count": 0,
+      "reactions": [{ "emoji": "100", "users": ["U_MARCUS"], "count": 1 }],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1762768800.000100",
+      "user": { "id": "U_MARCUS", "handle": "marcus", "name": "Marcus Webb" },
+      "text": "goland for go, vscode for everything else. done.",
+      "thread_ts": "1762761600.000100",
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1762772400.000100",
+      "user": { "id": "U_SOFIA", "handle": "sofia", "name": "Sofia Gutierrez" },
+      "text": "cursor actually. i said what i said 🤷‍♀️",
+      "thread_ts": "1762761600.000100",
+      "reply_count": 0,
+      "reactions": [{ "emoji": "joy", "users": ["U_JORDAN"], "count": 1 }],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1762776000.000100",
+      "user": {
+        "id": "U_JORDAN",
+        "handle": "jordan.o",
+        "name": "Jordan Okafor"
+      },
+      "text": "i don't know who cursors is but i choose not to acknowledge it",
+      "thread_ts": "1762761600.000100",
+      "reply_count": 0,
+      "reactions": [
+        {
+          "emoji": "joy",
+          "users": ["U_SOFIA", "U_NINA", "U_CALEB"],
+          "count": 3
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1764572400.000100",
+      "user": { "id": "U_NINA", "handle": "nina", "name": "Nina Kowalski" },
+      "text": "quick PSA: holiday break is Dec 23 – Jan 2. i'll send a calendar block today. jordan is on-call for infra emergencies, liam is backup. for everything else: it'll wait 🎅",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        {
+          "emoji": "santa",
+          "users": ["U_TESSA", "U_SOFIA", "U_CALEB", "U_DANA", "U_MARCUS"],
+          "count": 5
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": ["U_JORDAN", "U_LIAM"],
+      "is_pinned": false
+    },
+    {
+      "ts": "1766872800.000100",
+      "user": { "id": "U_CALEB", "handle": "caleb", "name": "Caleb Whitford" },
+      "text": "anyone got a WeWork desk this week? trying to not lose my mind in my apartment",
+      "thread_ts": null,
+      "reply_count": 2,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1766876400.000100",
+      "user": { "id": "U_TESSA", "handle": "tessa", "name": "Tessa Moreno" },
+      "text": "i'm going tuesday. embarcadero 2, 8th floor. come through",
+      "thread_ts": "1766872800.000100",
+      "reply_count": 0,
+      "reactions": [{ "emoji": "+1", "users": ["U_CALEB"], "count": 1 }],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": ["U_CALEB"],
+      "is_pinned": false
+    },
+    {
+      "ts": "1766880000.000100",
+      "user": { "id": "U_NINA", "handle": "nina", "name": "Nina Kowalski" },
+      "text": "i'll be there monday and *tuesday. desk near the window usually free by 9am",
+      "thread_ts": "1766872800.000100",
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1769270400.000100",
+      "user": { "id": "U_RAJ", "handle": "raj", "name": "Raj Sundaram" },
+      "text": "first day as FTE! feels the same but the health insurance email from nina makes it official 😅",
+      "thread_ts": null,
+      "reply_count": 2,
+      "reactions": [
+        {
+          "emoji": "tada",
+          "users": [
+            "U_DANA",
+            "U_PRIYA",
+            "U_NINA",
+            "U_TESSA",
+            "U_SOFIA",
+            "U_MARCUS"
+          ],
+          "count": 6
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1769274000.000100",
+      "user": { "id": "U_SOFIA", "handle": "sofia", "name": "Sofia Gutierrez" },
+      "text": "welcome to the commitment era 🎉 don't let @marcus review your figma files he has opinions",
+      "thread_ts": "1769270400.000100",
+      "reply_count": 0,
+      "reactions": [
+        { "emoji": "joy", "users": ["U_RAJ", "U_DANA", "U_MARCUS"], "count": 3 }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": ["U_MARCUS"],
+      "is_pinned": false
+    },
+    {
+      "ts": "1769277600.000100",
+      "user": { "id": "U_MARCUS", "handle": "marcus", "name": "Marcus Webb" },
+      "text": "i have helpful opinions",
+      "thread_ts": "1769270400.000100",
+      "reply_count": 0,
+      "reactions": [
+        {
+          "emoji": "joy",
+          "users": ["U_RAJ", "U_SOFIA", "U_DANA", "U_LIAM", "U_JORDAN"],
+          "count": 5
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [
+        {
+          "id": "F07RAN001",
+          "name": "office-selfie.jpg",
+          "mimetype": "image/jpeg",
+          "size_bytes": 1840000,
+          "url_private": "https://files.slack.com/files-pri/T07VECTRIX-F07RAN001/office-selfie.jpg",
+          "thumb_360": "https://files.slack.com/files-tmb/T07VECTRIX-F07RAN001/office-selfie_360.jpg",
+          "uploaded_by": "U_NINA"
+        }
+      ],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1770928800.000100",
+      "user": { "id": "U_SOFIA", "handle": "sofia", "name": "Sofia Gutierrez" },
+      "text": "it's thursday not tuesday and i've been telling everyone the wrong standup time all week. sorry to anyone i confused. *Tuesday not Thursday for the 1:1 reschedule",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        { "emoji": "joy", "users": ["U_LIAM", "U_CALEB", "U_NINA"], "count": 3 }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1771353600.000100",
+      "user": { "id": "U_LIAM", "handle": "liam", "name": "Liam Nakamura" },
+      "text": "anyone know a good dumpling place in seattle that isn't Din Tai Fung",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1772136000.000100",
+      "user": { "id": "U_CALEB", "handle": "caleb", "name": "Caleb Whitford" },
+      "text": "bro it's 8am and i just saw @liam's dumpling message from sunday with zero replies. is nobody going to help him",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        { "emoji": "joy", "users": ["U_NINA", "U_SOFIA"], "count": 2 }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": ["U_LIAM"],
+      "is_pinned": false
+    },
+    {
+      "ts": "1772139600.000100",
+      "user": { "id": "U_NINA", "handle": "nina", "name": "Nina Kowalski" },
+      "text": "landmark bakery & café on beacon hill. not a dumpling place per se but they have xiao long bao on weekends and it's 10/10",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [{ "emoji": "pray", "users": ["U_LIAM"], "count": 1 }],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": ["U_LIAM"],
+      "is_pinned": false
+    }
+  ]
+}

@@ -1,0 +1,475 @@
+{
+  "channel": {
+    "id": "C07VECTRIX01",
+    "name": "general",
+    "purpose": "Company-wide announcements",
+    "topic": "📌 Team directory + onboarding guide pinned below"
+  },
+  "messages": [
+    {
+      "ts": "1757955600.000100",
+      "user": { "id": "U_PRIYA", "handle": "priya", "name": "Priya Chandran" },
+      "text": "@here vectrix.io is live. public beta starts now. go find something broken.",
+      "thread_ts": null,
+      "reply_count": 1,
+      "reactions": [
+        {
+          "emoji": "rocket",
+          "users": [
+            "U_MARCUS",
+            "U_LIAM",
+            "U_SOFIA",
+            "U_JORDAN",
+            "U_TESSA",
+            "U_NINA"
+          ],
+          "count": 6
+        },
+        {
+          "emoji": "tada",
+          "users": ["U_SOFIA", "U_TESSA", "U_NINA", "U_DANA"],
+          "count": 4
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": ["@here"],
+      "is_pinned": false
+    },
+    {
+      "ts": "1757955600.000200",
+      "user": { "id": "U_MARCUS", "handle": "marcus", "name": "Marcus Webb" },
+      "text": "shipped 🚀",
+      "thread_ts": "1757955600.000100",
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1759338000.000100",
+      "user": { "id": "U_PRIYA", "handle": "priya", "name": "Priya Chandran" },
+      "text": "welcome Jordan Okafor (@jordan.o) — infra and DevOps. coming from DigitalOcean. this is the hire we've needed since day one.",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        {
+          "emoji": "wave",
+          "users": [
+            "U_MARCUS",
+            "U_LIAM",
+            "U_SOFIA",
+            "U_TESSA",
+            "U_DANA",
+            "U_NINA"
+          ],
+          "count": 6
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": ["U_JORDAN"],
+      "is_pinned": false
+    },
+    {
+      "ts": "1759767600.000100",
+      "user": { "id": "U_PRIYA", "handle": "priya", "name": "Priya Chandran" },
+      "text": "Nina Kowalski (@nina) joins today, part-time through October, full-time November 1st. ops and people. anything admin — loop her in.",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        {
+          "emoji": "wave",
+          "users": ["U_MARCUS", "U_SOFIA", "U_TESSA", "U_LIAM", "U_JORDAN"],
+          "count": 5
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": ["U_NINA"],
+      "is_pinned": false
+    },
+    {
+      "ts": "1760119200.000100",
+      "user": { "id": "U_PRIYA", "handle": "priya", "name": "Priya Chandran" },
+      "text": "@here Brainloop just signed. $1,200/mo Growth plan. first paying customer. this is real.",
+      "thread_ts": null,
+      "reply_count": 3,
+      "reactions": [
+        {
+          "emoji": "tada",
+          "users": [
+            "U_MARCUS",
+            "U_LIAM",
+            "U_SOFIA",
+            "U_JORDAN",
+            "U_TESSA",
+            "U_NINA",
+            "U_DANA"
+          ],
+          "count": 7
+        },
+        { "emoji": "moneybag", "users": ["U_TESSA", "U_CALEB"], "count": 2 }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": ["@here"],
+      "is_pinned": false
+    },
+    {
+      "ts": "1760119200.000200",
+      "user": { "id": "U_TESSA", "handle": "tessa", "name": "Tessa Moreno" },
+      "text": "let's go!!! 🎉 kevin was a pleasure. excited for the next one.",
+      "thread_ts": "1760119200.000100",
+      "reply_count": 0,
+      "reactions": [{ "emoji": "+1", "users": ["U_PRIYA"], "count": 1 }],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1760119200.000300",
+      "user": { "id": "U_NINA", "handle": "nina", "name": "Nina Kowalski" },
+      "text": "🎉🎉 huge!!",
+      "thread_ts": "1760119200.000100",
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1760119200.000400",
+      "user": { "id": "U_MARCUS", "handle": "marcus", "name": "Marcus Webb" },
+      "text": "🎊",
+      "thread_ts": "1760119200.000100",
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1762365600.000100",
+      "user": { "id": "U_PRIYA", "handle": "priya", "name": "Priya Chandran" },
+      "text": "Caleb Whitford (@caleb) starts today — AE. Tessa's first hire on the sales team. he's coming from Gong.",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        {
+          "emoji": "wave",
+          "users": [
+            "U_MARCUS",
+            "U_SOFIA",
+            "U_NINA",
+            "U_TESSA",
+            "U_LIAM",
+            "U_JORDAN",
+            "U_DANA"
+          ],
+          "count": 7
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": ["U_CALEB"],
+      "is_pinned": false
+    },
+    {
+      "ts": "1762801200.000100",
+      "user": { "id": "U_PRIYA", "handle": "priya", "name": "Priya Chandran" },
+      "text": "Raj Sundaram (@raj) joins as contract designer, 3 days/week. he's leading Dashboard v2. RISD trained, worked with Mercury, Ramp, Notion. welcome.",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        {
+          "emoji": "wave",
+          "users": [
+            "U_MARCUS",
+            "U_DANA",
+            "U_SOFIA",
+            "U_TESSA",
+            "U_NINA",
+            "U_CALEB"
+          ],
+          "count": 6
+        },
+        { "emoji": "art", "users": ["U_DANA", "U_SOFIA"], "count": 2 }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": ["U_RAJ"],
+      "is_pinned": false
+    },
+    {
+      "ts": "1766084400.000100",
+      "user": { "id": "U_PRIYA", "handle": "priya", "name": "Priya Chandran" },
+      "text": "Q4 wrap: 14 paying customers, $15,400 MRR, 99.7% uptime. more detail in the deck.",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        {
+          "emoji": "fire",
+          "users": ["U_TESSA", "U_MARCUS", "U_DANA", "U_NINA", "U_CALEB"],
+          "count": 5
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [
+        {
+          "service_name": "Google Drive",
+          "title": "Q4 2025 All-Hands Deck",
+          "title_link": "https://drive.google.com/file/d/allhands-q4-2025/view",
+          "text": "Last edited by priya@vectrix.io · Dec 18, 2025",
+          "author_name": "Priya Chandran",
+          "color": "#4285F4"
+        }
+      ],
+      "files": [],
+      "mentions": [],
+      "is_pinned": true
+    },
+    {
+      "ts": "1766772000.000100",
+      "user": { "id": "U_PRIYA", "handle": "priya", "name": "Priya Chandran" },
+      "text": "we're formalizing on-call rotation in january. jordan can't be the only person paged at 2am. marcus and i are working on a schedule. more soon.",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        { "emoji": "pray", "users": ["U_JORDAN"], "count": 1 },
+        {
+          "emoji": "+1",
+          "users": ["U_LIAM", "U_SOFIA", "U_MARCUS"],
+          "count": 3
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": ["U_JORDAN", "U_MARCUS"],
+      "is_pinned": false
+    },
+    {
+      "ts": "1767722400.000100",
+      "user": { "id": "U_PRIYA", "handle": "priya", "name": "Priya Chandran" },
+      "text": "we're back. sprint 9 starts today. let's make Q1 count.",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        {
+          "emoji": "muscle",
+          "users": ["U_TESSA", "U_CALEB", "U_SOFIA", "U_MARCUS"],
+          "count": 4
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1767909600.000100",
+      "user": { "id": "U_PRIYA", "handle": "priya", "name": "Priya Chandran" },
+      "text": "Cascade Systems signed Enterprise. $2,400/mo. tessa closed it. first enterprise logo.",
+      "thread_ts": null,
+      "reply_count": 1,
+      "reactions": [
+        {
+          "emoji": "tada",
+          "users": [
+            "U_MARCUS",
+            "U_LIAM",
+            "U_SOFIA",
+            "U_JORDAN",
+            "U_DANA",
+            "U_NINA",
+            "U_CALEB",
+            "U_RAJ"
+          ],
+          "count": 8
+        },
+        { "emoji": "moneybag", "users": ["U_CALEB", "U_TESSA"], "count": 2 }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": ["U_TESSA"],
+      "is_pinned": false
+    },
+    {
+      "ts": "1767909600.000200",
+      "user": { "id": "U_TESSA", "handle": "tessa", "name": "Tessa Moreno" },
+      "text": "team effort 🙌 liam helped me through 3 onboarding calls to get maria over the line. she's going to keep us honest.",
+      "thread_ts": "1767909600.000100",
+      "reply_count": 0,
+      "reactions": [{ "emoji": "heart", "users": ["U_LIAM"], "count": 1 }],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": ["U_LIAM"],
+      "is_pinned": false
+    },
+    {
+      "ts": "1768500000.000100",
+      "user": { "id": "U_PRIYA", "handle": "priya", "name": "Priya Chandran" },
+      "text": "Raj is full-time as of today. welcome properly, @raj. 🎨",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        {
+          "emoji": "tada",
+          "users": [
+            "U_DANA",
+            "U_SOFIA",
+            "U_NINA",
+            "U_MARCUS",
+            "U_CALEB",
+            "U_TESSA"
+          ],
+          "count": 6
+        },
+        { "emoji": "art", "users": ["U_DANA", "U_SOFIA"], "count": 2 }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": ["U_RAJ"],
+      "is_pinned": false
+    },
+    {
+      "ts": "1769101200.000100",
+      "user": { "id": "U_PRIYA", "handle": "priya", "name": "Priya Chandran" },
+      "text": "new pricing is live. free / growth ($19/mo) / enterprise ($99/mo + usage). existing customers stay on old pricing through march. check vectrix.io/pricing.",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        {
+          "emoji": "eyes",
+          "users": ["U_CALEB", "U_TESSA", "U_DANA", "U_MARCUS"],
+          "count": 4
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1771092000.000100",
+      "user": { "id": "U_NINA", "handle": "nina", "name": "Nina Kowalski" },
+      "text": "Hi team! Optional Valentine's Day lunch tomorrow at Hog Island Oyster Co, Ferry Building, 12:30pm. SF folks — who's in? 🦪❤️ (remote crew: spiritually with you)",
+      "thread_ts": null,
+      "reply_count": 2,
+      "reactions": [
+        {
+          "emoji": "heart",
+          "users": ["U_PRIYA", "U_TESSA", "U_SOFIA"],
+          "count": 3
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1771092000.000200",
+      "user": { "id": "U_TESSA", "handle": "tessa", "name": "Tessa Moreno" },
+      "text": "yes! see you there 🥂",
+      "thread_ts": "1771092000.000100",
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": ["U_NINA"],
+      "is_pinned": false
+    },
+    {
+      "ts": "1771092000.000300",
+      "user": { "id": "U_SOFIA", "handle": "sofia", "name": "Sofia Gutierrez" },
+      "text": "i'm in in spirit from austin 🫂",
+      "thread_ts": "1771092000.000100",
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1772298000.000100",
+      "user": { "id": "U_PRIYA", "handle": "priya", "name": "Priya Chandran" },
+      "text": "$18,200 MRR. 14 paying customers. end of february. we're building something real.",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        {
+          "emoji": "fire",
+          "users": [
+            "U_MARCUS",
+            "U_TESSA",
+            "U_CALEB",
+            "U_DANA",
+            "U_LIAM",
+            "U_JORDAN",
+            "U_NINA",
+            "U_RAJ",
+            "U_SOFIA"
+          ],
+          "count": 9
+        },
+        {
+          "emoji": "tada",
+          "users": ["U_TESSA", "U_CALEB", "U_DANA"],
+          "count": 3
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    }
+  ]
+}

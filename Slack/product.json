@@ -1,0 +1,348 @@
+{
+  "channel": {
+    "id": "C07VECTRIX03",
+    "name": "product",
+    "purpose": "Product roadmap and features",
+    "topic": "Current sprint: Sprint 12 | Dash v2 target: Mar 7 | Meridian: Mar 15"
+  },
+  "messages": [
+    {
+      "ts": "1758758400.000100",
+      "user": { "id": "U_DANA", "handle": "dana", "name": "Dana Reeves" },
+      "text": "sprint 2 retro question: we closed 14 issues but VEC-8, VEC-9, VEC-11 all carried over again. are these consistently underestimated or are we pulling in too much? want to talk through this in sprint planning monday.",
+      "thread_ts": null,
+      "reply_count": 1,
+      "reactions": [{ "emoji": "eyes", "users": ["U_MARCUS"], "count": 1 }],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": ["U_MARCUS"],
+      "is_pinned": false
+    },
+    {
+      "ts": "1758762000.000100",
+      "user": { "id": "U_MARCUS", "handle": "marcus", "name": "Marcus Webb" },
+      "text": "VEC-8 and VEC-9 are both blocked on infra work that isn't scoped yet. VEC-11 is just bigger than 3 points. let's break it down monday.",
+      "thread_ts": "1758758400.000100",
+      "reply_count": 0,
+      "reactions": [{ "emoji": "+1", "users": ["U_DANA"], "count": 1 }],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1761321600.000100",
+      "user": { "id": "U_DANA", "handle": "dana", "name": "Dana Reeves" },
+      "text": "sprint 5 planning note: pulling in dashboard improvements (VEC-33, VEC-34) and the anomaly config UX (VEC-36). i also want to scope out what building usage analytics for API monetization would take — customers keep asking. thoughts on priority?",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        { "emoji": "eyes", "users": ["U_MARCUS", "U_SOFIA"], "count": 2 }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1763250000.000100",
+      "user": { "id": "U_DANA", "handle": "dana", "name": "Dana Reeves" },
+      "text": "just finished reviewing the notes from priya and tessa's call with meridian. their requirements are pretty clear: SSO (SAML), SOC 2 Type II, data residency (US only), custom 1-year retention, and 99.9% SLA. these aren't nice-to-haves — they won't sign without them. i've opened feature stories for each. SSO is VEC-52. retention config is VEC-47.",
+      "thread_ts": null,
+      "reply_count": 2,
+      "reactions": [
+        {
+          "emoji": "eyes",
+          "users": ["U_MARCUS", "U_LIAM", "U_TESSA"],
+          "count": 3
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1763253600.000100",
+      "user": { "id": "U_MARCUS", "handle": "marcus", "name": "Marcus Webb" },
+      "text": "VEC-52 (SSO) is the one that drives the Clerk migration decision. i'm going to write a comparison doc this week — that's what unblocks the whole auth work.",
+      "thread_ts": "1763250000.000100",
+      "reply_count": 0,
+      "reactions": [{ "emoji": "+1", "users": ["U_DANA"], "count": 1 }],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1763257200.000100",
+      "user": { "id": "U_TESSA", "handle": "tessa", "name": "Tessa Moreno" },
+      "text": "worth flagging: meridian is evaluating us against Datadog. the $2,800/mo deal closes if we hit those requirements. per my call notes — dr. fong said 'we'll move fast once the compliance box is checked.'",
+      "thread_ts": "1763250000.000100",
+      "reply_count": 0,
+      "reactions": [
+        {
+          "emoji": "eyes",
+          "users": ["U_DANA", "U_MARCUS", "U_PRIYA"],
+          "count": 3
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1765519200.000100",
+      "user": { "id": "U_DANA", "handle": "dana", "name": "Dana Reeves" },
+      "text": "peakline analytics (free tier, tom andersen) asked about SSO again. he's a solo founder — definitely can't afford enterprise. this is the third time we've had someone on free ask about SSO. should we explore adding it to growth tier, or create a mid-tier? see VEC-61 where i started scoping this.",
+      "thread_ts": null,
+      "reply_count": 1,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1765522800.000100",
+      "user": { "id": "U_TESSA", "handle": "tessa", "name": "Tessa Moreno" },
+      "text": "moving SSO down-tier devalues the enterprise SKU. SSO is the reason meridian is paying $2,800/mo. i'd hold the line here.",
+      "thread_ts": "1765519200.000100",
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1768082400.000100",
+      "user": { "id": "U_DANA", "handle": "dana", "name": "Dana Reeves" },
+      "text": "pricing restructure — i've been thinking about this since tessa's proposal. the current pro tier ($29/mo) is awkward: too expensive for solo developers, too cheap for mid-market teams. the new growth/enterprise model makes more sense to me. my concern is transition communication — existing customers on pro need clear messaging. i started a draft in VEC-65. would love a second pair of eyes @priya",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        { "emoji": "eyes", "users": ["U_TESSA", "U_PRIYA"], "count": 2 }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": ["U_PRIYA"],
+      "is_pinned": false
+    },
+    {
+      "ts": "1769101200.000200",
+      "user": { "id": "U_DANA", "handle": "dana", "name": "Dana Reeves" },
+      "text": "new pricing is live. updated VEC-65 to done. the customer email went out this morning. keeping an eye on support inbox.",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        { "emoji": "white_check_mark", "users": ["U_TESSA"], "count": 1 }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1769814000.000100",
+      "user": { "id": "U_DANA", "handle": "dana", "name": "Dana Reeves" },
+      "text": "design review today was really good. raj, those endpoint detail screens are exactly what customers have been asking for. sharing the figma here for anyone who missed it. question for everyone: comparison mode (VEC-82) — are we still targeting v2 launch for this? i have three customer requests logged (VEC-89 thread). customers want it.",
+      "thread_ts": null,
+      "reply_count": 4,
+      "reactions": [
+        {
+          "emoji": "eyes",
+          "users": ["U_MARCUS", "U_SOFIA", "U_LIAM"],
+          "count": 3
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": ["U_RAJ"],
+      "is_pinned": false
+    },
+    {
+      "ts": "1769814000.000200",
+      "user": { "id": "U_RAJ", "handle": "raj", "name": "Raj Sundaram" },
+      "text": "🎨 here are the updated dashboard v2 screens — 12 frames total. endpoint detail view is frame 7. saved views UI is frames 9-11. lmk what's unclear.",
+      "thread_ts": "1769814000.000100",
+      "reply_count": 0,
+      "reactions": [
+        { "emoji": "heart", "users": ["U_DANA", "U_SOFIA"], "count": 2 },
+        { "emoji": "art", "users": ["U_DANA"], "count": 1 }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [
+        {
+          "service_name": "Figma",
+          "title": "Dashboard v2 — All Screens",
+          "title_link": "https://www.figma.com/file/abc123/Dashboard-v2?node-id=1:1",
+          "text": "12 frames · Vectrix Design System",
+          "author_name": "raj@vectrix.io",
+          "color": "#F24E1E"
+        }
+      ],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1769817600.000100",
+      "user": { "id": "U_DANA", "handle": "dana", "name": "Dana Reeves" },
+      "text": "the endpoint detail view is 💯. i approved the core layout. tracking feedback in VEC-84. the comparison mode design (frame 12) is also ready — raj built it, we just need the backend to support it.",
+      "thread_ts": "1769814000.000100",
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1769820000.000100",
+      "user": { "id": "U_MARCUS", "handle": "marcus", "name": "Marcus Webb" },
+      "text": "comparison mode requires changes to the query engine — specifically how we handle multi-range aggregation. that's 2-3 sprint points of backend work minimum, probably more. i don't think we should hold v2 launch for it. this should be v2.1.",
+      "thread_ts": "1769814000.000100",
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1769823600.000100",
+      "user": { "id": "U_DANA", "handle": "dana", "name": "Dana Reeves" },
+      "text": "we already communicated comparison mode in v2 to customers — including brainloop. can we not scope the query engine work tighter? i don't want to slip on a feature we've been promising. if we defer this it needs to be a firm commitment on timeline, not 'v2.1 someday'",
+      "thread_ts": "1769814000.000100",
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": ["U_MARCUS"],
+      "is_pinned": false
+    },
+    {
+      "ts": "1770141600.000100",
+      "user": { "id": "U_DANA", "handle": "dana", "name": "Dana Reeves" },
+      "text": "sprint 11 priorities: VEC-47 (retention config) is P0 — meridian won't sign without it. VEC-52 (SSO/Clerk) needs to close out this sprint, we're at 80%. VEC-84 (dashbaord v2 core) — pushing to get this done by feb 28.",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        {
+          "emoji": "eyes",
+          "users": ["U_MARCUS", "U_LIAM", "U_SOFIA"],
+          "count": 3
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1770141600.000200",
+      "user": { "id": "U_DANA", "handle": "dana", "name": "Dana Reeves" },
+      "text": "*dashboard",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1770328800.000100",
+      "user": { "id": "U_SOFIA", "handle": "sofia", "name": "Sofia Gutierrez" },
+      "text": "quick q — for the saved views feature (VEC-88), does the view state include the active alert filters or just the time range and endpoint selection? i want to make sure i'm persisting the right stuff before i go deep on the schema 🙏",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1771369200.000100",
+      "user": { "id": "U_DANA", "handle": "dana", "name": "Dana Reeves" },
+      "text": "comparison mode is deferred to v2.1 per this morning's sprint review. i don't love this decision — three customers specifically asked for it in the last two months — but i understand marcus's concern about the query engine work. for the record: v2.1 needs a real target date. not 'eventually.' putting VEC-82 as top of v2.1 backlog.",
+      "thread_ts": null,
+      "reply_count": 1,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1771372800.000100",
+      "user": { "id": "U_MARCUS", "handle": "marcus", "name": "Marcus Webb" },
+      "text": "noted. i'll have a timeline for VEC-82 backend work in the architecture spec by next sprint planning. it's not off the table, just not blocking the core v2 launch.",
+      "thread_ts": "1771369200.000100",
+      "reply_count": 0,
+      "reactions": [{ "emoji": "eyes", "users": ["U_DANA"], "count": 1 }],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": ["U_DANA"],
+      "is_pinned": false
+    },
+    {
+      "ts": "1771970400.000100",
+      "user": { "id": "U_DANA", "handle": "dana", "name": "Dana Reeves" },
+      "text": "brainloop filed 3 new feature requests this week. see VEC-89 (CSV export), VEC-91 (webhook retry config), VEC-93 (custom alert thresholds per endpoint). kevin is very active for a growth tier customer. keeping these in backlog for now but VEC-89 is small — worth pulling into sprint 13.",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        { "emoji": "eyes", "users": ["U_MARCUS", "U_TESSA"], "count": 2 }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    }
+  ]
+}

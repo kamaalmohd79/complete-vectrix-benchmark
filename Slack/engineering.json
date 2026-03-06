@@ -1,0 +1,742 @@
+{
+  "channel": {
+    "id": "C07VECTRIX02",
+    "name": "engineering",
+    "purpose": "Engineering discussion",
+    "topic": "deploy process → https://drive.google.com/file/d/vectrix-deploy-runbook | current version: v0.16.1"
+  },
+  "messages": [
+    {
+      "ts": "1757966400.000100",
+      "user": {
+        "id": "U_JORDAN",
+        "handle": "jordan.o",
+        "name": "Jordan Okafor"
+      },
+      "text": "🚀 deployed v0.12.0 to prod. ingestion pipeline + dashboard. release notes in the PR.",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        {
+          "emoji": "rocket",
+          "users": ["U_MARCUS", "U_SOFIA", "U_LIAM"],
+          "count": 3
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": true
+    },
+    {
+      "ts": "1758574800.000100",
+      "user": { "id": "U_SOFIA", "handle": "sofia", "name": "Sofia Gutierrez" },
+      "text": "hey — brainloop beta user is reporting delayed dashboard updates. alerts coming through 15+ minutes late. anyone else seeing kafka lag?",
+      "thread_ts": null,
+      "reply_count": 4,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1758574800.000200",
+      "user": { "id": "U_LIAM", "handle": "liam", "name": "Liam Nakamura" },
+      "text": "checking consumer lag now",
+      "thread_ts": "1758574800.000100",
+      "reply_count": 0,
+      "reactions": [{ "emoji": "eyes", "users": ["U_SOFIA"], "count": 1 }],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1758661200.000100",
+      "user": { "id": "U_LIAM", "handle": "liam", "name": "Liam Nakamura" },
+      "text": "bad offset reset after the pod restart last night. `consumer_lag` hit 45k. pushing a fix.",
+      "thread_ts": "1758574800.000100",
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1758736800.000100",
+      "user": { "id": "U_LIAM", "handle": "liam", "name": "Liam Nakamura" },
+      "text": "fixed. deployed v0.12.2. lag cleared. alerts back to normal latency.",
+      "thread_ts": "1758574800.000100",
+      "reply_count": 0,
+      "reactions": [
+        {
+          "emoji": "white_check_mark",
+          "users": ["U_SOFIA", "U_MARCUS"],
+          "count": 2
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1758740400.000100",
+      "user": { "id": "U_MARCUS", "handle": "marcus", "name": "Marcus Webb" },
+      "text": "nice. opened VEC-12 to add kafka consumer lag to pagerduty so we catch this before users report it next time.",
+      "thread_ts": "1758574800.000100",
+      "reply_count": 0,
+      "reactions": [{ "emoji": "+1", "users": ["U_LIAM"], "count": 1 }],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1760133600.000100",
+      "user": {
+        "id": "U_JORDAN",
+        "handle": "jordan.o",
+        "name": "Jordan Okafor"
+      },
+      "text": "🚀 deployed v0.13.0 to prod. anomaly detection v2 + onboarding flow fixes. build time: 3m52s.",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        {
+          "emoji": "rocket",
+          "users": ["U_MARCUS", "U_SOFIA", "U_LIAM", "U_DANA"],
+          "count": 4
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1761320400.000100",
+      "user": { "id": "U_MARCUS", "handle": "marcus", "name": "Marcus Webb" },
+      "text": "Kevin at Brainloop emailed earlier today — anomaly detection is firing false positives on low-traffic endpoints (< 50 req/day). the baseline calculation is wrong at that scale. per his email thread, it's affecting their `/api/admin` endpoints specifically. @liam can you take a look?",
+      "thread_ts": null,
+      "reply_count": 2,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": ["U_LIAM"],
+      "is_pinned": false
+    },
+    {
+      "ts": "1761320400.000200",
+      "user": { "id": "U_LIAM", "handle": "liam", "name": "Liam Nakamura" },
+      "text": "can repro. the rolling window doesn't work right when n < 30 samples. opened VEC-18.",
+      "thread_ts": "1761320400.000100",
+      "reply_count": 0,
+      "reactions": [{ "emoji": "eyes", "users": ["U_MARCUS"], "count": 1 }],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1761406800.000100",
+      "user": { "id": "U_LIAM", "handle": "liam", "name": "Liam Nakamura" },
+      "text": "VEC-18 done. hotfix deployed. added a minimum sample size guard — falls back to static threshold below 30 data points.",
+      "thread_ts": "1761320400.000100",
+      "reply_count": 0,
+      "reactions": [
+        { "emoji": "white_check_mark", "users": ["U_MARCUS"], "count": 1 }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1762984800.000100",
+      "user": { "id": "U_MARCUS", "handle": "marcus", "name": "Marcus Webb" },
+      "text": "wrote up the case for moving from TimescaleDB to ClickHouse for event storage. link below. tl;dr: timescale write throughput is a ceiling we'll hit in 2-3 months at current growth. ClickHouse handles this with much lower ops overhead once set up. want to make a call by EOW.",
+      "thread_ts": null,
+      "reply_count": 3,
+      "reactions": [
+        {
+          "emoji": "eyes",
+          "users": ["U_LIAM", "U_JORDAN", "U_SOFIA"],
+          "count": 3
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [
+        {
+          "service_name": "Google Drive",
+          "title": "RFC: Migrating from TimescaleDB to ClickHouse for Event Storage",
+          "title_link": "https://drive.google.com/file/d/vectrix-clickhouse-rfc/view",
+          "text": "Last edited by marcus@vectrix.io · Nov 12, 2025",
+          "author_name": "Marcus Webb",
+          "color": "#4285F4"
+        }
+      ],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1762984800.000200",
+      "user": { "id": "U_LIAM", "handle": "liam", "name": "Liam Nakamura" },
+      "text": "read it. write path section is solid. left a few questions in the doc — mostly around the schema migration strategy and how we handle the dual-write window.",
+      "thread_ts": "1762984800.000100",
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1763056800.000100",
+      "user": {
+        "id": "U_JORDAN",
+        "handle": "jordan.o",
+        "name": "Jordan Okafor"
+      },
+      "text": "i can have a ClickHouse cluster up in staging by end of week. we can run smoke tests against real ingestion traffic.",
+      "thread_ts": "1762984800.000100",
+      "reply_count": 0,
+      "reactions": [{ "emoji": "+1", "users": ["U_MARCUS"], "count": 1 }],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1763060400.000100",
+      "user": { "id": "U_MARCUS", "handle": "marcus", "name": "Marcus Webb" },
+      "text": "perfect. target EOD friday for staging smoke tests. if throughput looks good we're moving forward.",
+      "thread_ts": "1762984800.000100",
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": ["U_JORDAN"],
+      "is_pinned": false
+    },
+    {
+      "ts": "1763247600.000100",
+      "user": { "id": "U_LIAM", "handle": "liam", "name": "Liam Nakamura" },
+      "text": "does ClickHouse support ZSTD compression per-column or only at the table level? trying to figure out the storage estimates for the event schema",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1763571600.000100",
+      "user": {
+        "id": "U_JORDAN",
+        "handle": "jordan.o",
+        "name": "Jordan Okafor"
+      },
+      "text": "🚀 deployed v0.14.0 to prod. dashboard improvements + endpoint search. monitoring looks clean.",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        { "emoji": "rocket", "users": ["U_MARCUS", "U_SOFIA"], "count": 2 }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1764093600.000100",
+      "user": { "id": "U_MARCUS", "handle": "marcus", "name": "Marcus Webb" },
+      "text": "migration starts today. jordan is bringing up the ClickHouse prod cluster, liam is on the ingestion pipeline rewrite. plan:\n1. dual-write to timescaleDB + ClickHouse for 2 weeks\n2. validate row counts + query results match\n3. cutover reads to ClickHouse\n4. decommission timescaleDB writes\ntarget completion: dec 15. updated architecture spec is in Drive.",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        {
+          "emoji": "eyes",
+          "users": ["U_LIAM", "U_JORDAN", "U_SOFIA"],
+          "count": 3
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": ["U_JORDAN", "U_LIAM"],
+      "is_pinned": false
+    },
+    {
+      "ts": "1764702000.000100",
+      "user": { "id": "U_LIAM", "handle": "liam", "name": "Liam Nakamura" },
+      "text": "migration is stuck. data type mismatch on the `event_metadata` column. timescaleDB has it as varchar, ClickHouse expects LowCardinality(String). the backfill is failing. looking at it now.",
+      "thread_ts": null,
+      "reply_count": 4,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1764702000.000200",
+      "user": {
+        "id": "U_JORDAN",
+        "handle": "jordan.o",
+        "name": "Jordan Okafor"
+      },
+      "text": "is it all rows or just the nulls? we had some events with null metadata early on",
+      "thread_ts": "1764702000.000100",
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1764705600.000100",
+      "user": { "id": "U_LIAM", "handle": "liam", "name": "Liam Nakamura" },
+      "text": "both. here's the error from the backfill run:\n\n```\nCode: 53, e.displayText() = DB::Exception: Type mismatch in IN or VALUES section. \nExpected: LowCardinality(String). Got: Nullable(String)\nBackfill halted at row offset 2,847,291 / 10,394,002\n```\n\nneed to cast the nulls to empty string before insert. writing the fix now.",
+      "thread_ts": "1764702000.000100",
+      "reply_count": 0,
+      "reactions": [
+        { "emoji": "eyes", "users": ["U_JORDAN", "U_MARCUS"], "count": 2 }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [
+        {
+          "id": "F07ENG001",
+          "name": "backfill-error-dec2.log",
+          "mimetype": "text/plain",
+          "size_bytes": 4200,
+          "url_private": "https://files.slack.com/files-pri/T07VECTRIX-F07ENG001/backfill-error-dec2.log",
+          "thumb_360": null,
+          "uploaded_by": "U_LIAM"
+        }
+      ],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1764972000.000100",
+      "user": { "id": "U_LIAM", "handle": "liam", "name": "Liam Nakamura" },
+      "text": "backfill ran clean. 10,394,002 rows migrated, 0 errors. coalesce on the null metadata did it. ready to cut over.",
+      "thread_ts": "1764702000.000100",
+      "reply_count": 0,
+      "reactions": [
+        {
+          "emoji": "white_check_mark",
+          "users": ["U_MARCUS", "U_JORDAN"],
+          "count": 2
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1764975600.000100",
+      "user": { "id": "U_MARCUS", "handle": "marcus", "name": "Marcus Webb" },
+      "text": "great. cutting over reads tonight after 11pm PT. jordan on standby. ping in this thread if anything breaks.",
+      "thread_ts": "1764702000.000100",
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": ["U_JORDAN"],
+      "is_pinned": false
+    },
+    {
+      "ts": "1765386000.000100",
+      "user": {
+        "id": "U_JORDAN",
+        "handle": "jordan.o",
+        "name": "Jordan Okafor"
+      },
+      "text": "🚀 deployed v0.15.0 to prod. ClickHouse migration complete. all reads now going to ClickHouse. timescaleDB kept as read-only backup for 30 days.",
+      "thread_ts": null,
+      "reply_count": 1,
+      "reactions": [
+        {
+          "emoji": "rocket",
+          "users": ["U_MARCUS", "U_LIAM", "U_SOFIA", "U_DANA"],
+          "count": 4
+        },
+        { "emoji": "tada", "users": ["U_SOFIA"], "count": 1 }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1765386000.000200",
+      "user": { "id": "U_MARCUS", "handle": "marcus", "name": "Marcus Webb" },
+      "text": "good work jordan + liam. timescaleDB stays up read-only until jan 10 — ping me if you need to query old data during the transition window.",
+      "thread_ts": "1765386000.000100",
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": ["U_JORDAN", "U_LIAM"],
+      "is_pinned": false
+    },
+    {
+      "ts": "1765580400.000100",
+      "user": { "id": "U_MARCUS", "handle": "marcus", "name": "Marcus Webb" },
+      "text": "wrote up the firebase vs clerk vs auth0 comparison for our auth migration decision. full comparison doc is in Drive, but the short version: clerk wins on org-level permissions and SSO support, which we need for Meridian. auth0 is overpriced for our scale. firebase has no org model at all. i'm recommending we move to clerk.\n\nthis is the intergration that unblocks Meridian.",
+      "thread_ts": null,
+      "reply_count": 3,
+      "reactions": [
+        {
+          "emoji": "eyes",
+          "users": ["U_LIAM", "U_SOFIA", "U_DANA"],
+          "count": 3
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [
+        {
+          "service_name": "Google Drive",
+          "title": "Auth Provider Comparison: Firebase vs Clerk vs Auth0",
+          "title_link": "https://drive.google.com/file/d/vectrix-auth-comparison/view",
+          "text": "Last edited by marcus@vectrix.io · Dec 12, 2025",
+          "author_name": "Marcus Webb",
+          "color": "#4285F4"
+        }
+      ],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1765648800.000100",
+      "user": { "id": "U_LIAM", "handle": "liam", "name": "Liam Nakamura" },
+      "text": "clerk wins. the org-level permissions model is exactly what we need. auth0 would work but it's overkill and expensive. firebase is a dead end for this.",
+      "thread_ts": "1765580400.000100",
+      "reply_count": 0,
+      "reactions": [{ "emoji": "+1", "users": ["U_MARCUS"], "count": 1 }],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1765738800.000100",
+      "user": { "id": "U_SOFIA", "handle": "sofia", "name": "Sofia Gutierrez" },
+      "text": "+1 on clerk. their react hooks are way cleaner than the firebase SDK. `useAuth()` just works. would make the frontend migration much easier 🙌",
+      "thread_ts": "1765580400.000100",
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1765742400.000100",
+      "user": { "id": "U_MARCUS", "handle": "marcus", "name": "Marcus Webb" },
+      "text": "*integration",
+      "thread_ts": "1765580400.000100",
+      "reply_count": 0,
+      "reactions": [{ "emoji": "joy", "users": ["U_SOFIA"], "count": 1 }],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1766562300.000100",
+      "user": {
+        "id": "U_JORDAN",
+        "handle": "jordan.o",
+        "name": "Jordan Okafor"
+      },
+      "text": "🚨 P1 INCIDENT — rate limiter misconfiguration is returning 403 errors for Brainloop. i'm on it.",
+      "thread_ts": null,
+      "reply_count": 3,
+      "reactions": [
+        { "emoji": "eyes", "users": ["U_MARCUS", "U_LIAM"], "count": 2 }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1766562300.000200",
+      "user": {
+        "id": "U_JORDAN",
+        "handle": "jordan.o",
+        "name": "Jordan Okafor"
+      },
+      "text": "it's the holidays. it's 11pm. i'm the only one on call and i've been paged three times this month. this is the second production incident i've handled solo since the team went on break. i need us to actually build a rotation in january because this isn't sustainable.",
+      "thread_ts": "1766562300.000100",
+      "reply_count": 0,
+      "reactions": [
+        {
+          "emoji": "heart",
+          "users": ["U_PRIYA", "U_MARCUS", "U_LIAM"],
+          "count": 3
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1766562300.000300",
+      "user": { "id": "U_MARCUS", "handle": "marcus", "name": "Marcus Webb" },
+      "text": "you're right. this is on me for not setting this up before the break. i'll share on-call tonight and we'll formalize the rotation in january. you shouldn't be carrying this alone. fix the incident first — we'll figure the rest out.",
+      "thread_ts": "1766562300.000100",
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": ["U_JORDAN"],
+      "is_pinned": false
+    },
+    {
+      "ts": "1766641200.000100",
+      "user": {
+        "id": "U_JORDAN",
+        "handle": "jordan.o",
+        "name": "Jordan Okafor"
+      },
+      "text": "fixed. rate limiter config was applying the wrong tier limits after a recent env var change. deployed hotfix v0.15.1. brainloop fully restored. total downtime: ~90 minutes. post-mortem tomorrow.",
+      "thread_ts": "1766562300.000100",
+      "reply_count": 0,
+      "reactions": [
+        {
+          "emoji": "white_check_mark",
+          "users": ["U_MARCUS", "U_LIAM"],
+          "count": 2
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [
+        {
+          "service_name": "GitHub",
+          "title": "hotfix: correct rate limiter tier config for multi-org envs #89",
+          "title_link": "https://github.com/vectrix-labs/vectrix-platform/pull/89",
+          "text": "Fixes P1 incident Dec 23 — rate limiter applying wrong tier to Brainloop org.",
+          "author_name": "jordan-o",
+          "color": "#24292e"
+        }
+      ],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1768327200.000100",
+      "user": { "id": "U_MARCUS", "handle": "marcus", "name": "Marcus Webb" },
+      "text": "starting the Clerk migration today. tickets are VEC-52 (backend token validation) and VEC-53 (frontend auth context). plan:\n1. sofia handles frontend auth changes — useAuth hook wrapping both firebase and clerk during transition\n2. liam handles backend JWT validation — needs to accept both token formats during migration window\n3. migrate existing customers one at a time, starting with brainloop\ntarget: complete by jan 31.",
+      "thread_ts": null,
+      "reply_count": 2,
+      "reactions": [
+        {
+          "emoji": "eyes",
+          "users": ["U_SOFIA", "U_LIAM", "U_JORDAN"],
+          "count": 3
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": ["U_SOFIA", "U_LIAM"],
+      "is_pinned": false
+    },
+    {
+      "ts": "1768327200.000200",
+      "user": { "id": "U_SOFIA", "handle": "sofia", "name": "Sofia Gutierrez" },
+      "text": "on it for the frontend. i'm starting with the useAuth hook today — check the calendar invite for the pair session i sent @liam",
+      "thread_ts": "1768327200.000100",
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": ["U_LIAM"],
+      "is_pinned": false
+    },
+    {
+      "ts": "1768330800.000100",
+      "user": { "id": "U_LIAM", "handle": "liam", "name": "Liam Nakamura" },
+      "text": "backend tokens — on it. will handle the JWT validation middleware first.",
+      "thread_ts": "1768327200.000100",
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1769900000.000100",
+      "user": { "id": "U_LIAM", "handle": "liam", "name": "Liam Nakamura" },
+      "text": "clerk migration: 5 of 6 customers done. brainloop has a non-standard token format — their legacy integration is sending bearer tokens without the org claim. tracking in VEC-52. should be resolved this week.",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [{ "emoji": "eyes", "users": ["U_MARCUS"], "count": 1 }],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1770760800.000100",
+      "user": { "id": "U_SOFIA", "handle": "sofia", "name": "Sofia Gutierrez" },
+      "text": "hey can you pick up milk on the way home?",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        {
+          "emoji": "joy",
+          "users": ["U_LIAM", "U_MARCUS", "U_JORDAN"],
+          "count": 3
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1770760860.000100",
+      "user": { "id": "U_SOFIA", "handle": "sofia", "name": "Sofia Gutierrez" },
+      "text": "lol wrong chat sorry 😅",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        {
+          "emoji": "joy",
+          "users": ["U_LIAM", "U_MARCUS", "U_JORDAN", "U_DANA"],
+          "count": 4
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1771610400.000100",
+      "user": {
+        "id": "U_JORDAN",
+        "handle": "jordan.o",
+        "name": "Jordan Okafor"
+      },
+      "text": "🚨 P2 — ClickHouse Cloud maintenance window just overlapped with Cascade's peak traffic window. dashboard showing stale data. investigating.",
+      "thread_ts": null,
+      "reply_count": 1,
+      "reactions": [
+        { "emoji": "eyes", "users": ["U_MARCUS", "U_LIAM"], "count": 2 }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1771614000.000100",
+      "user": {
+        "id": "U_JORDAN",
+        "handle": "jordan.o",
+        "name": "Jordan Okafor"
+      },
+      "text": "resolved. ClickHouse maintenance ended, queries resuming. stale data window: ~45 minutes. cascade affected. maria chen already emailed per Dana's forward. filing incident report and post-mortem. we need to check ClickHouse maintenance schedule and block our peak traffic windows.",
+      "thread_ts": "1771610400.000100",
+      "reply_count": 0,
+      "reactions": [
+        { "emoji": "white_check_mark", "users": ["U_MARCUS"], "count": 1 }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    }
+  ]
+}

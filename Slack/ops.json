@@ -1,0 +1,235 @@
+{
+  "channel": {
+    "id": "C07VECTRIX06",
+    "name": "ops",
+    "purpose": "Operations, infra alerts",
+    "topic": "pagerduty: vectrix-production | on-call: jordan.o (primary) → marcus (backup)"
+  },
+  "messages": [
+    {
+      "ts": "1759776000.000100",
+      "user": {
+        "id": "U_JORDAN",
+        "handle": "jordan.o",
+        "name": "Jordan Okafor"
+      },
+      "text": "AWS cost review: september burn was $1,800/mo on infra. storage is growing ~22% month-over-month driven by TimescaleDB event table. at this rate we'll hit $4K/mo by q1. i'm going to put together a proposal for tiered data retention to control the growth. will share in engineering.",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        { "emoji": "eyes", "users": ["U_MARCUS", "U_PRIYA"], "count": 2 }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1760745600.000100",
+      "user": {
+        "id": "U_JORDAN",
+        "handle": "jordan.o",
+        "name": "Jordan Okafor"
+      },
+      "text": "data retention proposal: raw events 90 days, hourly aggregates 2 years. this brings projected storage costs down ~40% vs 180-day raw retention. full doc shared with marcus.",
+      "thread_ts": null,
+      "reply_count": 1,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1760749200.000100",
+      "user": { "id": "U_MARCUS", "handle": "marcus", "name": "Marcus Webb" },
+      "text": "i want to keep 180 days on raw events. losing 90 days of raw data feels like a risk if we need to replay events for a customer. what's the actual storage delta in dollars?",
+      "thread_ts": "1760745600.000100",
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1760946000.000100",
+      "user": {
+        "id": "U_JORDAN",
+        "handle": "jordan.o",
+        "name": "Jordan Okafor"
+      },
+      "text": "🔔 [PagerDuty] ALERT — RESOLVED | vectrix-production | High memory on ingestion pods | Duration: 12 min | Acked by: jordan.o",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        { "emoji": "white_check_mark", "users": ["U_MARCUS"], "count": 1 }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1763078400.000100",
+      "user": {
+        "id": "U_JORDAN",
+        "handle": "jordan.o",
+        "name": "Jordan Okafor"
+      },
+      "text": "ClickHouse staging cluster is up. write throughput test: 52M events/day simulated, p99 insert latency 18ms. TimescaleDB was hitting 340ms at this volume. moving forward with migration.",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        { "emoji": "rocket", "users": ["U_MARCUS", "U_LIAM"], "count": 2 }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1763680800.000100",
+      "user": {
+        "id": "U_JORDAN",
+        "handle": "jordan.o",
+        "name": "Jordan Okafor"
+      },
+      "text": "monitoring link for the migration: https://grafana.vectrix.io/d/xFz9kL7m/clickhouse-migration-monitor?orgId=1&from=now-7d&to=now — tracking write lag, row counts, and error rates across both DBs during dual-write phase.",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        { "emoji": "eyes", "users": ["U_MARCUS", "U_LIAM"], "count": 2 }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1766562100.000100",
+      "user": {
+        "id": "U_JORDAN",
+        "handle": "jordan.o",
+        "name": "Jordan Okafor"
+      },
+      "text": "🔔 [PagerDuty] ALERT — FIRING | vectrix-production | P1: 403 errors for org brainloop-prod | Triggered: 23:41 PT | Acked by: jordan.o",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [{ "emoji": "eyes", "users": ["U_MARCUS"], "count": 1 }],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1768414800.000100",
+      "user": { "id": "U_NINA", "handle": "nina", "name": "Nina Kowalski" },
+      "text": "heads up — got a payment failure alert from Typesense Cloud ($59). card declined. forwarding to priya to update the card. should be resolved today.",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [{ "emoji": "eyes", "users": ["U_PRIYA"], "count": 1 }],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [
+        {
+          "service_name": "Email",
+          "title": "Action required: Payment failed for Typesense Cloud",
+          "title_link": "",
+          "text": "Amount: $59.00 · Error: card declined · Update payment method within 3 days to avoid interruption",
+          "author_name": "billing@typesense.org",
+          "color": "#E53E3E"
+        }
+      ],
+      "files": [],
+      "mentions": ["U_PRIYA"],
+      "is_pinned": false
+    },
+    {
+      "ts": "1771610200.000100",
+      "user": {
+        "id": "U_JORDAN",
+        "handle": "jordan.o",
+        "name": "Jordan Okafor"
+      },
+      "text": "🔔 [PagerDuty] ALERT — FIRING | vectrix-production | P2: ClickHouse Cloud maintenance window — queries degraded | Triggered: 14:18 PT | Acked by: jordan.o",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        { "emoji": "eyes", "users": ["U_MARCUS", "U_LIAM"], "count": 2 }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1771617600.000100",
+      "user": {
+        "id": "U_JORDAN",
+        "handle": "jordan.o",
+        "name": "Jordan Okafor"
+      },
+      "text": "🔔 [PagerDuty] ALERT — RESOLVED | vectrix-production | ClickHouse maintenance ended | Duration: 45 min | grafana incident dashboard: https://grafana.vectrix.io/d/pQr3mN2j/incident-feb20?orgId=1",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        { "emoji": "white_check_mark", "users": ["U_MARCUS"], "count": 1 }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1771879200.000100",
+      "user": {
+        "id": "U_JORDAN",
+        "handle": "jordan.o",
+        "name": "Jordan Okafor"
+      },
+      "text": "ClickHouse Cloud is at $1,100/mo now. if it hits $2K i want to start an evaluation of self-hosting on EC2. flagging this early so it's not a surprise.",
+      "thread_ts": null,
+      "reply_count": 1,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1771882800.000100",
+      "user": { "id": "U_MARCUS", "handle": "marcus", "name": "Marcus Webb" },
+      "text": "not there yet. ops overhead of self-hosting ClickHouse at our scale outweighs the savings. let's revisit at $2.5K/mo.",
+      "thread_ts": "1771879200.000100",
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    }
+  ]
+}

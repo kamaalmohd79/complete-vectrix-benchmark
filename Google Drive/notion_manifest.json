@@ -1,0 +1,30 @@
+{
+  "workspace": "Vectrix Engineering",
+  "workspace_id": "ws_vectrix_eng_2025",
+  "pages": [
+    {
+      "page_id": "7f3a9b2c-1d4e-4f8a-bc6d-8e2f01a4c9b0",
+      "title": "Vectrix Data Retention & Privacy Policy",
+      "author": "Jordan Okafor",
+      "author_email": "jordan@vectrix.io",
+      "created": "2025-09-20T10:14:00Z",
+      "last_updated": "2025-10-15T16:42:00Z",
+      "status": "Published",
+      "filename": "data-retention-policy-notion.md",
+      "note": "Contains Section 5 (Customer Data Export) that was NOT migrated to the Google Drive version (data-retention-policy-v2.md). Drive version is current for retention schedule but missing export rights section. Jordan flagged this in a Notion comment on Oct 16 — unresolved.",
+      "drive_equivalent": "data-retention-policy-v2.md",
+      "comments": [
+        {
+          "author": "Jordan Okafor",
+          "date": "2025-10-16T09:22:00Z",
+          "text": "heads up — when i migrated this to Drive I forgot to copy Section 5 (the export rights section). the Drive version is now authoritative for the retention schedule but it's missing the export SLA entirely. someone should add it before we share with any enterprise prospects"
+        },
+        {
+          "author": "Marcus Webb",
+          "date": "2025-10-16T11:05:00Z",
+          "text": "noted. adding to the backlog but low priority until Meridian asks for it"
+        }
+      ]
+    }
+  ]
+}

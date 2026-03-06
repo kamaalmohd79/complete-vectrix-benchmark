@@ -1,0 +1,123 @@
+{
+  "channel": {
+    "id": "DM-02",
+    "name": "dm_tessa_caleb",
+    "purpose": "Direct message",
+    "topic": ""
+  },
+  "participants": ["U_TESSA", "U_CALEB"],
+  "messages": [
+    {
+      "ts": "1770561600.000100",
+      "user": { "id": "U_TESSA", "handle": "tessa", "name": "Tessa Moreno" },
+      "text": "hey — i need to talk to you about the ridgeway email. i saw jason's reply forwarded from marcus. what happened?",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1770565200.000100",
+      "user": { "id": "U_CALEB", "handle": "caleb", "name": "Caleb Whitford" },
+      "text": "yeah i know. i told jason we could build the clickhouse-to-snowflake export in 2 weeks. i thought it was closer to ready than it was. i should have checked first.",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1770568800.000100",
+      "user": { "id": "U_TESSA", "handle": "tessa", "name": "Tessa Moreno" },
+      "text": "that feature isn't on the roadmap at all — it's H2 at the earliest, and that's optimistic. 2 weeks is nowhere close to reality. i sent a correction to jason but now we have a trust problem to fix before we can reopen the conversation.\n\nthere's a rule i should have made explicit earlier: if you're not 100% sure a feature exists and when it ships, you don't promise it. you say 'let me check with engineering and get back to you today.' that's not weakness — that's how you keep prospects. over-promising and walking it back is what kills deals.",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1770572400.000100",
+      "user": { "id": "U_CALEB", "handle": "caleb", "name": "Caleb Whitford" },
+      "text": "understood. i messed up. how do i fix it with jason?",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1770576000.000100",
+      "user": { "id": "U_TESSA", "handle": "tessa", "name": "Tessa Moreno" },
+      "text": "i've already sent the correction. for now, give it a few days before you follow up. when you do reach out, focus on what we *can* do today — CSV export is real and available now, the snowflake connector is roadmap. that's an honest conversation. don't bring up the timeline you gave him.",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1770579600.000100",
+      "user": { "id": "U_CALEB", "handle": "caleb", "name": "Caleb Whitford" },
+      "text": "ok. and what's the actual timeline for the snowflake connector, if jason asks?",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1770583200.000100",
+      "user": { "id": "U_TESSA", "handle": "tessa", "name": "Tessa Moreno" },
+      "text": "\"second half of 2026, not yet on the official roadmap.\" that's it. no specifics. check with marcus if jason presses for detail.",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1770586800.000100",
+      "user": { "id": "U_CALEB", "handle": "caleb", "name": "Caleb Whitford" },
+      "text": "got it. thanks for not making it a bigger thing than it needed to be. i'll be more careful.",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    }
+  ]
+}

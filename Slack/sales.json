@@ -1,0 +1,364 @@
+{
+  "channel": {
+    "id": "C07VECTRIX04",
+    "name": "sales",
+    "purpose": "Deal updates and prospect intel",
+    "topic": "Feb pipeline: Meridian ($2,800) in negotiation · Ridgeway ($1,500) in discovery"
+  },
+  "messages": [
+    {
+      "ts": "1763171200.000100",
+      "user": { "id": "U_TESSA", "handle": "tessa", "name": "Tessa Moreno" },
+      "text": "got an intro to Meridian Health Systems through Threshold Ventures. 400 employees, Series D, healthtech. VP of Engineering is Dr. Alan Fong. first call scheduled for Nov 20. they have 200+ internal APIs and a team of 85 engineers — this is exactly our ICP. could be our first real enterprise deal.",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        { "emoji": "eyes", "users": ["U_PRIYA", "U_CALEB"], "count": 2 },
+        { "emoji": "fire", "users": ["U_CALEB"], "count": 1 }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1763935200.000100",
+      "user": { "id": "U_TESSA", "handle": "tessa", "name": "Tessa Moreno" },
+      "text": "just got off the meridian call with priya and dr. fong. 45 minutes, very productive. they're serious. **four hard requirements before they'll sign:**\n• SSO via SAML\n• SOC 2 Type II (we have Type I — this is a gap)\n• Data residency: US-only\n• Custom 1-year raw event retention\n\nthey're evaluating us head-to-head against Datadog. rachel simmons (security lead) will be the gatekeeper. she's sending a security questionnaire. tagging @priya and @marcus — we need to talk about the timeline on these requirements.",
+      "thread_ts": null,
+      "reply_count": 1,
+      "reactions": [
+        {
+          "emoji": "eyes",
+          "users": ["U_PRIYA", "U_CALEB", "U_DANA"],
+          "count": 3
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": ["U_PRIYA", "U_MARCUS"],
+      "is_pinned": false
+    },
+    {
+      "ts": "1763938800.000100",
+      "user": { "id": "U_CALEB", "handle": "caleb", "name": "Caleb Whitford" },
+      "text": "this is huge. what's the potential ACV? are we talking $2K+/mo?",
+      "thread_ts": "1763935200.000100",
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1765586400.000100",
+      "user": { "id": "U_CALEB", "handle": "caleb", "name": "Caleb Whitford" },
+      "text": "peakline analytics (free tier, tom andersen) asked about SSO availability today. i told him it's enterprise-only for now. he seemed disappointed — said he's evaluating three other tools. fyi for the pipeline tracker.",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [{ "emoji": "eyes", "users": ["U_TESSA"], "count": 1 }],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1767912000.000100",
+      "user": { "id": "U_TESSA", "handle": "tessa", "name": "Tessa Moreno" },
+      "text": "🎉 **Cascade Systems — CLOSED.** $2,400/mo Enterprise, 3-month initial term. maria chen (VP Eng) signed this morning. required custom onboarding — 3 calls with me and liam to get them set up. first enterprise logo. this puts us at $4,400 MRR.",
+      "thread_ts": null,
+      "reply_count": 1,
+      "reactions": [
+        {
+          "emoji": "tada",
+          "users": ["U_PRIYA", "U_CALEB", "U_DANA", "U_MARCUS"],
+          "count": 4
+        },
+        { "emoji": "moneybag", "users": ["U_CALEB"], "count": 1 }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1767912000.000200",
+      "user": { "id": "U_CALEB", "handle": "caleb", "name": "Caleb Whitford" },
+      "text": "let's goooo 🎉🎉 tessa you're a machine",
+      "thread_ts": "1767912000.000100",
+      "reply_count": 0,
+      "reactions": [{ "emoji": "+1", "users": ["U_TESSA"], "count": 1 }],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": ["U_TESSA"],
+      "is_pinned": false
+    },
+    {
+      "ts": "1768935600.000100",
+      "user": { "id": "U_TESSA", "handle": "tessa", "name": "Tessa Moreno" },
+      "text": "meridian update: rachel simmons sent over the security questionnaire today. 147 questions across 9 categories. nina is coordinating responses. the big gap is SOC 2 Type II — priya committed to a Q2 audit. dr. fong asked for a status update call in two weeks. keeping the deal warm.",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        {
+          "emoji": "eyes",
+          "users": ["U_PRIYA", "U_DANA", "U_MARCUS"],
+          "count": 3
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1770494400.000100",
+      "user": { "id": "U_TESSA", "handle": "tessa", "name": "Tessa Moreno" },
+      "text": "ridgeway financial update: caleb sent an email to jason liu (engineering manager) yesterday. we need to make sure our pipeline commitments stay realistic. if you're not sure whether something is on the roadmap, check with me or marcus first before promising a timeline to a prospect. i've sent a correction to jason.",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        { "emoji": "eyes", "users": ["U_CALEB", "U_PRIYA"], "count": 2 }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": ["U_CALEB"],
+      "is_pinned": false
+    },
+    {
+      "ts": "1770720000.000100",
+      "user": { "id": "U_TESSA", "handle": "tessa", "name": "Tessa Moreno" },
+      "text": "meridian sent the draft SOW today. $2,800/mo, 12-month term, 99.9% SLA with financial credits, custom 1-year retention. priya and nina are in legal review now with orion legal. attaching the customer-facing one-pager for context.",
+      "thread_ts": null,
+      "reply_count": 1,
+      "reactions": [
+        {
+          "emoji": "fire",
+          "users": ["U_PRIYA", "U_CALEB", "U_DANA"],
+          "count": 3
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [
+        {
+          "id": "F07SAL001",
+          "name": "vectrix-enterprise-onepager-feb2026.pdf",
+          "mimetype": "application/pdf",
+          "size_bytes": 382000,
+          "url_private": "https://files.slack.com/files-pri/T07VECTRIX-F07SAL001/vectrix-enterprise-onepager-feb2026.pdf",
+          "thumb_360": null,
+          "uploaded_by": "U_TESSA"
+        }
+      ],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1770720000.000200",
+      "user": { "id": "U_CALEB", "handle": "caleb", "name": "Caleb Whitford" },
+      "text": "this is massive. what's the close date looking like?",
+      "thread_ts": "1770720000.000100",
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1770858000.000100",
+      "user": { "id": "U_CALEB", "handle": "caleb", "name": "Caleb Whitford" },
+      "text": "[This message was deleted]",
+      "deleted": true,
+      "thread_ts": null,
+      "reply_count": 1,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1770858000.000200",
+      "user": { "id": "U_TESSA", "handle": "tessa", "name": "Tessa Moreno" },
+      "text": "hey — can you delete that? don't share prospect pricing details or deal terms in the channel. dm me if you need to share pipeline specifics.",
+      "thread_ts": "1770858000.000100",
+      "reply_count": 0,
+      "reactions": [{ "emoji": "+1", "users": ["U_CALEB"], "count": 1 }],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": ["U_CALEB"],
+      "is_pinned": false
+    },
+    {
+      "ts": "1771023600.000100",
+      "user": { "id": "U_TESSA", "handle": "tessa", "name": "Tessa Moreno" },
+      "text": "meridian sent the draft SOW today. $2,800/mo, 12-month term, 99.9% SLA with financial credits, custom 1-year retention. priya and nina are in legal review now with orion legal. attaching the customer-facing one-pager for context.",
+      "thread_ts": null,
+      "reply_count": 1,
+      "reactions": [
+        {
+          "emoji": "fire",
+          "users": ["U_PRIYA", "U_CALEB", "U_DANA"],
+          "count": 3
+        }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1771023600.000200",
+      "user": { "id": "U_CALEB", "handle": "caleb", "name": "Caleb Whitford" },
+      "text": "this is massive. what's the close date looking like?",
+      "thread_ts": "1771023600.000100",
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [
+        {
+          "id": "F07SAL001",
+          "name": "vectrix-enterprise-onepager-feb2026.pdf",
+          "mimetype": "application/pdf",
+          "size_bytes": 382000,
+          "url_private": "https://files.slack.com/files-pri/T07VECTRIX-F07SAL001/vectrix-enterprise-onepager-feb2026.pdf",
+          "thumb_360": null,
+          "uploaded_by": "U_TESSA"
+        }
+      ],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1770858000.000100",
+      "user": { "id": "U_CALEB", "handle": "caleb", "name": "Caleb Whitford" },
+      "text": "[This message was deleted]",
+      "deleted": true,
+      "thread_ts": null,
+      "reply_count": 1,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1770858000.000200",
+      "user": { "id": "U_TESSA", "handle": "tessa", "name": "Tessa Moreno" },
+      "text": "hey — can you delete that? don't share prospect pricing details or deal terms in the channel. dm me if you need to share pipeline specifics.",
+      "thread_ts": "1770858000.000100",
+      "reply_count": 0,
+      "reactions": [{ "emoji": "+1", "users": ["U_CALEB"], "count": 1 }],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": ["U_CALEB"],
+      "is_pinned": false
+    },
+    {
+      "ts": "1771108800.000100",
+      "user": { "id": "U_TESSA", "handle": "tessa", "name": "Tessa Moreno" },
+      "text": "end of week pipeline: **Meridian** — in legal review, targeting close by mar 15. **Ridgeway** — back in discovery after jason's questions about vendor lock-in. **11 growth tier customers** signed this month — outbound is working. current MRR: $18,200.",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        { "emoji": "fire", "users": ["U_PRIYA", "U_CALEB"], "count": 2 }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1771975200.000100",
+      "user": { "id": "U_CALEB", "handle": "caleb", "name": "Caleb Whitford" },
+      "text": "intel from a call with a prospect today (bootstrapped devtools co, ~20 engineers): they mentioned they're also looking at Datadog Synthetics and Honeycomb. main concern was query latency on their dashboard — said their current tool takes 4-5 seconds to load endpoint detail views. that's an opening for us.",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        { "emoji": "eyes", "users": ["U_TESSA", "U_MARCUS"], "count": 2 }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1772218800.000100",
+      "user": { "id": "U_CALEB", "handle": "caleb", "name": "Caleb Whitford" },
+      "text": "quick pipeline export for tessa's review — feb month-end",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [
+        {
+          "id": "F07SAL002",
+          "name": "pipeline-export-feb2026.csv",
+          "mimetype": "text/csv",
+          "size_bytes": 8400,
+          "url_private": "https://files.slack.com/files-pri/T07VECTRIX-F07SAL002/pipeline-export-feb2026.csv",
+          "thumb_360": null,
+          "uploaded_by": "U_CALEB"
+        }
+      ],
+      "mentions": ["U_TESSA"],
+      "is_pinned": false
+    },
+    {
+      "ts": "1772222400.000100",
+      "user": { "id": "U_TESSA", "handle": "tessa", "name": "Tessa Moreno" },
+      "text": "february wrap. 14 paying customers, $18,200 MRR, two enterprise logos in progress (meridian + potential renewal from cascade in april). Q1 target was $20K by end of march — we're on track if meridian closes. good month.",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [
+        { "emoji": "tada", "users": ["U_CALEB", "U_PRIYA"], "count": 2 }
+      ],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "channel": {
+    "id": "DM-03",
+    "name": "dm_sofia_liam",
+    "purpose": "Direct message",
+    "topic": ""
+  },
+  "participants": ["U_SOFIA", "U_LIAM"],
+  "messages": [
+    {
+      "ts": "1768416000.000100",
+      "user": { "id": "U_SOFIA", "handle": "sofia", "name": "Sofia Gutierrez" },
+      "text": "hey liam — before i go deep on the clerk frontend implementation, can you review my approach? i'm wrapping the useAuth hook so it falls through to firebase if the clerk token isn't present during the migration window. does that pattern work from your side?",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1768420800.000100",
+      "user": { "id": "U_LIAM", "handle": "liam", "name": "Liam Nakamura" },
+      "text": "yes that'll work. backend validates both token formats — check for clerk JWT signature first, fall back to firebase verification. just make sure the user ID claim is the same across both. clerk maps it to `sub`, firebase uses `user_id`. need to normalize that on your end.",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1768424400.000100",
+      "user": { "id": "U_SOFIA", "handle": "sofia", "name": "Sofia Gutierrez" },
+      "text": "oh good catch. i'll normalize to `userId` in the context object and handle both claim names in the mapper. thanks. also — you available for a quick pair session thursday? i want to make sure the session refresh flow is right before i open the PR.",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1768428000.000100",
+      "user": { "id": "U_LIAM", "handle": "liam", "name": "Liam Nakamura" },
+      "text": "thursday 2pm works",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1769320800.000100",
+      "user": { "id": "U_SOFIA", "handle": "sofia", "name": "Sofia Gutierrez" },
+      "text": "PR #91 is up for the auth frontend changes. can you review before marcus? i want to catch anything backend-impacting before it goes to him for the architecture review. lmk 🙏",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [
+        {
+          "service_name": "GitHub",
+          "title": "frontend: Clerk auth migration — dual-token support during transition #91",
+          "title_link": "https://github.com/vectrix-labs/vectrix-platform/pull/91",
+          "text": "15 files changed · +312 -48",
+          "author_name": "sofia-g",
+          "color": "#24292e"
+        }
+      ],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    },
+    {
+      "ts": "1769324400.000100",
+      "user": { "id": "U_LIAM", "handle": "liam", "name": "Liam Nakamura" },
+      "text": "on it",
+      "thread_ts": null,
+      "reply_count": 0,
+      "reactions": [],
+      "edited": false,
+      "edited_ts": null,
+      "attachments": [],
+      "files": [],
+      "mentions": [],
+      "is_pinned": false
+    }
+  ]
+}

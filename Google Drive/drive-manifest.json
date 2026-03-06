@@ -1,0 +1,512 @@
+{
+  "corpus": "google_drive",
+  "generated": "2026-02-28",
+  "total_files": 33,
+  "folders": {
+    "root": "drive/",
+    "notion": "notion/"
+  },
+  "files": [
+    {
+      "id": "gd_001",
+      "filename": "architecture-spec-v1.md",
+      "folder": "drive/specs/",
+      "type": "spec",
+      "format": "md",
+      "author": "Marcus Webb",
+      "created": "2025-07-10",
+      "modified": "2025-09-15",
+      "status": "SUPERSEDED",
+      "version": 1,
+      "version_conflict": true,
+      "conflict_pair": "architecture-spec-v2.md",
+      "conflict_description": "TimescaleDB → ClickHouse; 180-day retention → 90-day raw + 2yr aggregated",
+      "notes": "Old architecture. Still in Drive — AI retrieval should prefer v2."
+    },
+    {
+      "id": "gd_002",
+      "filename": "architecture-spec-v2.md",
+      "folder": "drive/specs/",
+      "type": "spec",
+      "format": "md",
+      "author": "Marcus Webb",
+      "created": "2025-11-26",
+      "modified": "2025-12-10",
+      "status": "CURRENT",
+      "version": 2,
+      "version_conflict": true,
+      "conflict_pair": "architecture-spec-v1.md",
+      "notes": "Current architecture. ClickHouse, Clerk migration, tiered retention."
+    },
+    {
+      "id": "gd_003",
+      "filename": "data-retention-policy-v1.md",
+      "folder": "drive/specs/",
+      "type": "spec",
+      "format": "md",
+      "author": "Jordan Okafor",
+      "created": "2025-09-15",
+      "modified": "2025-09-15",
+      "status": "SUPERSEDED",
+      "version": 1,
+      "version_conflict": true,
+      "conflict_pair": "data-retention-policy-v2.md",
+      "conflict_description": "180-day flat retention → tiered (90-day raw + 2yr aggregated)",
+      "notes": "Old policy. References TimescaleDB. Superseded by v2."
+    },
+    {
+      "id": "gd_004",
+      "filename": "data-retention-policy-v2.md",
+      "folder": "drive/specs/",
+      "type": "spec",
+      "format": "md",
+      "author": "Jordan Okafor",
+      "created": "2025-10-21",
+      "modified": "2025-12-10",
+      "status": "CURRENT",
+      "version": 2,
+      "version_conflict": true,
+      "conflict_pair": "data-retention-policy-v1.md",
+      "notes": "IMPORTANT: Missing Section 5 (Customer Data Export) that exists in the Notion version. Not yet synced."
+    },
+    {
+      "id": "gd_005",
+      "filename": "sr-frontend-jd-v1.md",
+      "folder": "drive/hiring/",
+      "type": "spec",
+      "format": "md",
+      "author": "Marcus Webb",
+      "created": "2025-12-15",
+      "modified": "2025-12-15",
+      "status": "SUPERSEDED",
+      "version": 1,
+      "version_conflict": true,
+      "conflict_pair": "sr-frontend-jd-v2.md",
+      "conflict_description": "Salary band $140K-$155K → $145K-$165K; equity range added",
+      "notes": "Old JD. Derek Huang declined at $145K. Band raised and v2 posted."
+    },
+    {
+      "id": "gd_006",
+      "filename": "sr-frontend-jd-v2.md",
+      "folder": "drive/hiring/",
+      "type": "spec",
+      "format": "md",
+      "author": "Marcus Webb",
+      "created": "2026-01-28",
+      "modified": "2026-01-28",
+      "status": "CURRENT",
+      "version": 2,
+      "version_conflict": true,
+      "conflict_pair": "sr-frontend-jd-v1.md",
+      "notes": "Current JD. Anya Chen in final round Feb 27. Offer: $158K/0.20%."
+    },
+    {
+      "id": "gd_007",
+      "filename": "clickhouse-migration-rfc.md",
+      "folder": "drive/specs/",
+      "type": "spec",
+      "format": "md",
+      "author": "Marcus Webb",
+      "created": "2025-11-12",
+      "modified": "2025-12-10",
+      "status": "APPROVED",
+      "notes": "Approved Nov 26. Migration complete Dec 10. Post-mortem notes appended."
+    },
+    {
+      "id": "gd_008",
+      "filename": "auth-provider-comparison.md",
+      "folder": "drive/specs/",
+      "type": "spec",
+      "format": "md",
+      "author": "Marcus Webb",
+      "created": "2025-12-12",
+      "modified": "2025-12-12",
+      "status": "DECISION MADE",
+      "notes": "Firebase vs Clerk vs Auth0. Clerk chosen. Migration in progress."
+    },
+    {
+      "id": "gd_009",
+      "filename": "sdk-v2-rfc.md",
+      "folder": "drive/specs/",
+      "type": "spec",
+      "format": "md",
+      "author": "Liam Nakamura",
+      "created": "2026-01-15",
+      "modified": "2026-01-15",
+      "status": "DRAFT",
+      "has_tbd_sections": true,
+      "notes": "Contains multiple TBD sections: Go auto-instrumentation approach, docs ownership, Python package name. Target April 2026."
+    },
+    {
+      "id": "gd_010",
+      "filename": "sprint-review-2025-12-18.md",
+      "folder": "drive/meeting-notes/",
+      "type": "meeting_notes",
+      "format": "md",
+      "author": "Dana Reeves",
+      "created": "2025-12-18",
+      "modified": "2025-12-18",
+      "notes": "Q4 sprint review + all-hands. ClickHouse complete. Meridian in negotiation. Dashboard v2 velocity issues."
+    },
+    {
+      "id": "gd_011",
+      "filename": "sprint-review-2026-01-30.md",
+      "folder": "drive/meeting-notes/",
+      "type": "meeting_notes",
+      "format": "md",
+      "author": "Dana Reeves",
+      "created": "2026-01-30",
+      "modified": "2026-01-30",
+      "notes": "Sprint 11 review. Dashboard v2 75% complete. Comparison mode deferred. Clerk 80% done."
+    },
+    {
+      "id": "gd_012",
+      "filename": "sprint-review-2026-02-17.md",
+      "folder": "drive/meeting-notes/",
+      "type": "meeting_notes",
+      "format": "md",
+      "author": "Dana Reeves",
+      "created": "2026-02-17",
+      "modified": "2026-02-17",
+      "notes": "Sprint 12 review. Dashboard v2 85%. Clerk complete. Meridian SOW received. v2 target Mar 7."
+    },
+    {
+      "id": "gd_013",
+      "filename": "infra-cost-review-2025-10-20.md",
+      "folder": "drive/meeting-notes/",
+      "type": "meeting_notes",
+      "format": "md",
+      "author": "Jordan Okafor",
+      "created": "2025-10-20",
+      "modified": "2025-10-20",
+      "notes": "Jordan's infra cost analysis. Led to 90-day retention decision. Query pattern data included."
+    },
+    {
+      "id": "gd_014",
+      "filename": "all-hands-2026-01-06.md",
+      "folder": "drive/meeting-notes/",
+      "type": "meeting_notes",
+      "format": "md",
+      "author": "Nina Kowalski",
+      "created": "2026-01-06",
+      "modified": "2026-01-06",
+      "edge_case": "EMPTY_NOTES",
+      "notes": "Agenda template was pasted but notes were never filled in. This is an intentional edge case simulating a doc that was created but abandoned."
+    },
+    {
+      "id": "gd_015",
+      "filename": "meridian-security-questionnaire.md",
+      "folder": "drive/sales/",
+      "type": "sales",
+      "format": "md",
+      "author": "Nina Kowalski",
+      "created": "2026-01-22",
+      "modified": "2026-02-03",
+      "edge_case": "SHARED_EXTERNALLY_WITH_COMMENT",
+      "external_share": {
+        "shared_with": "Rachel Simmons (rachel.simmons@meridianhealth.com)",
+        "shared_by": "Nina Kowalski",
+        "shared_date": "2026-01-22"
+      },
+      "comments": [
+        {
+          "author": "Rachel Simmons",
+          "org": "Meridian Health Systems",
+          "date": "2026-01-24",
+          "comment_type": "external",
+          "questions_flagged": [
+            "Q3 (SOC 2 Type II)",
+            "Q47 (SLA credit cap)",
+            "Q61 (ClickHouse subprocessor detail)"
+          ]
+        }
+      ],
+      "notes": "EDGE CASE: Shared externally. Rachel Simmons has open comments in the margin. SLA credits (Q47) and ClickHouse subprocessor (Q61) are unresolved."
+    },
+    {
+      "id": "gd_016",
+      "filename": "meridian-sow-redlined.pdf",
+      "folder": "drive/contracts/",
+      "type": "contract",
+      "format": "pdf",
+      "author": "James Hartley (Orion Legal)",
+      "created": "2026-02-10",
+      "modified": "2026-02-13",
+      "edge_case": "REDLINED_CONTRACT",
+      "notes": "EDGE CASE: PDF with tracked changes and counsel comments. Two redlined clauses: SLA credit cap (§5.1) and termination for convenience (§6.1). Awaiting Priya direction."
+    },
+    {
+      "id": "gd_017",
+      "filename": "cascade-nda.pdf",
+      "folder": "drive/contracts/",
+      "type": "contract",
+      "format": "pdf",
+      "author": "Vectrix Legal",
+      "created": "2025-12-15",
+      "modified": "2025-12-15",
+      "status": "EXECUTED",
+      "notes": "Clean, signed mutual NDA with Cascade Systems. Effective Dec 15, 2025."
+    },
+    {
+      "id": "gd_018",
+      "filename": "raj-offer-letter.pdf",
+      "folder": "drive/hr/",
+      "type": "hr",
+      "format": "pdf",
+      "author": "Priya Chandran",
+      "created": "2026-01-13",
+      "modified": "2026-01-13",
+      "status": "EXECUTED",
+      "notes": "Raj Sundaram FTE conversion offer. $95K base, 0.15% equity. Accepted Jan 14, 2026."
+    },
+    {
+      "id": "gd_019",
+      "filename": "employee-benefits-summary.pdf",
+      "folder": "drive/hr/",
+      "type": "hr",
+      "format": "pdf",
+      "author": "Nina Kowalski",
+      "created": "2026-01-01",
+      "modified": "2026-01-06",
+      "notes": "2026 benefits guide. Health, dental, vision, 401k, PTO, stipends, equity."
+    },
+    {
+      "id": "gd_020",
+      "filename": "pricing-v1.xlsx",
+      "folder": "drive/finance/",
+      "type": "spreadsheet",
+      "format": "xlsx",
+      "author": "Tessa Moreno",
+      "created": "2025-09-15",
+      "modified": "2025-09-15",
+      "status": "SUPERSEDED",
+      "version": 1,
+      "version_conflict": true,
+      "conflict_pair": "pricing-v2.xlsx",
+      "conflict_description": "Pro $29/mo → Growth $19/mo; Enterprise $149 flat → $99 + usage; tier renamed",
+      "notes": "Old pricing. Pre-Jan 22, 2026. Superseded by v2."
+    },
+    {
+      "id": "gd_021",
+      "filename": "pricing-v2.xlsx",
+      "folder": "drive/finance/",
+      "type": "spreadsheet",
+      "format": "xlsx",
+      "author": "Tessa Moreno",
+      "created": "2026-01-22",
+      "modified": "2026-01-22",
+      "status": "CURRENT",
+      "version": 2,
+      "version_conflict": true,
+      "conflict_pair": "pricing-v1.xlsx",
+      "notes": "Current pricing. Growth $19, Enterprise $99+usage. Effective Jan 22, 2026."
+    },
+    {
+      "id": "gd_022",
+      "filename": "q1-budget-2026.xlsx",
+      "folder": "drive/finance/",
+      "type": "spreadsheet",
+      "format": "xlsx",
+      "author": "Nina Kowalski",
+      "created": "2026-01-06",
+      "modified": "2026-01-06",
+      "edge_case": "FORMULA_ERROR",
+      "formula_error": {
+        "sheet": "Q1 2026 Budget",
+        "description": "SUM formula in payroll total row covers only rows 6:14, omitting Nina Kowalski (row 15). Total is understated by $85,000 annually ($7,083/month, $21,250/quarter).",
+        "error_type": "wrong_range",
+        "cells_affected": ["C17", "D17", "E17"]
+      },
+      "notes": "EDGE CASE: Formula error — Nina's salary row is excluded from the SUM range. Budget total is off by $85K/year."
+    },
+    {
+      "id": "gd_023",
+      "filename": "metrics-dashboard.xlsx",
+      "folder": "drive/finance/",
+      "type": "spreadsheet",
+      "format": "xlsx",
+      "author": "Tessa Moreno",
+      "created": "2026-02-28",
+      "modified": "2026-02-28",
+      "notes": "MRR dashboard and customer list. Sep 2025 through Feb 2026. 14 active customers, $18,200 MRR."
+    },
+    {
+      "id": "gd_024",
+      "filename": "dashboard-v2-feature-tracker.xlsx",
+      "folder": "drive/product/",
+      "type": "spreadsheet",
+      "format": "xlsx",
+      "author": "Dana Reeves",
+      "created": "2026-02-17",
+      "modified": "2026-02-17",
+      "notes": "Feature-level tracking for Dashboard v2. 15 tickets, 8 done, 1 in-progress, 5 not started, 1 deferred (VEC-82)."
+    },
+    {
+      "id": "gd_025",
+      "filename": "q4-allhands-2025.pptx",
+      "folder": "drive/presentations/",
+      "type": "presentation",
+      "format": "pptx",
+      "author": "Priya Chandran",
+      "created": "2025-12-18",
+      "modified": "2025-12-18",
+      "slides": 9,
+      "edge_case": "DRAFT_WATERMARK_INCOMPLETE_SLIDE",
+      "notes": "EDGE CASE: DRAFT — DO NOT DISTRIBUTE watermark on all slides. Slide 8 says '[Raj to add dashboard screenshots]' — never completed."
+    },
+    {
+      "id": "gd_026",
+      "filename": "investor-update-q4-2025.pptx",
+      "folder": "drive/presentations/",
+      "type": "presentation",
+      "format": "pptx",
+      "author": "Priya Chandran",
+      "created": "2025-12-20",
+      "modified": "2025-12-20",
+      "slides": 6,
+      "notes": "Q4 investor update. Sent to Threshold Ventures Dec 20. Clean, no watermark."
+    },
+    {
+      "id": "gd_027",
+      "filename": "sprint-review-deck-sprint12.pptx",
+      "folder": "drive/presentations/",
+      "type": "presentation",
+      "format": "pptx",
+      "author": "Dana Reeves",
+      "created": "2026-02-17",
+      "modified": "2026-02-17",
+      "slides": 5,
+      "notes": "Sprint 12 review deck. Dashboard v2 status, Clerk complete, Anya Chen final round, Meridian SOW."
+    },
+    {
+      "id": "gd_028",
+      "filename": "dashboard-v2-product-brief.md",
+      "folder": "drive/product/",
+      "type": "planning",
+      "format": "md",
+      "author": "Dana Reeves",
+      "created": "2025-11-05",
+      "modified": "2026-01-08",
+      "notes": "Full product brief for Dashboard v2. Scope, non-goals, risks, decision log."
+    },
+    {
+      "id": "gd_029",
+      "filename": "competitive-analysis.md",
+      "folder": "drive/product/",
+      "type": "planning",
+      "format": "md",
+      "author": "Dana Reeves",
+      "created": "2025-10-01",
+      "modified": "2026-01-01",
+      "notes": "Vectrix vs Datadog, Moesif, Honeycomb. Positioning and deal notes."
+    },
+    {
+      "id": "gd_030",
+      "filename": "hiring-plan-q1-2026.md",
+      "folder": "drive/hr/",
+      "type": "planning",
+      "format": "md",
+      "author": "Priya Chandran",
+      "created": "2026-01-06",
+      "modified": "2026-01-06",
+      "notes": "Q1 hiring plan. Sr. Frontend (active) and CSM (contingent on Meridian). Comp bands, process."
+    },
+    {
+      "id": "gd_031",
+      "filename": "go-to-market-strategy.md",
+      "folder": "drive/product/",
+      "type": "planning",
+      "format": "md",
+      "author": "Priya Chandran",
+      "created": "2025-10-01",
+      "modified": "2026-01-06",
+      "notes": "ICP, positioning, channels, pricing philosophy, 2026 priorities."
+    },
+    {
+      "id": "gd_032",
+      "filename": "architecture-diagram-v2.png",
+      "folder": "drive/assets/",
+      "type": "image",
+      "format": "png",
+      "author": "Marcus Webb",
+      "created": "2025-12-10",
+      "modified": "2025-12-10",
+      "notes": "Full system architecture diagram post-ClickHouse migration. Shows all layers from SDK → storage → frontend."
+    },
+    {
+      "id": "gd_033",
+      "filename": "dashboard-v2-screenshot.png",
+      "folder": "drive/assets/",
+      "type": "image",
+      "format": "png",
+      "author": "Raj Sundaram",
+      "created": "2026-02-17",
+      "modified": "2026-02-17",
+      "notes": "Dashboard v2 mockup screenshot. Used in investor deck and Meridian trial materials."
+    }
+  ],
+  "notion_files": [
+    {
+      "id": "notion_001",
+      "filename": "data-retention-policy-notion.md",
+      "folder": "notion/",
+      "type": "spec",
+      "format": "md",
+      "author": "Jordan Okafor",
+      "created": "2025-09-20",
+      "modified": "2025-10-15",
+      "edge_case": "NOTION_ONLY_SECTION",
+      "notes": "Contains Section 5 (Customer Data Export) NOT present in Google Drive version. Simulates incomplete Notion → Drive migration."
+    },
+    {
+      "id": "notion_002",
+      "filename": "notion_manifest.json",
+      "folder": "notion/",
+      "type": "manifest",
+      "format": "json",
+      "notes": "Index of Notion pages with metadata and comments."
+    }
+  ],
+  "version_conflict_pairs": [
+    {
+      "v1": "architecture-spec-v1.md",
+      "v2": "architecture-spec-v2.md",
+      "key_change": "TimescaleDB→ClickHouse; 180-day→90-day+2yr retention"
+    },
+    {
+      "v1": "data-retention-policy-v1.md",
+      "v2": "data-retention-policy-v2.md",
+      "key_change": "180-day flat→tiered (90-day raw, 2yr aggregated)"
+    },
+    {
+      "v1": "pricing-v1.xlsx",
+      "v2": "pricing-v2.xlsx",
+      "key_change": "Pro $29→Growth $19; Enterprise $149 flat→$99+usage"
+    },
+    {
+      "v1": "sr-frontend-jd-v1.md",
+      "v2": "sr-frontend-jd-v2.md",
+      "key_change": "Salary $140-155K→$145-165K; equity range added"
+    }
+  ],
+  "edge_cases": {
+    "formula_error": [
+      "q1-budget-2026.xlsx (SUM excludes Nina Kowalski row — off by $85K/yr)"
+    ],
+    "empty_meeting_notes": [
+      "all-hands-2026-01-06.md (agenda template only, no notes)"
+    ],
+    "redlined_contract": [
+      "meridian-sow-redlined.pdf (SLA cap and termination clause redlined by Orion Legal)"
+    ],
+    "draft_watermark": [
+      "q4-allhands-2025.pptx (DRAFT watermark all slides, incomplete slide 8)"
+    ],
+    "shared_externally_with_comment": [
+      "meridian-security-questionnaire.md (Rachel Simmons comment on Q47 SLA, Q61 subprocessor)"
+    ],
+    "notion_only_section": [
+      "notion/data-retention-policy-notion.md (Section 5 not in Drive version)"
+    ]
+  }
+}

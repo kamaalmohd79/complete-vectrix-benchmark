@@ -1,0 +1,152 @@
+{
+  "workspace": {
+    "name": "Vectrix",
+    "id": "T07VECTRIX",
+    "domain": "vectrix.slack.com"
+  },
+  "channels": [
+    {
+      "filename": "general.json",
+      "channel_id": "C07VECTRIX01",
+      "channel_name": "general",
+      "message_count": 21,
+      "date_range": {
+        "first": "1757955600.000100",
+        "last": "1772298000.000100"
+      },
+      "thread_count": 4,
+      "file_count": 0,
+      "pinned_count": 2
+    },
+    {
+      "filename": "engineering.json",
+      "channel_id": "C07VECTRIX02",
+      "channel_name": "engineering",
+      "message_count": 42,
+      "date_range": {
+        "first": "1757966400.000100",
+        "last": "1771614000.000100"
+      },
+      "thread_count": 10,
+      "file_count": 1,
+      "pinned_count": 1
+    },
+    {
+      "filename": "product.json",
+      "channel_id": "C07VECTRIX03",
+      "channel_name": "product",
+      "message_count": 22,
+      "date_range": {
+        "first": "1758758400.000100",
+        "last": "1771975200.000100"
+      },
+      "thread_count": 6,
+      "file_count": 0,
+      "pinned_count": 0
+    },
+    {
+      "filename": "sales.json",
+      "channel_id": "C07VECTRIX04",
+      "channel_name": "sales",
+      "message_count": 17,
+      "date_range": {
+        "first": "1763171200.000100",
+        "last": "1772222400.000100"
+      },
+      "thread_count": 4,
+      "file_count": 2,
+      "pinned_count": 0
+    },
+    {
+      "filename": "random.json",
+      "channel_id": "C07VECTRIX05",
+      "channel_name": "random",
+      "message_count": 23,
+      "date_range": {
+        "first": "1758254400.000100",
+        "last": "1772139600.000100"
+      },
+      "thread_count": 5,
+      "file_count": 1,
+      "pinned_count": 0
+    },
+    {
+      "filename": "ops.json",
+      "channel_id": "C07VECTRIX06",
+      "channel_name": "ops",
+      "message_count": 12,
+      "date_range": {
+        "first": "1759776000.000100",
+        "last": "1771882800.000100"
+      },
+      "thread_count": 2,
+      "file_count": 0,
+      "pinned_count": 0
+    },
+    {
+      "filename": "design.json",
+      "channel_id": "C07VECTRIX07",
+      "channel_name": "design",
+      "message_count": 8,
+      "date_range": {
+        "first": "1762891200.000100",
+        "last": "1771622400.000100"
+      },
+      "thread_count": 2,
+      "file_count": 0,
+      "pinned_count": 0
+    }
+  ],
+  "dms": [
+    {
+      "filename": "dms/dm_01.json",
+      "dm_id": "DM-01",
+      "participants": ["U_MARCUS", "U_PRIYA"],
+      "message_count": 10,
+      "date_range": {
+        "first": "1767722400.000100",
+        "last": "1772276400.000100"
+      },
+      "content_focus": "Frontend hiring comp band, Anya Chen decision"
+    },
+    {
+      "filename": "dms/dm_02.json",
+      "dm_id": "DM-02",
+      "participants": ["U_TESSA", "U_CALEB"],
+      "message_count": 8,
+      "date_range": {
+        "first": "1770561600.000100",
+        "last": "1770586800.000100"
+      },
+      "content_focus": "Sales coaching, Ridgeway over-promise cleanup"
+    },
+    {
+      "filename": "dms/dm_03.json",
+      "dm_id": "DM-03",
+      "participants": ["U_SOFIA", "U_LIAM"],
+      "message_count": 6,
+      "date_range": {
+        "first": "1768416000.000100",
+        "last": "1769324400.000100"
+      },
+      "content_focus": "Code review asks, auth migration questions"
+    }
+  ],
+  "totals": {
+    "total_channel_messages": 145,
+    "total_dm_messages": 24,
+    "total_messages": 169,
+    "total_files_uploaded": 4,
+    "total_link_unfurls": 12,
+    "edge_cases_implemented": [
+      "wrong_channel_correction: sofia milk message in #engineering",
+      "unresolved_questions: liam ClickHouse ZSTD question, sofia saved views question unanswered, liam dumpling request unanswered 5 days",
+      "deleted_message_aftermath: caleb pipeline numbers in #sales, tessa reply referencing deleted message remains",
+      "typo_corrections: marcus *integration in #engineering, nina *tuesday in #random",
+      "link_rot: jordan grafana incident dashboard link in #ops (reorganized after incident)",
+      "cross_platform_references: 7 messages reference email/linear/github/drive/calendar",
+      "emotional_moment: jordan vents in #engineering dec 23, marcus empathetic reply, priya ❤️ reaction, general post on oncall rotation",
+      "celebration_then_problem: brainloop signing in #general oct 10, two weeks later bug debugging in #engineering"
+    ]
+  }
+}
