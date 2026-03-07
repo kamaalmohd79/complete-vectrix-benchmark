@@ -1,122 +1,161 @@
 {
   "thread_id": "thread_08",
-  "subject": "Vectrix onboarding \u2014 getting started",
+  "subject": "Welcome to Vectrix \u2014 onboarding kickoff",
   "category": "client",
-  "participants": [
-    "maria.chen@cascadesystems.io",
-    "tessa@vectrix.io",
-    "marcus@vectrix.io"
-  ],
   "messages": [
     {
       "message_id": "msg_028",
-      "from_email": "tessa@vectrix.io",
-      "from_name": "Tessa Moreno",
+      "from": {
+        "name": "Tessa Moreno",
+        "email": "tessa@vectrix.io"
+      },
       "to": [
         {
-          "email": "maria.chen@cascadesystems.io",
-          "name": "Maria Chen"
+          "name": "Maria Chen",
+          "email": "maria.chen@cascadesystems.io"
         }
       ],
       "cc": [
         {
-          "email": "marcus@vectrix.io",
-          "name": "Marcus Webb"
+          "name": "Marcus Webb",
+          "email": "marcus@vectrix.io"
         }
       ],
       "bcc": [],
       "date": "2026-01-09T09:00:00-08:00",
       "subject": "Welcome to Vectrix \u2014 onboarding kickoff",
-      "body": "Hi Maria,\n\nWelcome to Vectrix! I'm so glad we got the paperwork across the finish line this week.\n\nI'm setting up your organization in the system today. A few things to get you started:\n\n1. Your SDK install guide: https://docs.vectrix.io/quickstart\n2. Marcus Webb (our CTO) is CC'd here \u2014 he's available for any technical setup questions.\n3. I'll send your PagerDuty integration setup doc separately.\n\nWe have a kickoff call scheduled for Jan 14 at 10am PT. I'll send the calendar invite shortly. Looking forward to working with you.\n\n\u2014 Tessa",
+      "body_text": "Hi Maria,\n\nWelcome to Vectrix! Really glad we got the paperwork across the finish line this week.\n\nI'm setting up your organization in the system today. A few things to get you started:\n\n1. SDK install guide: https://docs.vectrix.io/quickstart\n2. Marcus Webb (our CTO) is CC'd here \u2014 he's available for any technical setup questions.\n3. Attached is your enterprise onboarding agenda for our kickoff call January 14.\n\nLooking forward to working with you.\n\n\u2014 Tessa Moreno\nHead of Sales, Vectrix Labs\ntessa@vectrix.io",
+      "body_html": "<p>Hi Maria,</p>\n<p>Welcome to Vectrix! Really glad we got the paperwork across the finish line this week.</p>\n<p>I'm setting up your organization in the system today. A few things to get you started:</p>\n<p>1. SDK install guide: https://docs.vectrix.io/quickstart<br>2. Marcus Webb (our CTO) is CC'd here \u2014 he's available for any technical setup questions.<br>3. Attached is your enterprise onboarding agenda for our kickoff call January 14.</p>\n<p>Looking forward to working with you.</p>\n<p>\u2014 Tessa Moreno<br>Head of Sales, Vectrix Labs<br>tessa@vectrix.io</p>",
       "attachments": [
         {
-          "filename": "vectrix-enterprise-onboarding-guide.pdf",
-          "type": "application/pdf",
-          "size_kb": 312
+          "filename": "cascade-onboarding-agenda.docx",
+          "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "size_bytes": 31400
         }
       ],
-      "is_automated": false,
-      "is_auto_reply": false
+      "in_reply_to": null,
+      "references": [],
+      "labels": [
+        "SENT"
+      ],
+      "is_read": true,
+      "is_starred": true,
+      "signature": "Tessa Moreno\nHead of Sales, Vectrix Labs\ntessa@vectrix.io"
     },
     {
       "message_id": "msg_029",
-      "from_email": "maria.chen@cascadesystems.io",
-      "from_name": "Maria Chen",
+      "from": {
+        "name": "Maria Chen",
+        "email": "maria.chen@cascadesystems.io"
+      },
       "to": [
         {
-          "email": "tessa@vectrix.io",
-          "name": "Tessa Moreno"
+          "name": "Tessa Moreno",
+          "email": "tessa@vectrix.io"
         },
         {
-          "email": "marcus@vectrix.io",
-          "name": "Marcus Webb"
+          "name": "Marcus Webb",
+          "email": "marcus@vectrix.io"
         }
       ],
       "cc": [],
       "bcc": [],
       "date": "2026-01-14T15:47:00-08:00",
       "subject": "Re: Welcome to Vectrix \u2014 onboarding kickoff",
-      "body": "Hi Tessa,\n\nGood kickoff call today. SDK is installed and we're seeing events come in.\n\nOne thing I want to flag: we specifically chose Vectrix in part because we were told comparison mode (week-over-week endpoint performance) was coming in the v2 dashboard release. If that feature is deferred or descoped, I need to know now \u2014 that affects how we plan our Q1 reliability review with our engineering leadership.\n\nCan you confirm the timeline?\n\nThanks,\nMaria Chen\nVP Engineering, Cascade Systems",
+      "body_text": "Hi Tessa,\n\nGood kickoff call today. SDK is installed and we're seeing events come in \u2014 setup was faster than expected.\n\nOne thing I want to flag: we specifically chose Vectrix in part because we were told comparison mode (week-over-week endpoint performance) was coming in the v2 dashboard. If that feature is deferred or descoped, I need to know now \u2014 it affects how I plan our Q1 reliability review with engineering leadership.\n\nCan you confirm the timeline?\n\n\u2014 Maria Chen\nVP Engineering, Cascade Systems\nmaria.chen@cascadesystems.io",
+      "body_html": "<p>Hi Tessa,</p>\n<p>Good kickoff call today. SDK is installed and we're seeing events come in \u2014 setup was faster than expected.</p>\n<p>One thing I want to flag: we specifically chose Vectrix in part because we were told comparison mode (week-over-week endpoint performance) was coming in the v2 dashboard. If that feature is deferred or descoped, I need to know now \u2014 it affects how I plan our Q1 reliability review with engineering leadership.</p>\n<p>Can you confirm the timeline?</p>\n<p>\u2014 Maria Chen<br>VP Engineering, Cascade Systems<br>maria.chen@cascadesystems.io</p>",
       "attachments": [],
-      "is_automated": false,
-      "is_auto_reply": false
+      "in_reply_to": "msg_028",
+      "references": [
+        "msg_028"
+      ],
+      "labels": [
+        "INBOX"
+      ],
+      "is_read": true,
+      "is_starred": true,
+      "signature": "Maria Chen\nVP Engineering, Cascade Systems\nmaria.chen@cascadesystems.io"
     },
     {
       "message_id": "msg_030",
-      "from_email": "tessa@vectrix.io",
-      "from_name": "Tessa Moreno",
+      "from": {
+        "name": "Tessa Moreno",
+        "email": "tessa@vectrix.io"
+      },
       "to": [
         {
-          "email": "maria.chen@cascadesystems.io",
-          "name": "Maria Chen"
+          "name": "Maria Chen",
+          "email": "maria.chen@cascadesystems.io"
         }
       ],
       "cc": [
         {
-          "email": "marcus@vectrix.io",
-          "name": "Marcus Webb"
+          "name": "Marcus Webb",
+          "email": "marcus@vectrix.io"
         },
         {
-          "email": "dana@vectrix.io",
-          "name": "Dana Reeves"
+          "name": "Dana Reeves",
+          "email": "dana@vectrix.io"
         }
       ],
       "bcc": [],
       "date": "2026-01-15T09:22:00-08:00",
       "subject": "Re: Welcome to Vectrix \u2014 onboarding kickoff",
-      "body": "Hi Maria,\n\nThank you for raising this directly \u2014 I want to give you a straight answer.\n\nComparison mode is in our Dashboard v2 roadmap. Dana Reeves (our Head of Product, CC'd here) can give you the specific timeline. Dana, can you send Maria the v2 launch target and where comparison mode sits in the scope?\n\nMaria \u2014 I can commit that if the timeline shifts in a way that materially affects your Q1 planning, you'll hear from me directly before it's announced elsewhere.\n\n\u2014 Tessa",
+      "body_text": "Hi Maria,\n\nThank you for raising this directly \u2014 I want to give you a straight answer.\n\nComparison mode is in our Dashboard v2 roadmap. I'm looping in Dana Reeves (our Head of Product, CC'd) who can give you the specific timeline and scope. Dana \u2014 can you send Maria the v2 launch target and where comparison mode sits?\n\nMaria \u2014 I can commit that if the timeline shifts in a way that materially affects your Q1 planning, you'll hear from me directly before it's announced elsewhere.\n\n\u2014 Tessa Moreno\nHead of Sales, Vectrix Labs\ntessa@vectrix.io",
+      "body_html": "<p>Hi Maria,</p>\n<p>Thank you for raising this directly \u2014 I want to give you a straight answer.</p>\n<p>Comparison mode is in our Dashboard v2 roadmap. I'm looping in Dana Reeves (our Head of Product, CC'd) who can give you the specific timeline and scope. Dana \u2014 can you send Maria the v2 launch target and where comparison mode sits?</p>\n<p>Maria \u2014 I can commit that if the timeline shifts in a way that materially affects your Q1 planning, you'll hear from me directly before it's announced elsewhere.</p>\n<p>\u2014 Tessa Moreno<br>Head of Sales, Vectrix Labs<br>tessa@vectrix.io</p>",
       "attachments": [],
-      "is_automated": false,
-      "is_auto_reply": false
+      "in_reply_to": "msg_029",
+      "references": [
+        "msg_028",
+        "msg_029"
+      ],
+      "labels": [
+        "SENT"
+      ],
+      "is_read": true,
+      "is_starred": false,
+      "signature": "Tessa Moreno\nHead of Sales, Vectrix Labs\ntessa@vectrix.io"
     },
     {
       "message_id": "msg_031",
-      "from_email": "dana@vectrix.io",
-      "from_name": "Dana Reeves",
+      "from": {
+        "name": "Dana Reeves",
+        "email": "dana@vectrix.io"
+      },
       "to": [
         {
-          "email": "maria.chen@cascadesystems.io",
-          "name": "Maria Chen"
+          "name": "Maria Chen",
+          "email": "maria.chen@cascadesystems.io"
         }
       ],
       "cc": [
         {
-          "email": "tessa@vectrix.io",
-          "name": "Tessa Moreno"
+          "name": "Tessa Moreno",
+          "email": "tessa@vectrix.io"
         },
         {
-          "email": "marcus@vectrix.io",
-          "name": "Marcus Webb"
+          "name": "Marcus Webb",
+          "email": "marcus@vectrix.io"
         }
       ],
       "bcc": [],
       "date": "2026-01-15T14:05:00-08:00",
       "subject": "Re: Welcome to Vectrix \u2014 onboarding kickoff",
-      "body": "Hi Maria,\n\nI'm Dana, Head of Product. Comparison mode (week-over-week and custom date range comparison) is confirmed in the Dashboard v2 scope with a target launch of late February. It's one of our top three features for the release alongside saved views and the core layout redesign.\n\nI'll make sure you're among the first to know when we lock the final launch date.\n\nWelcome aboard \u2014 looking forward to having Cascade as a reference customer.\n\n\u2014 Dana Reeves",
+      "body_text": "Hi Maria,\n\nI'm Dana, Head of Product. Comparison mode \u2014 week-over-week and custom date range comparison \u2014 is confirmed in the Dashboard v2 scope. Target launch is late February / early March. It's one of our top three features for the release alongside saved views and the core layout redesign.\n\nI'll make sure you're among the first to know when we lock the final date.\n\nWelcome aboard \u2014 we're glad to have Cascade as a reference customer.\n\n\u2014 Dana Reeves\nHead of Product, Vectrix Labs\ndana@vectrix.io",
+      "body_html": "<p>Hi Maria,</p>\n<p>I'm Dana, Head of Product. Comparison mode \u2014 week-over-week and custom date range comparison \u2014 is confirmed in the Dashboard v2 scope. Target launch is late February / early March. It's one of our top three features for the release alongside saved views and the core layout redesign.</p>\n<p>I'll make sure you're among the first to know when we lock the final date.</p>\n<p>Welcome aboard \u2014 we're glad to have Cascade as a reference customer.</p>\n<p>\u2014 Dana Reeves<br>Head of Product, Vectrix Labs<br>dana@vectrix.io</p>",
       "attachments": [],
-      "is_automated": false,
-      "is_auto_reply": false,
-      "internal_note": "Note: Dana's email here says comparison mode is confirmed for v2. This contradicts the Feb 17 Slack decision deferring it to v2.1. Both are part of the version conflict edge case for 'email contradicts Slack decision'."
+      "in_reply_to": "msg_030",
+      "references": [
+        "msg_028",
+        "msg_029",
+        "msg_030"
+      ],
+      "labels": [
+        "SENT"
+      ],
+      "is_read": true,
+      "is_starred": false,
+      "signature": "Dana Reeves\nHead of Product, Vectrix Labs\ndana@vectrix.io"
     }
   ]
 }

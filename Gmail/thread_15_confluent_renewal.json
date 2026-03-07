@@ -1,0 +1,103 @@
+{
+  "thread_id": "thread_15",
+  "subject": "[Confluent Cloud] Annual subscription renewal \u2014 action required",
+  "category": "automated",
+  "messages": [
+    {
+      "message_id": "msg_055",
+      "from": {
+        "name": "Confluent Cloud",
+        "email": "noreply@confluent.io"
+      },
+      "to": [
+        {
+          "name": "Jordan Okafor",
+          "email": "jordan@vectrix.io"
+        }
+      ],
+      "cc": [],
+      "bcc": [],
+      "date": "2026-02-01T08:00:00-08:00",
+      "subject": "[Confluent Cloud] Annual subscription renewal \u2014 action required",
+      "body_text": "Hi Jordan,\n\nYour Confluent Cloud annual subscription is set to renew on March 1, 2026.\n\nSubscription: Kafka Standard Cluster (3 partitions)\nOrganization: Vectrix Labs\nAnnual amount: $5,040.00\nRenewal date: March 1, 2026\nPayment method: Visa ending 4821\n\nNo action is required if you'd like to continue on the same plan. To upgrade, downgrade, or cancel, please log in at https://confluent.cloud before February 22, 2026.\n\nQuestions? Contact your account manager at enterprise@confluent.io.\n\n\u2014 Confluent Cloud",
+      "body_html": "<p>Hi Jordan,</p>\n<p>Your Confluent Cloud annual subscription is set to renew on March 1, 2026.</p>\n<p>Subscription: Kafka Standard Cluster (3 partitions)<br>Organization: Vectrix Labs<br>Annual amount: $5,040.00<br>Renewal date: March 1, 2026<br>Payment method: Visa ending 4821</p>\n<p>No action is required if you'd like to continue on the same plan. To upgrade, downgrade, or cancel, please log in at https://confluent.cloud before February 22, 2026.</p>\n<p>Questions? Contact your account manager at enterprise@confluent.io.</p>\n<p>\u2014 Confluent Cloud</p>",
+      "attachments": [
+        {
+          "filename": "INV-2026-01-Confluent.pdf",
+          "mime_type": "application/pdf",
+          "size_bytes": 91200
+        }
+      ],
+      "in_reply_to": null,
+      "references": [],
+      "labels": [
+        "INBOX"
+      ],
+      "is_read": false,
+      "is_starred": false,
+      "signature": null,
+      "is_automated": true
+    },
+    {
+      "message_id": "msg_056",
+      "from": {
+        "name": "Jordan Okafor",
+        "email": "jordan@vectrix.io"
+      },
+      "to": [
+        {
+          "name": "Marcus Webb",
+          "email": "marcus@vectrix.io"
+        }
+      ],
+      "cc": [],
+      "bcc": [],
+      "date": "2026-02-01T10:22:00-08:00",
+      "subject": "Fwd: Confluent renewal \u2014 $5,040 due March 1",
+      "body_text": "Marcus,\n\nForwarding the Confluent renewal. $5,040/year \u2014 same as last year. I think we should renew; we're not ready to self-host Kafka and the managed overhead is worth it at our volume.\n\nAlso separately: we had a GitHub Actions CI failure on the main branch at 2am last night \u2014 deploy to staging was blocked for about 3 hours. Fixed itself after a GitHub incident resolved. No customer impact but I'm going to add a fallback deploy path for staging so a CI outage doesn't block us. I'll file a Linear ticket.\n\n\u2014 Jordan Okafor\nDevOps / Infra, Vectrix Labs\njordan@vectrix.io",
+      "body_html": "<p>Marcus,</p>\n<p>Forwarding the Confluent renewal. $5,040/year \u2014 same as last year. I think we should renew; we're not ready to self-host Kafka and the managed overhead is worth it at our volume.</p>\n<p>Also separately: we had a GitHub Actions CI failure on the main branch at 2am last night \u2014 deploy to staging was blocked for about 3 hours. Fixed itself after a GitHub incident resolved. No customer impact but I'm going to add a fallback deploy path for staging so a CI outage doesn't block us. I'll file a Linear ticket.</p>\n<p>\u2014 Jordan Okafor<br>DevOps / Infra, Vectrix Labs<br>jordan@vectrix.io</p>",
+      "attachments": [],
+      "in_reply_to": "msg_055",
+      "references": [
+        "msg_055"
+      ],
+      "labels": [
+        "SENT"
+      ],
+      "is_read": true,
+      "is_starred": false,
+      "signature": "Jordan Okafor\nDevOps / Infra, Vectrix Labs\njordan@vectrix.io"
+    },
+    {
+      "message_id": "msg_057",
+      "from": {
+        "name": "Marcus Webb",
+        "email": "marcus@vectrix.io"
+      },
+      "to": [
+        {
+          "name": "Jordan Okafor",
+          "email": "jordan@vectrix.io"
+        }
+      ],
+      "cc": [],
+      "bcc": [],
+      "date": "2026-02-01T11:05:00-08:00",
+      "subject": "Re: Confluent renewal \u2014 $5,040 due March 1",
+      "body_text": "Renew. Same plan.\n\nOn the CI fallback \u2014 agreed. File the Linear ticket and we'll scope it in Sprint 13.\n\n-M\n\n\u2014 Marcus Webb\nCTO, Vectrix Labs\nmarcus@vectrix.io",
+      "body_html": "<p>Renew. Same plan.</p>\n<p>On the CI fallback \u2014 agreed. File the Linear ticket and we'll scope it in Sprint 13.</p>\n<p>-M</p>\n<p>\u2014 Marcus Webb<br>CTO, Vectrix Labs<br>marcus@vectrix.io</p>",
+      "attachments": [],
+      "in_reply_to": "msg_056",
+      "references": [
+        "msg_055",
+        "msg_056"
+      ],
+      "labels": [
+        "INBOX"
+      ],
+      "is_read": true,
+      "is_starred": false,
+      "signature": "Marcus Webb\nCTO, Vectrix Labs\nmarcus@vectrix.io"
+    }
+  ]
+}

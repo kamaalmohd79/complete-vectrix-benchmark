@@ -1,114 +1,149 @@
 {
   "thread_id": "thread_13",
-  "subject": "Re: Offer \u2014 Senior Frontend Engineer at Vectrix Labs",
+  "subject": "Offer \u2014 Senior Frontend Engineer at Vectrix Labs",
   "category": "recruiting",
-  "participants": [
-    "marcus@vectrix.io",
-    "derek.huang@email.com",
-    "nina@vectrix.io",
-    "priya@vectrix.io"
-  ],
   "messages": [
     {
-      "message_id": "msg_046",
-      "from_email": "nina@vectrix.io",
-      "from_name": "Nina Kowalski",
+      "message_id": "msg_047",
+      "from": {
+        "name": "Nina Kowalski",
+        "email": "nina@vectrix.io"
+      },
       "to": [
         {
-          "email": "derek.huang@email.com",
-          "name": "Derek Huang"
+          "name": "Derek Huang",
+          "email": "derek.huang@email.com"
         }
       ],
       "cc": [
         {
-          "email": "marcus@vectrix.io",
-          "name": "Marcus Webb"
+          "name": "Marcus Webb",
+          "email": "marcus@vectrix.io"
         }
       ],
       "bcc": [],
       "date": "2026-01-20T10:00:00-08:00",
       "subject": "Offer \u2014 Senior Frontend Engineer at Vectrix Labs",
-      "body": "Hi Derek,\n\nWe're thrilled to extend an offer for the Senior Frontend Engineer role at Vectrix Labs.\n\nOffer details:\n- Base salary: $145,000/year\n- Equity: 0.18% (75,000 options, 4-year vest, 1-year cliff, $0.04 exercise price)\n- Start date: February 3, 2026 (flexible)\n- Full benefits per the attached summary\n\nPlease review the attached offer letter. We'd love to have your decision by January 24.\n\n\u2014 Nina Kowalski\nOps & People, Vectrix Labs",
+      "body_text": "Hi Derek,\n\nWe're thrilled to extend an offer for the Senior Frontend Engineer role at Vectrix Labs.\n\nOffer details:\n- Base salary: $145,000/year\n- Equity: 0.18% \u2014 75,000 options, 4-year vest, 1-year cliff, $0.04 strike price\n- Start date: February 3, 2026 (flexible)\n- Benefits per the attached summary\n\nPlease review the attached offer letter and let us know your decision by January 24.\n\nWe're excited about the possibility of you joining the team.\n\n\u2014 Nina Kowalski\nOps & People, Vectrix Labs\nnina@vectrix.io",
+      "body_html": "<p>Hi Derek,</p>\n<p>We're thrilled to extend an offer for the Senior Frontend Engineer role at Vectrix Labs.</p>\n<p>Offer details:<br>- Base salary: $145,000/year<br>- Equity: 0.18% \u2014 75,000 options, 4-year vest, 1-year cliff, $0.04 strike price<br>- Start date: February 3, 2026 (flexible)<br>- Benefits per the attached summary</p>\n<p>Please review the attached offer letter and let us know your decision by January 24.</p>\n<p>We're excited about the possibility of you joining the team.</p>\n<p>\u2014 Nina Kowalski<br>Ops & People, Vectrix Labs<br>nina@vectrix.io</p>",
       "attachments": [
         {
           "filename": "derek-huang-offer-letter.pdf",
-          "type": "application/pdf",
-          "size_kb": 198
+          "mime_type": "application/pdf",
+          "size_bytes": 198400
         },
         {
           "filename": "employee-benefits-summary.pdf",
-          "type": "application/pdf",
-          "size_kb": 312
+          "mime_type": "application/pdf",
+          "size_bytes": 319200
         }
       ],
-      "is_automated": false,
-      "is_auto_reply": false
+      "in_reply_to": null,
+      "references": [],
+      "labels": [
+        "SENT"
+      ],
+      "is_read": true,
+      "is_starred": false,
+      "signature": "Nina Kowalski\nOps & People, Vectrix Labs\nnina@vectrix.io"
     },
     {
-      "message_id": "msg_047",
-      "from_email": "derek.huang@email.com",
-      "from_name": "Derek Huang",
+      "message_id": "msg_048",
+      "from": {
+        "name": "Derek Huang",
+        "email": "derek.huang@email.com"
+      },
       "to": [
         {
-          "email": "nina@vectrix.io",
-          "name": "Nina Kowalski"
+          "name": "Nina Kowalski",
+          "email": "nina@vectrix.io"
         }
       ],
       "cc": [],
       "bcc": [],
       "date": "2026-01-23T16:45:00-08:00",
       "subject": "Re: Offer \u2014 Senior Frontend Engineer at Vectrix Labs",
-      "body": "Hi Nina,\n\nThank you so much for the offer and for the time the team spent with me. I have a lot of respect for what Marcus and the team are building.\n\nUnfortunately, I'm going to have to decline. I've accepted an offer elsewhere \u2014 the comp was closer to my target ($160K base) and the role is fully remote without any in-person expectations.\n\nI hope our paths cross again. Genuinely rooting for Vectrix.\n\n\u2014 Derek",
+      "body_text": "Hi Nina,\n\nThank you so much for the offer and for the time the team spent with me. I have a lot of respect for what Marcus and Priya are building at Vectrix.\n\nUnfortunately, I'm going to have to decline. I've accepted an offer elsewhere \u2014 the comp landed closer to my target ($160K base) and the role is fully remote without any in-person expectations.\n\nI hope our paths cross again. Genuinely rooting for Vectrix.\n\n\u2014 Derek Huang\nderek.huang@email.com",
+      "body_html": "<p>Hi Nina,</p>\n<p>Thank you so much for the offer and for the time the team spent with me. I have a lot of respect for what Marcus and Priya are building at Vectrix.</p>\n<p>Unfortunately, I'm going to have to decline. I've accepted an offer elsewhere \u2014 the comp landed closer to my target ($160K base) and the role is fully remote without any in-person expectations.</p>\n<p>I hope our paths cross again. Genuinely rooting for Vectrix.</p>\n<p>\u2014 Derek Huang<br>derek.huang@email.com</p>",
       "attachments": [],
-      "is_automated": false,
-      "is_auto_reply": false
+      "in_reply_to": "msg_047",
+      "references": [
+        "msg_047"
+      ],
+      "labels": [
+        "INBOX"
+      ],
+      "is_read": true,
+      "is_starred": false,
+      "signature": "Derek Huang\nderek.huang@email.com"
     },
     {
-      "message_id": "msg_048",
-      "from_email": "marcus@vectrix.io",
-      "from_name": "Marcus Webb",
+      "message_id": "msg_049",
+      "from": {
+        "name": "Marcus Webb",
+        "email": "marcus@vectrix.io"
+      },
       "to": [
         {
-          "email": "priya@vectrix.io",
-          "name": "Priya Chandran"
+          "name": "Priya Chandran",
+          "email": "priya@vectrix.io"
         }
       ],
       "cc": [
         {
-          "email": "nina@vectrix.io",
-          "name": "Nina Kowalski"
+          "name": "Nina Kowalski",
+          "email": "nina@vectrix.io"
         }
       ],
       "bcc": [],
       "date": "2026-01-23T17:15:00-08:00",
-      "subject": "Derek Huang declined \u2014 we need to revisit the band",
-      "body": "Priya,\n\nDerek declined. He said comp was the issue \u2014 $145K wasn't close enough to his target and he got $160K elsewhere.\n\nThis is the second candidate in two months where we've lost at offer stage on comp. I think we need to move the band to $145K\u2013$165K and be willing to go to $158\u2013$165K for strong candidates. At $145K we're fighting with Series B companies on price and losing.\n\nAmanda at TalentBridge told me the current market rate for this role in SF is $155K\u2013$170K. We're at the bottom of that range.\n\nCan we get this approved so we can repost and move on? I want Anya Chen to be our next candidate \u2014 she's in TalentBridge's pipeline and her background is exactly what we need.\n\n\u2014 Marcus",
+      "subject": "Derek Huang declined \u2014 need to revisit the comp band",
+      "body_text": "Priya,\n\nDerek declined. He said comp was the issue \u2014 $145K wasn't close enough to his target and he accepted $160K elsewhere.\n\nThis is the second candidate in two months where we've lost at offer on comp. I think we need to move the band to $145K\u2013$165K and be willing to go to $158\u2013$165K for strong candidates. At $145K we're fighting with Series B companies on price and losing. Amanda at TalentBridge tells me the current SF market for this role is $155K\u2013$170K.\n\nCan we get this approved today so we can repost? Anya Chen is in the TalentBridge pipeline and her background is exactly what we need \u2014 I want to move fast.\n\n\u2014 Marcus Webb\nCTO, Vectrix Labs\nmarcus@vectrix.io",
+      "body_html": "<p>Priya,</p>\n<p>Derek declined. He said comp was the issue \u2014 $145K wasn't close enough to his target and he accepted $160K elsewhere.</p>\n<p>This is the second candidate in two months where we've lost at offer on comp. I think we need to move the band to $145K\u2013$165K and be willing to go to $158\u2013$165K for strong candidates. At $145K we're fighting with Series B companies on price and losing. Amanda at TalentBridge tells me the current SF market for this role is $155K\u2013$170K.</p>\n<p>Can we get this approved today so we can repost? Anya Chen is in the TalentBridge pipeline and her background is exactly what we need \u2014 I want to move fast.</p>\n<p>\u2014 Marcus Webb<br>CTO, Vectrix Labs<br>marcus@vectrix.io</p>",
       "attachments": [],
-      "is_automated": false,
-      "is_auto_reply": false
+      "in_reply_to": null,
+      "references": [],
+      "labels": [
+        "INBOX",
+        "IMPORTANT"
+      ],
+      "is_read": true,
+      "is_starred": true,
+      "signature": "Marcus Webb\nCTO, Vectrix Labs\nmarcus@vectrix.io"
     },
     {
-      "message_id": "msg_049",
-      "from_email": "priya@vectrix.io",
-      "from_name": "Priya Chandran",
+      "message_id": "msg_050",
+      "from": {
+        "name": "Priya Chandran",
+        "email": "priya@vectrix.io"
+      },
       "to": [
         {
-          "email": "marcus@vectrix.io",
-          "name": "Marcus Webb"
+          "name": "Marcus Webb",
+          "email": "marcus@vectrix.io"
         },
         {
-          "email": "nina@vectrix.io",
-          "name": "Nina Kowalski"
+          "name": "Nina Kowalski",
+          "email": "nina@vectrix.io"
         }
       ],
       "cc": [],
       "bcc": [],
       "date": "2026-01-24T09:02:00-08:00",
-      "subject": "Re: Derek Huang declined \u2014 we need to revisit the band",
-      "body": "Approved. New band: $145K\u2013$165K. We can go to $160K without another approval cycle; above $160K ping me first.\n\nNina \u2014 please update the JD and the TalentBridge brief. Marcus \u2014 reach out to Amanda today about Anya Chen.\n\n\u2014 P",
+      "subject": "Re: Derek Huang declined \u2014 need to revisit the comp band",
+      "body_text": "Approved. New band: $145K\u2013$165K. We can go to $160K without another approval cycle; above $160K ping me first.\n\nNina \u2014 update the JD and the TalentBridge brief today. Marcus \u2014 reach out to Amanda about Anya Chen.\n\n\u2014 Priya Chandran\nCEO, Vectrix Labs\npriya@vectrix.io",
+      "body_html": "<p>Approved. New band: $145K\u2013$165K. We can go to $160K without another approval cycle; above $160K ping me first.</p>\n<p>Nina \u2014 update the JD and the TalentBridge brief today. Marcus \u2014 reach out to Amanda about Anya Chen.</p>\n<p>\u2014 Priya Chandran<br>CEO, Vectrix Labs<br>priya@vectrix.io</p>",
       "attachments": [],
-      "is_automated": false,
-      "is_auto_reply": false
+      "in_reply_to": "msg_049",
+      "references": [
+        "msg_049"
+      ],
+      "labels": [
+        "INBOX"
+      ],
+      "is_read": true,
+      "is_starred": false,
+      "signature": "Priya Chandran\nCEO, Vectrix Labs\npriya@vectrix.io"
     }
   ]
 }

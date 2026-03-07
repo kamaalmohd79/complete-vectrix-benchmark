@@ -1,96 +1,161 @@
 {
   "thread_id": "thread_09",
-  "subject": "Re: Vectrix evaluation \u2014 Meridian Health Systems",
+  "subject": "Vectrix evaluation \u2014 Meridian Health Systems",
   "category": "client",
-  "participants": [
-    "alan.fong@meridianhealth.com",
-    "priya@vectrix.io",
-    "tessa@vectrix.io",
-    "nina@vectrix.io"
-  ],
   "messages": [
     {
       "message_id": "msg_032",
-      "from_email": "alan.fong@meridianhealth.com",
-      "from_name": "Dr. Alan Fong",
+      "from": {
+        "name": "Dr. Alan Fong",
+        "email": "alan.fong@meridianhealth.com"
+      },
       "to": [
         {
-          "email": "priya@vectrix.io",
-          "name": "Priya Chandran"
+          "name": "Priya Chandran",
+          "email": "priya@vectrix.io"
         }
       ],
       "cc": [],
       "bcc": [],
       "date": "2025-11-20T14:03:00-08:00",
       "subject": "Vectrix evaluation \u2014 Meridian Health Systems",
-      "body": "Hi Priya,\n\nI'm Alan Fong, VP of Engineering at Meridian Health Systems. We found Vectrix through a Hacker News thread earlier this week and I've been exploring the platform for the last few days.\n\nWe run 85+ production APIs supporting clinical data workflows. We're currently using a combination of Datadog and in-house tooling for API monitoring, and neither is giving us the endpoint-level anomaly detection we need.\n\nBefore I escalate this internally, I want to understand a few things:\n1. Data residency \u2014 we have strict requirements that all data stay in US-based infrastructure.\n2. SSO \u2014 we're on Okta and would need SAML integration.\n3. Audit trail / retention \u2014 our compliance team requires 12-month data retention.\n4. SOC 2 status.\n\nIf those four are addressable, I'd like to set up a call.\n\n\u2014 Dr. Alan Fong\nVP Engineering, Meridian Health Systems",
+      "body_text": "Hi Priya,\n\nI'm Alan Fong, VP of Engineering at Meridian Health Systems. We found Vectrix through a Hacker News thread earlier this week and I've been exploring the platform.\n\nWe run 85+ production APIs supporting clinical data workflows. We currently use a combination of Datadog and in-house tooling for API monitoring, and neither gives us the endpoint-level anomaly detection we need.\n\nBefore I escalate this internally, I want to understand four things:\n1. Data residency \u2014 we require all data to stay in US-based infrastructure.\n2. SSO \u2014 we're on Okta and need SAML integration.\n3. Retention \u2014 our compliance team requires 12-month data retention.\n4. SOC 2 status.\n\nIf those four are addressable, I'd like to set up a call.\n\n\u2014 Dr. Alan Fong\nVP Engineering, Meridian Health Systems\nalan.fong@meridianhealth.com",
+      "body_html": "<p>Hi Priya,</p>\n<p>I'm Alan Fong, VP of Engineering at Meridian Health Systems. We found Vectrix through a Hacker News thread earlier this week and I've been exploring the platform.</p>\n<p>We run 85+ production APIs supporting clinical data workflows. We currently use a combination of Datadog and in-house tooling for API monitoring, and neither gives us the endpoint-level anomaly detection we need.</p>\n<p>Before I escalate this internally, I want to understand four things:<br>1. Data residency \u2014 we require all data to stay in US-based infrastructure.<br>2. SSO \u2014 we're on Okta and need SAML integration.<br>3. Retention \u2014 our compliance team requires 12-month data retention.<br>4. SOC 2 status.</p>\n<p>If those four are addressable, I'd like to set up a call.</p>\n<p>\u2014 Dr. Alan Fong<br>VP Engineering, Meridian Health Systems<br>alan.fong@meridianhealth.com</p>",
       "attachments": [],
-      "is_automated": false,
-      "is_auto_reply": false
+      "in_reply_to": null,
+      "references": [],
+      "labels": [
+        "INBOX",
+        "IMPORTANT"
+      ],
+      "is_read": false,
+      "is_starred": true,
+      "signature": "Dr. Alan Fong\nVP Engineering, Meridian Health Systems\nalan.fong@meridianhealth.com"
     },
     {
       "message_id": "msg_033",
-      "from_email": "priya@vectrix.io",
-      "from_name": "Priya Chandran",
+      "from": {
+        "name": "Priya Chandran",
+        "email": "priya@vectrix.io"
+      },
       "to": [
         {
-          "email": "alan.fong@meridianhealth.com",
-          "name": "Dr. Alan Fong"
+          "name": "Dr. Alan Fong",
+          "email": "alan.fong@meridianhealth.com"
         }
       ],
       "cc": [
         {
-          "email": "tessa@vectrix.io",
-          "name": "Tessa Moreno"
+          "name": "Tessa Moreno",
+          "email": "tessa@vectrix.io"
         }
       ],
       "bcc": [],
       "date": "2025-11-20T17:42:00-08:00",
       "subject": "Re: Vectrix evaluation \u2014 Meridian Health Systems",
-      "body": "Dr. Fong,\n\nThank you for reaching out. I'm glad you found us through HN \u2014 and your four requirements are exactly the right questions to ask.\n\nQuick answers:\n1. Data residency: All data stored and processed in AWS us-east-1 and us-west-2 (US only). No data leaves the US.\n2. SSO: We're mid-migration to Clerk, which supports SAML 2.0 and Okta integration natively. We can have SSO configured for your org within 30 days of contract.\n3. 12-month retention: Our standard retention is 90 days raw events. However, we support custom retention contracts for Enterprise \u2014 we've designed our infrastructure with per-org retention in mind (in development, targeting March 1).\n4. SOC 2: We hold SOC 2 Type I (issued October 2025). Type II audit is committed for Q2 2026.\n\nI'd love to set up a call this week or next. Tessa Moreno (CC'd), our Head of Sales, will reach out to find a time.\n\n\u2014 Priya Chandran\nCEO, Vectrix Labs",
+      "body_text": "Dr. Fong,\n\nThank you for reaching out \u2014 and those are exactly the right questions.\n\nQuick answers:\n1. Data residency: All data stored and processed in AWS us-east-1 and us-west-2 (US only). No data leaves the US.\n2. SSO: We're mid-migration to Clerk, which supports SAML 2.0 and Okta integration natively. We can have SSO configured for your org within 30 days of contract.\n3. 12-month retention: Our standard is 90-day raw events. We support custom retention contracts for Enterprise \u2014 per-org retention config is in development (target March 1).\n4. SOC 2: We hold Type I (issued October 2025). Type II audit committed for Q2 2026.\n\nTessa Moreno (CC'd), our Head of Sales, will reach out to coordinate a call.\n\n\u2014 Priya Chandran\nCEO, Vectrix Labs\npriya@vectrix.io",
+      "body_html": "<p>Dr. Fong,</p>\n<p>Thank you for reaching out \u2014 and those are exactly the right questions.</p>\n<p>Quick answers:<br>1. Data residency: All data stored and processed in AWS us-east-1 and us-west-2 (US only). No data leaves the US.<br>2. SSO: We're mid-migration to Clerk, which supports SAML 2.0 and Okta integration natively. We can have SSO configured for your org within 30 days of contract.<br>3. 12-month retention: Our standard is 90-day raw events. We support custom retention contracts for Enterprise \u2014 per-org retention config is in development (target March 1).<br>4. SOC 2: We hold Type I (issued October 2025). Type II audit committed for Q2 2026.</p>\n<p>Tessa Moreno (CC'd), our Head of Sales, will reach out to coordinate a call.</p>\n<p>\u2014 Priya Chandran<br>CEO, Vectrix Labs<br>priya@vectrix.io</p>",
       "attachments": [],
-      "is_automated": false,
-      "is_auto_reply": false
+      "in_reply_to": "msg_032",
+      "references": [
+        "msg_032"
+      ],
+      "labels": [
+        "SENT"
+      ],
+      "is_read": true,
+      "is_starred": false,
+      "signature": "Priya Chandran\nCEO, Vectrix Labs\npriya@vectrix.io"
     },
     {
       "message_id": "msg_034",
-      "from_email": "nina@vectrix.io",
-      "from_name": "Nina Kowalski",
+      "from": {
+        "name": "Nina Kowalski",
+        "email": "nina@vectrix.io"
+      },
       "to": [
         {
-          "email": "rachel.simmons@meridianhealth.com",
-          "name": "Rachel Simmons"
+          "name": "Rachel Simmons",
+          "email": "rachel.simmons@meridianhealth.com"
         }
       ],
       "cc": [
         {
-          "email": "alan.fong@meridianhealth.com",
-          "name": "Dr. Alan Fong"
+          "name": "Dr. Alan Fong",
+          "email": "alan.fong@meridianhealth.com"
         },
         {
-          "email": "tessa@vectrix.io",
-          "name": "Tessa Moreno"
+          "name": "Tessa Moreno",
+          "email": "tessa@vectrix.io"
         }
       ],
       "bcc": [],
       "date": "2026-01-22T11:00:00-08:00",
-      "subject": "Vectrix Security Questionnaire \u2014 responses attached",
-      "body": "Dear Rachel,\n\nThank you for sending over Meridian's vendor security questionnaire (147 questions). I'm attaching our initial responses. We've completed approximately 60% of the questionnaire; the remaining questions (primarily SOC 2 controls evidence and detailed encryption specifics) are in progress and will be completed by February 14.\n\nA few items I want to flag proactively:\n- Q47 (SLA Credits): Our standard policy caps credits at 30% of monthly fee. We're aware this is below typical enterprise requirements and Priya is reviewing options.\n- Q61 (ClickHouse subprocessor): Our analytics database runs on ClickHouse Cloud, which uses AWS us-east-1 as its underlying infrastructure.\n- Q3 (SOC 2 Type II): We hold Type I. Type II audit is committed for completion by June 30, 2026.\n\nPlease let me know if you have questions.\n\n\u2014 Nina Kowalski\nOps & People, Vectrix Labs",
+      "subject": "Vectrix Security Questionnaire \u2014 responses and SOW draft attached",
+      "body_text": "Dear Rachel,\n\nThank you for sending over Meridian's vendor security questionnaire. I'm attaching our initial responses and a copy of the SOW draft for your legal team's review.\n\nWe've completed approximately 60% of the questionnaire; the remaining questions (primarily SOC 2 controls evidence and detailed encryption specifics) will be completed by February 14.\n\nA few items I want to flag proactively:\n- Q47 (SLA Credits): Our standard policy caps credits at 30% of monthly fee. Priya is reviewing options and we expect to address this in the SOW redline.\n- Q61 (ClickHouse subprocessor): Our analytics database runs on ClickHouse Cloud, which uses AWS us-east-1 as its underlying infrastructure.\n- Q3 (SOC 2 Type II): We hold Type I. Type II audit committed for June 30, 2026.\n\nPlease let me know if you have questions.\n\n\u2014 Nina Kowalski\nOps & People, Vectrix Labs\nnina@vectrix.io",
+      "body_html": "<p>Dear Rachel,</p>\n<p>Thank you for sending over Meridian's vendor security questionnaire. I'm attaching our initial responses and a copy of the SOW draft for your legal team's review.</p>\n<p>We've completed approximately 60% of the questionnaire; the remaining questions (primarily SOC 2 controls evidence and detailed encryption specifics) will be completed by February 14.</p>\n<p>A few items I want to flag proactively:<br>- Q47 (SLA Credits): Our standard policy caps credits at 30% of monthly fee. Priya is reviewing options and we expect to address this in the SOW redline.<br>- Q61 (ClickHouse subprocessor): Our analytics database runs on ClickHouse Cloud, which uses AWS us-east-1 as its underlying infrastructure.<br>- Q3 (SOC 2 Type II): We hold Type I. Type II audit committed for June 30, 2026.</p>\n<p>Please let me know if you have questions.</p>\n<p>\u2014 Nina Kowalski<br>Ops & People, Vectrix Labs<br>nina@vectrix.io</p>",
       "attachments": [
         {
           "filename": "meridian-security-questionnaire.md",
-          "type": "text/markdown",
-          "size_kb": 42,
-          "source": "Google Drive \u2014 shared externally"
+          "mime_type": "text/markdown",
+          "size_bytes": 43200
         },
         {
-          "filename": "vectrix-soc2-type1-summary.pdf",
-          "type": "application/pdf",
-          "size_kb": 218
+          "filename": "meridian-sow-redlined.pdf",
+          "mime_type": "application/pdf",
+          "size_bytes": 186400
         }
       ],
-      "is_automated": false,
-      "is_auto_reply": false
+      "in_reply_to": null,
+      "references": [],
+      "labels": [
+        "SENT"
+      ],
+      "is_read": true,
+      "is_starred": false,
+      "signature": "Nina Kowalski\nOps & People, Vectrix Labs\nnina@vectrix.io"
+    },
+    {
+      "message_id": "msg_035",
+      "from": {
+        "name": "Rachel Simmons",
+        "email": "rachel.simmons@meridianhealth.com"
+      },
+      "to": [
+        {
+          "name": "Nina Kowalski",
+          "email": "nina@vectrix.io"
+        }
+      ],
+      "cc": [
+        {
+          "name": "Dr. Alan Fong",
+          "email": "alan.fong@meridianhealth.com"
+        }
+      ],
+      "bcc": [],
+      "date": "2026-01-24T14:30:00-08:00",
+      "subject": "Re: Vectrix Security Questionnaire \u2014 structured questionnaire attached",
+      "body_text": "Hi Nina,\n\nThank you for these. A few comments after reviewing the initial responses.\n\nWe've prepared a structured questionnaire (attached as .xlsx) with all 147 items \u2014 please use this format for your complete responses rather than the free-form document, as it maps to our vendor approval system.\n\nKey items flagged by our security team:\n- Q47: The 30% SLA credit cap does not meet our vendor standard for PHI-adjacent infrastructure. We require a minimum of 100% of monthly fee or uncapped. This needs to be resolved in the SOW before legal review can proceed.\n- Q61: Please confirm ClickHouse Cloud's underlying cloud provider and region explicitly in your response.\n- Q3: We are provisionally accepting the Type II commitment with a contractual backstop (termination right if not achieved by Sept 30, 2026).\n\nPlease return the completed .xlsx by February 14.\n\n\u2014 Rachel Simmons\nVP IT Security, Meridian Health Systems\nrachel.simmons@meridianhealth.com",
+      "body_html": "<p>Hi Nina,</p>\n<p>Thank you for these. A few comments after reviewing the initial responses.</p>\n<p>We've prepared a structured questionnaire (attached as .xlsx) with all 147 items \u2014 please use this format for your complete responses rather than the free-form document, as it maps to our vendor approval system.</p>\n<p>Key items flagged by our security team:<br>- Q47: The 30% SLA credit cap does not meet our vendor standard for PHI-adjacent infrastructure. We require a minimum of 100% of monthly fee or uncapped. This needs to be resolved in the SOW before legal review can proceed.<br>- Q61: Please confirm ClickHouse Cloud's underlying cloud provider and region explicitly in your response.<br>- Q3: We are provisionally accepting the Type II commitment with a contractual backstop (termination right if not achieved by Sept 30, 2026).</p>\n<p>Please return the completed .xlsx by February 14.</p>\n<p>\u2014 Rachel Simmons<br>VP IT Security, Meridian Health Systems<br>rachel.simmons@meridianhealth.com</p>",
+      "attachments": [
+        {
+          "filename": "meridian-vendor-security-147q.xlsx",
+          "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "size_bytes": 64800
+        }
+      ],
+      "in_reply_to": "msg_034",
+      "references": [
+        "msg_034"
+      ],
+      "labels": [
+        "INBOX",
+        "IMPORTANT"
+      ],
+      "is_read": false,
+      "is_starred": true,
+      "signature": "Rachel Simmons\nVP IT Security, Meridian Health Systems\nrachel.simmons@meridianhealth.com"
     }
   ]
 }

@@ -2,51 +2,68 @@
   "thread_id": "thread_07",
   "subject": "Vectrix dashboard outage last night \u2014 what happened?",
   "category": "client",
-  "edge_cases": ["ooo_auto_reply"],
-  "participants": [
-    "kevin.park@brainloop.io",
-    "priya@vectrix.io",
-    "marcus@vectrix.io",
-    "jordan@vectrix.io"
+  "edge_cases": [
+    "ooo_auto_reply"
   ],
   "messages": [
     {
       "message_id": "msg_024",
-      "from_email": "kevin.park@brainloop.io",
-      "from_name": "Kevin Park",
+      "from": {
+        "name": "Kevin Park",
+        "email": "kevin.park@brainloop.io"
+      },
       "to": [
         {
-          "email": "priya@vectrix.io",
-          "name": "Priya Chandran"
+          "name": "Priya Chandran",
+          "email": "priya@vectrix.io"
         }
       ],
       "cc": [],
       "bcc": [],
       "date": "2025-12-24T07:42:00-08:00",
       "subject": "Vectrix dashboard outage last night \u2014 what happened?",
-      "body": "Hi Priya,\n\nOur team was working late last night (Dec 23) and the Vectrix dashboard went down around 10:30pm PT for roughly 90 minutes. No alerts came through to our Slack integration either \u2014 our on-call engineer had no idea there was a problem until a customer reported an issue.\n\nThis is the first outage we've experienced since signing up in October. Can someone walk me through what happened and what the plan is?\n\nThanks,\nKevin Park\nHead of Engineering, Brainloop",
+      "body_text": "Hi Priya,\n\nOur team was working late last night (Dec 23) and the Vectrix dashboard went down around 10:30pm PT for roughly 90 minutes. More concerning: no alerts came through to our Slack integration \u2014 our on-call engineer had no idea there was a problem until a customer reported it.\n\nThis is the first outage we've experienced since signing up in October. Can someone walk me through what happened and what the plan is going forward?\n\n\u2014 Kevin Park\nHead of Engineering, Brainloop\nkevin.park@brainloop.io",
+      "body_html": "<p>Hi Priya,</p>\n<p>Our team was working late last night (Dec 23) and the Vectrix dashboard went down around 10:30pm PT for roughly 90 minutes. More concerning: no alerts came through to our Slack integration \u2014 our on-call engineer had no idea there was a problem until a customer reported it.</p>\n<p>This is the first outage we've experienced since signing up in October. Can someone walk me through what happened and what the plan is going forward?</p>\n<p>\u2014 Kevin Park<br>Head of Engineering, Brainloop<br>kevin.park@brainloop.io</p>",
       "attachments": [],
-      "is_automated": false,
-      "is_auto_reply": false
+      "in_reply_to": null,
+      "references": [],
+      "labels": [
+        "INBOX"
+      ],
+      "is_read": false,
+      "is_starred": false,
+      "signature": "Kevin Park\nHead of Engineering, Brainloop\nkevin.park@brainloop.io"
     },
     {
       "message_id": "msg_025",
-      "from_email": "priya@vectrix.io",
-      "from_name": "Priya Chandran (Out of Office)",
+      "from": {
+        "name": "Priya Chandran (Out of Office)",
+        "email": "priya@vectrix.io"
+      },
       "to": [
         {
-          "email": "kevin.park@brainloop.io",
-          "name": "Kevin Park"
+          "name": "Kevin Park",
+          "email": "kevin.park@brainloop.io"
         }
       ],
       "cc": [],
       "bcc": [],
       "date": "2025-12-24T07:42:08-08:00",
       "subject": "Out of Office: Vectrix dashboard outage last night \u2014 what happened?",
-      "body": "Hi,\n\nI'm out of the office December 23 through January 2 with limited email access.\n\nFor urgent product or infrastructure issues, please contact Marcus Webb at marcus@vectrix.io.\n\nI'll respond to your message when I return January 3.\n\nBest,\nPriya Chandran\nCEO, Vectrix Labs",
+      "body_text": "Hi,\n\nI'm out of the office December 23 through January 2 with limited email access.\n\nFor urgent product or infrastructure issues, please contact Marcus Webb at marcus@vectrix.io.\n\nI'll respond to your message when I return January 3.\n\nBest,\nPriya Chandran\nCEO, Vectrix Labs",
+      "body_html": "<p>Hi,</p>\n<p>I'm out of the office December 23 through January 2 with limited email access.</p>\n<p>For urgent product or infrastructure issues, please contact Marcus Webb at marcus@vectrix.io.</p>\n<p>I'll respond to your message when I return January 3.</p>\n<p>Best,<br>Priya Chandran<br>CEO, Vectrix Labs</p>",
       "attachments": [],
+      "in_reply_to": "msg_024",
+      "references": [
+        "msg_024"
+      ],
+      "labels": [
+        "SENT"
+      ],
+      "is_read": true,
+      "is_starred": false,
+      "signature": "Priya Chandran\nCEO, Vectrix Labs\npriya@vectrix.io",
       "is_automated": true,
-      "is_auto_reply": true,
       "auto_reply_metadata": {
         "ooo_start": "2025-12-23",
         "ooo_end": "2026-01-02",
@@ -55,46 +72,66 @@
     },
     {
       "message_id": "msg_026",
-      "from_email": "kevin.park@brainloop.io",
-      "from_name": "Kevin Park",
+      "from": {
+        "name": "Kevin Park",
+        "email": "kevin.park@brainloop.io"
+      },
       "to": [
         {
-          "email": "marcus@vectrix.io",
-          "name": "Marcus Webb"
+          "name": "Marcus Webb",
+          "email": "marcus@vectrix.io"
         }
       ],
       "cc": [],
       "bcc": [],
       "date": "2025-12-24T07:58:00-08:00",
       "subject": "Following up on last night's Vectrix outage",
-      "body": "Hi Marcus,\n\nReaching out directly \u2014 Priya is out. Can you fill me in on what happened last night? I need to be able to explain it to our VP.\n\nMain questions:\n1. What caused the outage?\n2. Why didn't our Slack alerts fire?\n3. What changes are coming?\n\nKevin",
+      "body_text": "Hi Marcus,\n\nReaching out directly \u2014 Priya is out. Can you fill me in on what happened last night with the Vectrix dashboard? I need to be able to explain it to our VP.\n\nMain questions:\n1. What caused the outage?\n2. Why didn't our Slack alerts fire?\n3. What changes are coming?\n\n\u2014 Kevin Park\nHead of Engineering, Brainloop\nkevin.park@brainloop.io",
+      "body_html": "<p>Hi Marcus,</p>\n<p>Reaching out directly \u2014 Priya is out. Can you fill me in on what happened last night with the Vectrix dashboard? I need to be able to explain it to our VP.</p>\n<p>Main questions:<br>1. What caused the outage?<br>2. Why didn't our Slack alerts fire?<br>3. What changes are coming?</p>\n<p>\u2014 Kevin Park<br>Head of Engineering, Brainloop<br>kevin.park@brainloop.io</p>",
       "attachments": [],
-      "is_automated": false,
-      "is_auto_reply": false
+      "in_reply_to": null,
+      "references": [],
+      "labels": [
+        "INBOX"
+      ],
+      "is_read": false,
+      "is_starred": false,
+      "signature": "Kevin Park\nHead of Engineering, Brainloop\nkevin.park@brainloop.io"
     },
     {
       "message_id": "msg_027",
-      "from_email": "marcus@vectrix.io",
-      "from_name": "Marcus Webb",
+      "from": {
+        "name": "Marcus Webb",
+        "email": "marcus@vectrix.io"
+      },
       "to": [
         {
-          "email": "kevin.park@brainloop.io",
-          "name": "Kevin Park"
+          "name": "Kevin Park",
+          "email": "kevin.park@brainloop.io"
         }
       ],
       "cc": [
         {
-          "email": "jordan@vectrix.io",
-          "name": "Jordan Okafor"
+          "name": "Jordan Okafor",
+          "email": "jordan@vectrix.io"
         }
       ],
       "bcc": [],
       "date": "2025-12-24T10:15:00-08:00",
       "subject": "Re: Following up on last night's Vectrix outage",
-      "body": "Hi Kevin,\n\nThank you for reaching out, and I apologize for the disruption. Here's the full picture:\n\nRoot cause: A rate limiter bug in our deploy at 10:15pm PT caused it to reject all inbound API requests. Jordan caught it at 11:45pm and rolled back the deploy. Service fully restored at 11:58pm \u2014 approximately 90 minutes of downtime.\n\nWhy your Slack alerts didn't fire: Our alert evaluation runs through the same API layer that was rate-limited. When the limiter blocked requests, alerts stopped evaluating too. This is a design flaw \u2014 alert evaluation should be isolated from API traffic. We're fixing it and shipping the fix in our next release (target: Jan 6).\n\nWhat we're doing:\n1. Decouple alert evaluation from the API layer (ships Jan 6)\n2. Add pre-deploy smoke tests for rate limiter config changes\n3. Formalize on-call rotation \u2014 Jordan was the sole engineer on-call Dec 23. That won't happen again.\n\nFormal post-mortem will be in your customer portal by December 27.\n\nAgain, I'm sorry. This shouldn't have happened, and the alert failure is particularly unacceptable \u2014 that's the thing we're there for.\n\n\u2014 Marcus Webb\nCTO, Vectrix Labs",
+      "body_text": "Hi Kevin,\n\nThank you for reaching out, and I'm sorry for the disruption. Here's the full picture:\n\nRoot cause: A rate limiter bug introduced in our 10:15pm deploy caused it to reject all inbound API requests. Jordan caught it at 11:45pm and rolled back the deploy. Service fully restored at 11:58pm \u2014 approximately 90 minutes of downtime.\n\nWhy your Slack alerts didn't fire: Our alert evaluation runs through the same API layer that was rate-limited. When the limiter blocked requests, alert evaluation stopped too. This is a design flaw \u2014 alert evaluation should be isolated from API traffic. We are fixing it and shipping the fix in our next release (target: Jan 6).\n\nWhat we're doing:\n1. Decouple alert evaluation from the API layer (ships Jan 6)\n2. Add pre-deploy smoke tests for rate limiter config changes\n3. Formalize on-call rotation \u2014 Jordan was the sole engineer on-call Dec 23. That won't happen again.\n\nFormal post-mortem will be in your customer portal by December 27.\n\nAgain, I'm sorry. The alert failure in particular is unacceptable \u2014 that's the thing we exist for.\n\n\u2014 Marcus Webb\nCTO, Vectrix Labs\nmarcus@vectrix.io",
+      "body_html": "<p>Hi Kevin,</p>\n<p>Thank you for reaching out, and I'm sorry for the disruption. Here's the full picture:</p>\n<p>Root cause: A rate limiter bug introduced in our 10:15pm deploy caused it to reject all inbound API requests. Jordan caught it at 11:45pm and rolled back the deploy. Service fully restored at 11:58pm \u2014 approximately 90 minutes of downtime.</p>\n<p>Why your Slack alerts didn't fire: Our alert evaluation runs through the same API layer that was rate-limited. When the limiter blocked requests, alert evaluation stopped too. This is a design flaw \u2014 alert evaluation should be isolated from API traffic. We are fixing it and shipping the fix in our next release (target: Jan 6).</p>\n<p>What we're doing:<br>1. Decouple alert evaluation from the API layer (ships Jan 6)<br>2. Add pre-deploy smoke tests for rate limiter config changes<br>3. Formalize on-call rotation \u2014 Jordan was the sole engineer on-call Dec 23. That won't happen again.</p>\n<p>Formal post-mortem will be in your customer portal by December 27.</p>\n<p>Again, I'm sorry. The alert failure in particular is unacceptable \u2014 that's the thing we exist for.</p>\n<p>\u2014 Marcus Webb<br>CTO, Vectrix Labs<br>marcus@vectrix.io</p>",
       "attachments": [],
-      "is_automated": false,
-      "is_auto_reply": false
+      "in_reply_to": "msg_026",
+      "references": [
+        "msg_026"
+      ],
+      "labels": [
+        "SENT"
+      ],
+      "is_read": true,
+      "is_starred": false,
+      "signature": "Marcus Webb\nCTO, Vectrix Labs\nmarcus@vectrix.io"
     }
   ]
 }

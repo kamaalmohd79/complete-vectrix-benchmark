@@ -2,77 +2,109 @@
   "thread_id": "thread_05",
   "subject": "Clerk auth migration \u2014 kicking off Jan 13",
   "category": "internal",
-  "participants": ["marcus@vectrix.io", "liam@vectrix.io", "sofia@vectrix.io"],
   "messages": [
     {
       "message_id": "msg_017",
-      "from_email": "marcus@vectrix.io",
-      "from_name": "Marcus Webb",
+      "from": {
+        "name": "Marcus Webb",
+        "email": "marcus@vectrix.io"
+      },
       "to": [
         {
-          "email": "liam@vectrix.io",
-          "name": "Liam Nakamura"
+          "name": "Liam Nakamura",
+          "email": "liam@vectrix.io"
         },
         {
-          "email": "sofia@vectrix.io",
-          "name": "Sofia Gutierrez"
+          "name": "Sofia Gutierrez",
+          "email": "sofia@vectrix.io"
         }
       ],
       "cc": [],
       "bcc": [],
       "date": "2026-01-13T09:00:00-08:00",
       "subject": "Clerk auth migration \u2014 kicking off Jan 13",
-      "body": "Liam, Sofia,\n\nStarting the Clerk migration today. Quick summary of the plan:\n\nBackend (Liam \u2014 VEC-52):\n- JWT middleware needs to accept both Firebase and Clerk tokens in parallel during the transition\n- Clerk tokens: RS256, JWKS endpoint at clerk.vectrix.io. Firebase tokens: RS256 but different key structure \u2014 separate validation paths\n- New Clerk org_id claim in JWT payload. Firebase tokens lack this \u2014 fallback: look up org_id from orgs table by user email\n- Target: backend dual-token middleware live by Jan 20\n\nFrontend (Sofia \u2014 VEC-53):\n- Replace useAuth / useUser with Clerk equivalents\n- useOrganization() gives us the org context we need for dashboard per-org filtering\n- Background context: auth-provider-comparison.md in Drive\n\nCustomers stay on Firebase until we explicitly switch each org. Migration order: staging first, then smallest orgs, Brainloop last (they have a non-standard token structure).\n\n-M",
+      "body_text": "Liam, Sofia,\n\nStarting the Clerk migration today. Plan:\n\nBackend (Liam \u2014 VEC-52):\n- JWT middleware must accept both Firebase and Clerk tokens in parallel during transition\n- Clerk tokens: RS256, JWKS at clerk.vectrix.io. Firebase: RS256 but different key structure \u2014 separate validation paths\n- New Clerk org_id claim in JWT payload. Firebase tokens lack this \u2014 fallback: look up org_id from orgs table by user email\n- Target: dual-token middleware live by Jan 20\n\nFrontend (Sofia \u2014 VEC-53):\n- Replace useAuth / useUser with Clerk equivalents\n- useOrganization() gives us the org context we need for per-org dashboard filtering\n- Background context: auth-provider-comparison.md in Drive\n\nCustomers stay on Firebase until we explicitly switch each org. Migration order: staging first, then smallest orgs, Brainloop last (non-standard token structure).\n\n\u2014 Marcus Webb\nCTO, Vectrix Labs\nmarcus@vectrix.io",
+      "body_html": "<p>Liam, Sofia,</p>\n<p>Starting the Clerk migration today. Plan:</p>\n<p>Backend (Liam \u2014 VEC-52):<br>- JWT middleware must accept both Firebase and Clerk tokens in parallel during transition<br>- Clerk tokens: RS256, JWKS at clerk.vectrix.io. Firebase: RS256 but different key structure \u2014 separate validation paths<br>- New Clerk org_id claim in JWT payload. Firebase tokens lack this \u2014 fallback: look up org_id from orgs table by user email<br>- Target: dual-token middleware live by Jan 20</p>\n<p>Frontend (Sofia \u2014 VEC-53):<br>- Replace useAuth / useUser with Clerk equivalents<br>- useOrganization() gives us the org context we need for per-org dashboard filtering<br>- Background context: auth-provider-comparison.md in Drive</p>\n<p>Customers stay on Firebase until we explicitly switch each org. Migration order: staging first, then smallest orgs, Brainloop last (non-standard token structure).</p>\n<p>\u2014 Marcus Webb<br>CTO, Vectrix Labs<br>marcus@vectrix.io</p>",
       "attachments": [],
-      "is_automated": false,
-      "is_auto_reply": false
+      "in_reply_to": null,
+      "references": [],
+      "labels": [
+        "INBOX",
+        "IMPORTANT"
+      ],
+      "is_read": true,
+      "is_starred": true,
+      "signature": "Marcus Webb\nCTO, Vectrix Labs\nmarcus@vectrix.io"
     },
     {
       "message_id": "msg_018",
-      "from_email": "liam@vectrix.io",
-      "from_name": "Liam Nakamura",
+      "from": {
+        "name": "Liam Nakamura",
+        "email": "liam@vectrix.io"
+      },
       "to": [
         {
-          "email": "marcus@vectrix.io",
-          "name": "Marcus Webb"
+          "name": "Marcus Webb",
+          "email": "marcus@vectrix.io"
         }
       ],
       "cc": [
         {
-          "email": "sofia@vectrix.io",
-          "name": "Sofia Gutierrez"
+          "name": "Sofia Gutierrez",
+          "email": "sofia@vectrix.io"
         }
       ],
       "bcc": [],
       "date": "2026-01-13T14:22:00-08:00",
       "subject": "Re: Clerk auth migration \u2014 kicking off Jan 13",
-      "body": "Confirmed on the backend approach. One thing I found: Brainloop's tokens are using a non-standard bearer format \u2014 missing the org claim entirely because Kevin Park's team issued them with a custom Firebase extension that predates our org model. I'll need a special case that looks up org membership by email before the standard Clerk path.\n\nEstimate: middleware live Jan 20, Brainloop edge case resolved by Feb 7.\n\n\u2014 L",
+      "body_text": "Confirmed on the backend approach. One thing I found: Brainloop's tokens use a non-standard bearer format \u2014 missing the org claim entirely because Kevin Park's team issued them with a custom Firebase extension that predates our org model. I'll need a special case that looks up org membership by email before the standard path.\n\nEstimate: middleware live Jan 20, Brainloop edge case resolved by Feb 7.\n\n\u2014 Liam Nakamura\nSenior Backend Engineer, Vectrix Labs\nliam@vectrix.io",
+      "body_html": "<p>Confirmed on the backend approach. One thing I found: Brainloop's tokens use a non-standard bearer format \u2014 missing the org claim entirely because Kevin Park's team issued them with a custom Firebase extension that predates our org model. I'll need a special case that looks up org membership by email before the standard path.</p>\n<p>Estimate: middleware live Jan 20, Brainloop edge case resolved by Feb 7.</p>\n<p>\u2014 Liam Nakamura<br>Senior Backend Engineer, Vectrix Labs<br>liam@vectrix.io</p>",
       "attachments": [],
-      "is_automated": false,
-      "is_auto_reply": false
+      "in_reply_to": "msg_017",
+      "references": [
+        "msg_017"
+      ],
+      "labels": [
+        "INBOX"
+      ],
+      "is_read": true,
+      "is_starred": false,
+      "signature": "Liam Nakamura\nSenior Backend Engineer, Vectrix Labs\nliam@vectrix.io"
     },
     {
       "message_id": "msg_019",
-      "from_email": "sofia@vectrix.io",
-      "from_name": "Sofia Gutierrez",
+      "from": {
+        "name": "Sofia Gutierrez",
+        "email": "sofia@vectrix.io"
+      },
       "to": [
         {
-          "email": "marcus@vectrix.io",
-          "name": "Marcus Webb"
+          "name": "Marcus Webb",
+          "email": "marcus@vectrix.io"
         },
         {
-          "email": "liam@vectrix.io",
-          "name": "Liam Nakamura"
+          "name": "Liam Nakamura",
+          "email": "liam@vectrix.io"
         }
       ],
       "cc": [],
       "bcc": [],
       "date": "2026-01-14T10:08:00-08:00",
       "subject": "Re: Clerk auth migration \u2014 kicking off Jan 13",
-      "body": "Starting on the frontend side. Quick question: during the transition window \u2014 when a user logs in, how do we route them to the right auth path? Is it per-org config in the DB, or do we try Clerk first and fall back to Firebase on rejection?\n\nAlso: Clerk's docs say useOrganization() can return null on the first render even when authenticated. Do I need an explicit loading state for org context, or does the SDK handle it?\n\n\u2014 Sofia \ud83d\ude4f",
+      "body_text": "Starting on the frontend side. Quick question: during the transition window \u2014 when a user logs in, how do we route them to the right auth path? Is it per-org config in the DB, or do we try Clerk first and fall back to Firebase on rejection?\n\nAlso: Clerk's docs say useOrganization() can return null on first render even when authenticated. Do I need an explicit loading state for org context, or does the SDK handle it internally?\n\n\u2014 Sofia Gutierrez\nFrontend Engineer, Vectrix Labs\nsofia@vectrix.io",
+      "body_html": "<p>Starting on the frontend side. Quick question: during the transition window \u2014 when a user logs in, how do we route them to the right auth path? Is it per-org config in the DB, or do we try Clerk first and fall back to Firebase on rejection?</p>\n<p>Also: Clerk's docs say useOrganization() can return null on first render even when authenticated. Do I need an explicit loading state for org context, or does the SDK handle it internally?</p>\n<p>\u2014 Sofia Gutierrez<br>Frontend Engineer, Vectrix Labs<br>sofia@vectrix.io</p>",
       "attachments": [],
-      "is_automated": false,
-      "is_auto_reply": false
+      "in_reply_to": "msg_018",
+      "references": [
+        "msg_017",
+        "msg_018"
+      ],
+      "labels": [
+        "INBOX"
+      ],
+      "is_read": true,
+      "is_starred": false,
+      "signature": "Sofia Gutierrez\nFrontend Engineer, Vectrix Labs\nsofia@vectrix.io"
     }
   ]
 }

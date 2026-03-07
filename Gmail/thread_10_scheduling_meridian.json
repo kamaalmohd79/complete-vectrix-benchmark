@@ -1,126 +1,165 @@
 {
   "thread_id": "thread_10",
-  "subject": "Re: Meridian SOW review \u2014 scheduling",
+  "subject": "Meridian SOW review \u2014 scheduling",
   "category": "scheduling",
-  "participants": [
-    "tessa@vectrix.io",
-    "alan.fong@meridianhealth.com",
-    "nina@vectrix.io",
-    "priya@vectrix.io"
-  ],
   "messages": [
     {
-      "message_id": "msg_035",
-      "from_email": "tessa@vectrix.io",
-      "from_name": "Tessa Moreno",
+      "message_id": "msg_036",
+      "from": {
+        "name": "Tessa Moreno",
+        "email": "tessa@vectrix.io"
+      },
       "to": [
         {
-          "email": "alan.fong@meridianhealth.com",
-          "name": "Dr. Alan Fong"
+          "name": "Dr. Alan Fong",
+          "email": "alan.fong@meridianhealth.com"
         }
       ],
       "cc": [
         {
-          "email": "priya@vectrix.io",
-          "name": "Priya Chandran"
+          "name": "Priya Chandran",
+          "email": "priya@vectrix.io"
         },
         {
-          "email": "nina@vectrix.io",
-          "name": "Nina Kowalski"
+          "name": "Nina Kowalski",
+          "email": "nina@vectrix.io"
         }
       ],
       "bcc": [],
       "date": "2026-02-12T10:05:00-08:00",
       "subject": "Meridian SOW review \u2014 let's find a time",
-      "body": "Dr. Fong,\n\nOur counsel (Orion Legal) has reviewed the SOW draft and we have a few redline items to discuss. Nothing blocking \u2014 two clauses we'd like to align on before execution.\n\nWould February 18 at 2pm PT work for a 45-minute call? Priya will join from our side.\n\n\u2014 Tessa",
+      "body_text": "Dr. Fong,\n\nOur counsel (Orion Legal) has reviewed the SOW draft and we have two redline items to discuss \u2014 nothing blocking, but we want to align before execution.\n\nWould February 18 at 2pm PT work for a 45-minute call? Priya will join from our side.\n\n\u2014 Tessa Moreno\nHead of Sales, Vectrix Labs\ntessa@vectrix.io",
+      "body_html": "<p>Dr. Fong,</p>\n<p>Our counsel (Orion Legal) has reviewed the SOW draft and we have two redline items to discuss \u2014 nothing blocking, but we want to align before execution.</p>\n<p>Would February 18 at 2pm PT work for a 45-minute call? Priya will join from our side.</p>\n<p>\u2014 Tessa Moreno<br>Head of Sales, Vectrix Labs<br>tessa@vectrix.io</p>",
       "attachments": [],
-      "is_automated": false,
-      "is_auto_reply": false
+      "in_reply_to": null,
+      "references": [],
+      "labels": [
+        "SENT"
+      ],
+      "is_read": true,
+      "is_starred": false,
+      "signature": "Tessa Moreno\nHead of Sales, Vectrix Labs\ntessa@vectrix.io"
     },
     {
-      "message_id": "msg_036",
-      "from_email": "alan.fong@meridianhealth.com",
-      "from_name": "Dr. Alan Fong",
+      "message_id": "msg_037",
+      "from": {
+        "name": "Dr. Alan Fong",
+        "email": "alan.fong@meridianhealth.com"
+      },
       "to": [
         {
-          "email": "tessa@vectrix.io",
-          "name": "Tessa Moreno"
+          "name": "Tessa Moreno",
+          "email": "tessa@vectrix.io"
         }
       ],
       "cc": [
         {
-          "email": "priya@vectrix.io",
-          "name": "Priya Chandran"
+          "name": "Priya Chandran",
+          "email": "priya@vectrix.io"
         }
       ],
       "bcc": [],
       "date": "2026-02-12T14:22:00-08:00",
       "subject": "Re: Meridian SOW review \u2014 let's find a time",
-      "body": "Hi Tessa,\n\nFeb 18 at 2pm PT doesn't work \u2014 I have a standing board prep that runs until 3pm.\n\nCan we do Feb 19 at 11am PT, or Feb 20 at 10am PT?\n\n\u2014 Alan",
+      "body_text": "Hi Tessa,\n\nFeb 18 at 2pm PT doesn't work \u2014 I have a standing board prep that runs until 3pm.\n\nCan we do Feb 19 at 11am PT, or Feb 20 at 10am PT?\n\n\u2014 Dr. Alan Fong\nVP Engineering, Meridian Health Systems\nalan.fong@meridianhealth.com",
+      "body_html": "<p>Hi Tessa,</p>\n<p>Feb 18 at 2pm PT doesn't work \u2014 I have a standing board prep that runs until 3pm.</p>\n<p>Can we do Feb 19 at 11am PT, or Feb 20 at 10am PT?</p>\n<p>\u2014 Dr. Alan Fong<br>VP Engineering, Meridian Health Systems<br>alan.fong@meridianhealth.com</p>",
       "attachments": [],
-      "is_automated": false,
-      "is_auto_reply": false
+      "in_reply_to": "msg_036",
+      "references": [
+        "msg_036"
+      ],
+      "labels": [
+        "INBOX"
+      ],
+      "is_read": true,
+      "is_starred": false,
+      "signature": "Dr. Alan Fong\nVP Engineering, Meridian Health Systems\nalan.fong@meridianhealth.com"
     },
     {
-      "message_id": "msg_037",
-      "from_email": "tessa@vectrix.io",
-      "from_name": "Tessa Moreno",
+      "message_id": "msg_038",
+      "from": {
+        "name": "Tessa Moreno",
+        "email": "tessa@vectrix.io"
+      },
       "to": [
         {
-          "email": "alan.fong@meridianhealth.com",
-          "name": "Dr. Alan Fong"
+          "name": "Dr. Alan Fong",
+          "email": "alan.fong@meridianhealth.com"
         }
       ],
       "cc": [
         {
-          "email": "priya@vectrix.io",
-          "name": "Priya Chandran"
+          "name": "Priya Chandran",
+          "email": "priya@vectrix.io"
         },
         {
-          "email": "nina@vectrix.io",
-          "name": "Nina Kowalski"
+          "name": "Nina Kowalski",
+          "email": "nina@vectrix.io"
         }
       ],
       "bcc": [],
       "date": "2026-02-12T15:55:00-08:00",
       "subject": "Re: Meridian SOW review \u2014 let's find a time",
-      "body": "Feb 19 at 11am PT works for us. I'll send a calendar invite.\n\n\u2014 Tessa",
+      "body_text": "Feb 19 at 11am PT works for us. Calendar invite coming from Nina.\n\n\u2014 Tessa Moreno\nHead of Sales, Vectrix Labs\ntessa@vectrix.io",
+      "body_html": "<p>Feb 19 at 11am PT works for us. Calendar invite coming from Nina.</p>\n<p>\u2014 Tessa Moreno<br>Head of Sales, Vectrix Labs<br>tessa@vectrix.io</p>",
       "attachments": [],
-      "is_automated": false,
-      "is_auto_reply": false
+      "in_reply_to": "msg_037",
+      "references": [
+        "msg_036",
+        "msg_037"
+      ],
+      "labels": [
+        "SENT"
+      ],
+      "is_read": true,
+      "is_starred": false,
+      "signature": "Tessa Moreno\nHead of Sales, Vectrix Labs\ntessa@vectrix.io"
     },
     {
-      "message_id": "msg_038",
-      "from_email": "nina@vectrix.io",
-      "from_name": "Nina Kowalski",
+      "message_id": "msg_039",
+      "from": {
+        "name": "Nina Kowalski",
+        "email": "nina@vectrix.io"
+      },
       "to": [
         {
-          "email": "alan.fong@meridianhealth.com",
-          "name": "Dr. Alan Fong"
+          "name": "Dr. Alan Fong",
+          "email": "alan.fong@meridianhealth.com"
         },
         {
-          "email": "tessa@vectrix.io",
-          "name": "Tessa Moreno"
+          "name": "Tessa Moreno",
+          "email": "tessa@vectrix.io"
         },
         {
-          "email": "priya@vectrix.io",
-          "name": "Priya Chandran"
+          "name": "Priya Chandran",
+          "email": "priya@vectrix.io"
         }
       ],
       "cc": [],
       "bcc": [],
       "date": "2026-02-12T16:10:00-08:00",
-      "subject": "Calendar invite: Meridian SOW Review Call \u2014 Feb 19, 11am PT",
-      "body": "Sending the calendar invite now. Details below.\n\nTitle: Meridian Health Systems / Vectrix \u2014 SOW Review\nDate: Wednesday, February 19, 2026\nTime: 11:00am \u2013 11:45am PT\nZoom: https://vectrix.zoom.us/j/84726193048\nPasword: sow2026\n\nAgenda:\n1. Review two redline items from Orion Legal (SLA credits, termination clause)\n2. Per-org retention config timeline (VEC-47)\n3. SAML SSO activation timeline\n4. Next steps to contract execution\n\n\u2014 Nina",
+      "subject": "Calendar invite: Meridian SOW Review \u2014 Feb 19, 11am PT",
+      "body_text": "Sending the calendar invite now. Details:\n\nTitle: Meridian Health Systems / Vectrix Labs \u2014 SOW Review\nDate: Wednesday, February 19, 2026\nTime: 11:00am \u2013 11:45am PT\nZoom: https://vectrix.zoom.us/j/84726193048\n\nAgenda:\n1. Two redline items from Orion Legal (SLA credits \u00a75.1, termination clause \u00a76.1)\n2. Per-org retention config timeline (VEC-47)\n3. SAML SSO activation timeline\n4. Next steps to contract execution\n\n\u2014 Nina Kowalski\nOps & People, Vectrix Labs\nnina@vectrix.io",
+      "body_html": "<p>Sending the calendar invite now. Details:</p>\n<p>Title: Meridian Health Systems / Vectrix Labs \u2014 SOW Review<br>Date: Wednesday, February 19, 2026<br>Time: 11:00am \u2013 11:45am PT<br>Zoom: https://vectrix.zoom.us/j/84726193048</p>\n<p>Agenda:<br>1. Two redline items from Orion Legal (SLA credits \u00a75.1, termination clause \u00a76.1)<br>2. Per-org retention config timeline (VEC-47)<br>3. SAML SSO activation timeline<br>4. Next steps to contract execution</p>\n<p>\u2014 Nina Kowalski<br>Ops & People, Vectrix Labs<br>nina@vectrix.io</p>",
       "attachments": [
         {
           "filename": "meridian-sow-review-feb19.ics",
-          "type": "text/calendar",
-          "size_kb": 4
+          "mime_type": "text/calendar",
+          "size_bytes": 3840
         }
       ],
-      "is_automated": false,
-      "is_auto_reply": false
+      "in_reply_to": "msg_038",
+      "references": [
+        "msg_036",
+        "msg_037",
+        "msg_038"
+      ],
+      "labels": [
+        "SENT"
+      ],
+      "is_read": true,
+      "is_starred": false,
+      "signature": "Nina Kowalski\nOps & People, Vectrix Labs\nnina@vectrix.io"
     }
   ]
 }

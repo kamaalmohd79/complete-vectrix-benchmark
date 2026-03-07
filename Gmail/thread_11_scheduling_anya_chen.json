@@ -1,89 +1,116 @@
 {
   "thread_id": "thread_11",
-  "subject": "Interview scheduling \u2014 Anya Chen, Sr. Frontend Engineer",
+  "subject": "Interview scheduling \u2014 Sr. Frontend Engineer at Vectrix",
   "category": "scheduling",
-  "participants": [
-    "marcus@vectrix.io",
-    "anya.chen@gmail.com",
-    "nina@vectrix.io"
-  ],
   "messages": [
     {
-      "message_id": "msg_039",
-      "from_email": "marcus@vectrix.io",
-      "from_name": "Marcus Webb",
+      "message_id": "msg_040",
+      "from": {
+        "name": "Marcus Webb",
+        "email": "marcus@vectrix.io"
+      },
       "to": [
         {
-          "email": "anya.chen@gmail.com",
-          "name": "Anya Chen"
+          "name": "Anya Chen",
+          "email": "anya.chen@gmail.com"
         }
       ],
       "cc": [
         {
-          "email": "nina@vectrix.io",
-          "name": "Nina Kowalski"
+          "name": "Nina Kowalski",
+          "email": "nina@vectrix.io"
         }
       ],
       "bcc": [],
       "date": "2026-02-14T09:00:00-08:00",
-      "subject": "Interview scheduling \u2014 Sr. Frontend Engineer role at Vectrix",
-      "body": "Hi Anya,\n\nThank you for completing the take-home assignment. We were genuinely impressed \u2014 the P95/P99 latency chart implementation was exactly the kind of thinking we're looking for.\n\nWe'd like to move forward with the final panel, which consists of:\n- Technical deep dive (60 min): Marcus Webb + Liam Nakamura\n- Product/culture panel (60 min): Dana Reeves + Priya Chandran\n\nWe can combine into a half-day on the same day, or run them back to back with a short break. Would February 27 work? We're flexible on the time slot.\n\nNina Kowalski (CC'd) manages our scheduling \u2014 she'll coordinate once we have a date confirmed.\n\n\u2014 Marcus Webb\nCTO, Vectrix Labs",
+      "subject": "Interview scheduling \u2014 Sr. Frontend Engineer at Vectrix",
+      "body_text": "Hi Anya,\n\nThank you for completing the take-home assignment. We were genuinely impressed \u2014 the P95/P99 latency chart implementation was exactly the kind of thinking we're looking for.\n\nWe'd like to move forward with the final panel:\n- Technical deep dive (60 min): Marcus Webb + Liam Nakamura\n- Product/culture panel (60 min): Dana Reeves + Priya Chandran\n\nWe can combine into a half-day on the same day, or split across two separate days. Would February 27 work? We're flexible on timing.\n\nNina Kowalski (CC'd) manages our scheduling and will coordinate once we have a date.\n\n\u2014 Marcus Webb\nCTO, Vectrix Labs\nmarcus@vectrix.io",
+      "body_html": "<p>Hi Anya,</p>\n<p>Thank you for completing the take-home assignment. We were genuinely impressed \u2014 the P95/P99 latency chart implementation was exactly the kind of thinking we're looking for.</p>\n<p>We'd like to move forward with the final panel:<br>- Technical deep dive (60 min): Marcus Webb + Liam Nakamura<br>- Product/culture panel (60 min): Dana Reeves + Priya Chandran</p>\n<p>We can combine into a half-day on the same day, or split across two separate days. Would February 27 work? We're flexible on timing.</p>\n<p>Nina Kowalski (CC'd) manages our scheduling and will coordinate once we have a date.</p>\n<p>\u2014 Marcus Webb<br>CTO, Vectrix Labs<br>marcus@vectrix.io</p>",
       "attachments": [],
-      "is_automated": false,
-      "is_auto_reply": false
+      "in_reply_to": null,
+      "references": [],
+      "labels": [
+        "SENT"
+      ],
+      "is_read": true,
+      "is_starred": false,
+      "signature": "Marcus Webb\nCTO, Vectrix Labs\nmarcus@vectrix.io"
     },
     {
-      "message_id": "msg_040",
-      "from_email": "anya.chen@gmail.com",
-      "from_name": "Anya Chen",
+      "message_id": "msg_041",
+      "from": {
+        "name": "Anya Chen",
+        "email": "anya.chen@gmail.com"
+      },
       "to": [
         {
-          "email": "marcus@vectrix.io",
-          "name": "Marcus Webb"
+          "name": "Marcus Webb",
+          "email": "marcus@vectrix.io"
         },
         {
-          "email": "nina@vectrix.io",
-          "name": "Nina Kowalski"
+          "name": "Nina Kowalski",
+          "email": "nina@vectrix.io"
         }
       ],
       "cc": [],
       "bcc": [],
       "date": "2026-02-14T11:30:00-08:00",
-      "subject": "Re: Interview scheduling \u2014 Sr. Frontend Engineer role at Vectrix",
-      "body": "Hi Marcus,\n\nThank you \u2014 I'm glad the take-home landed well. I had a lot of fun with the latency chart problem.\n\nFeb 27 works well for me. I'd prefer the combined half-day if possible \u2014 I can do 10am\u20131pm PT with a 15-minute break between the two panels. Does that work for your team?\n\n\u2014 Anya",
+      "subject": "Re: Interview scheduling \u2014 Sr. Frontend Engineer at Vectrix",
+      "body_text": "Hi Marcus,\n\nThank you \u2014 I'm glad the take-home landed well. I had a lot of fun with the latency chart problem.\n\nFeb 27 works well for me. I'd prefer the combined half-day if possible \u2014 10am\u20131pm PT with a short break between the two panels. Does that work for the team?",
+      "body_html": "<p>Hi Marcus,</p>\n<p>Thank you \u2014 I'm glad the take-home landed well. I had a lot of fun with the latency chart problem.</p>\n<p>Feb 27 works well for me. I'd prefer the combined half-day if possible \u2014 10am\u20131pm PT with a short break between the two panels. Does that work for the team?</p>",
       "attachments": [],
-      "is_automated": false,
-      "is_auto_reply": false
+      "in_reply_to": "msg_040",
+      "references": [
+        "msg_040"
+      ],
+      "labels": [
+        "INBOX"
+      ],
+      "is_read": true,
+      "is_starred": false,
+      "signature": null
     },
     {
-      "message_id": "msg_041",
-      "from_email": "nina@vectrix.io",
-      "from_name": "Nina Kowalski",
+      "message_id": "msg_042",
+      "from": {
+        "name": "Nina Kowalski",
+        "email": "nina@vectrix.io"
+      },
       "to": [
         {
-          "email": "anya.chen@gmail.com",
-          "name": "Anya Chen"
+          "name": "Anya Chen",
+          "email": "anya.chen@gmail.com"
         }
       ],
       "cc": [
         {
-          "email": "marcus@vectrix.io",
-          "name": "Marcus Webb"
+          "name": "Marcus Webb",
+          "email": "marcus@vectrix.io"
         }
       ],
       "bcc": [],
       "date": "2026-02-15T09:15:00-08:00",
       "subject": "Re: Interview scheduling \u2014 calendar invite sent",
-      "body": "Hi Anya,\n\nPerfect \u2014 10am\u20131pm PT on Feb 27 is confirmed. Sending the calendar invite now.\n\nSchedule:\n- 10:00\u201311:00am: Technical deep dive (Marcus Webb + Liam Nakamura) \u2014 Zoom\n- 11:00\u201311:15am: Break\n- 11:15am\u201312:15pm: Product/culture panel (Dana Reeves + Priya Chandran) \u2014 Zoom\n\nZoom link is in the invite. Please let me know if you need anything \u2014 happy to answer any logistics questions.\n\n\u2014 Nina\nOps & People, Vectrix Labs",
+      "body_text": "Hi Anya,\n\nPerfect \u2014 10am\u20131pm PT on Feb 27 is confirmed. Calendar invite attached.\n\nSchedule:\n- 10:00\u201311:00am PT: Technical deep dive (Marcus Webb + Liam Nakamura)\n- 11:00\u201311:15am PT: Break\n- 11:15am\u201312:15pm PT: Product/culture panel (Dana Reeves + Priya Chandran)\n\nZoom link is in the invite. Please let me know if you need anything before then.\n\n\u2014 Nina Kowalski\nOps & People, Vectrix Labs\nnina@vectrix.io",
+      "body_html": "<p>Hi Anya,</p>\n<p>Perfect \u2014 10am\u20131pm PT on Feb 27 is confirmed. Calendar invite attached.</p>\n<p>Schedule:<br>- 10:00\u201311:00am PT: Technical deep dive (Marcus Webb + Liam Nakamura)<br>- 11:00\u201311:15am PT: Break<br>- 11:15am\u201312:15pm PT: Product/culture panel (Dana Reeves + Priya Chandran)</p>\n<p>Zoom link is in the invite. Please let me know if you need anything before then.</p>\n<p>\u2014 Nina Kowalski<br>Ops & People, Vectrix Labs<br>nina@vectrix.io</p>",
       "attachments": [
         {
           "filename": "vectrix-interview-feb27-anya-chen.ics",
-          "type": "text/calendar",
-          "size_kb": 5
+          "mime_type": "text/calendar",
+          "size_bytes": 4220
         }
       ],
-      "is_automated": false,
-      "is_auto_reply": false
+      "in_reply_to": "msg_041",
+      "references": [
+        "msg_040",
+        "msg_041"
+      ],
+      "labels": [
+        "SENT"
+      ],
+      "is_read": true,
+      "is_starred": false,
+      "signature": "Nina Kowalski\nOps & People, Vectrix Labs\nnina@vectrix.io"
     }
   ]
 }

@@ -1,84 +1,111 @@
 {
   "thread_id": "thread_16",
-  "subject": "Re: Vanta \u2014 SOC 2 Type II audit timeline",
+  "subject": "Vanta \u2014 SOC 2 Type II readiness review",
   "category": "vendor",
-  "participants": [
-    "alex.morrison@vanta.com",
-    "nina@vectrix.io",
-    "priya@vectrix.io",
-    "marcus@vectrix.io"
-  ],
   "messages": [
     {
-      "message_id": "msg_057",
-      "from_email": "alex.morrison@vanta.com",
-      "from_name": "Alex Morrison",
+      "message_id": "msg_058",
+      "from": {
+        "name": "Alex Morrison",
+        "email": "alex.morrison@vanta.com"
+      },
       "to": [
         {
-          "email": "nina@vectrix.io",
-          "name": "Nina Kowalski"
+          "name": "Nina Kowalski",
+          "email": "nina@vectrix.io"
         }
       ],
       "cc": [],
       "bcc": [],
       "date": "2026-01-15T11:00:00-08:00",
       "subject": "Vanta \u2014 your SOC 2 Type II readiness review",
-      "body": "Hi Nina,\n\nThank you for being a Vanta customer. Following up on your Type I completion in October \u2014 I want to help you plan your path to Type II.\n\nTo get Type II, you'll need:\n1. A minimum 6-month observation window (you're on track \u2014 observation started Oct 15)\n2. An auditor engaged before the observation window closes\n3. A few controls we flagged as 'partial' in the Type I that need remediation\n\nBased on your Oct 15 start, your earliest possible Type II completion is mid-April 2026. For a June 30 commitment to a customer, that's achievable.\n\nI'd love to schedule a 30-min call to walk through the open controls and auditor options. Are you or Priya available next week?\n\n\u2014 Alex Morrison\nCustomer Success, Vanta",
+      "body_text": "Hi Nina,\n\nFollowing up on your SOC 2 Type I completion in October \u2014 I want to help you plan your path to Type II.\n\nWhat you need:\n1. A minimum 6-month observation window (you're on track \u2014 observation started Oct 15)\n2. An auditor engaged before the window closes\n3. Remediation of the controls flagged as 'partial' in your Type I\n\nBased on your Oct 15 start, earliest possible Type II completion is mid-April 2026. For a June 30 commitment to a customer, that is achievable \u2014 but you need to engage an auditor now. Auditors book out 2\u20133 months.\n\nI'd like to schedule 30 minutes to walk through the open controls and auditor options. Are you or Priya available next week?\n\nI'm attaching your readiness report.\n\n\u2014 Alex Morrison\nCustomer Success, Vanta\nalex.morrison@vanta.com",
+      "body_html": "<p>Hi Nina,</p>\n<p>Following up on your SOC 2 Type I completion in October \u2014 I want to help you plan your path to Type II.</p>\n<p>What you need:<br>1. A minimum 6-month observation window (you're on track \u2014 observation started Oct 15)<br>2. An auditor engaged before the window closes<br>3. Remediation of the controls flagged as 'partial' in your Type I</p>\n<p>Based on your Oct 15 start, earliest possible Type II completion is mid-April 2026. For a June 30 commitment to a customer, that is achievable \u2014 but you need to engage an auditor now. Auditors book out 2\u20133 months.</p>\n<p>I'd like to schedule 30 minutes to walk through the open controls and auditor options. Are you or Priya available next week?</p>\n<p>I'm attaching your readiness report.</p>\n<p>\u2014 Alex Morrison<br>Customer Success, Vanta<br>alex.morrison@vanta.com</p>",
       "attachments": [
         {
           "filename": "vectrix-soc2-typeii-readiness.pdf",
-          "type": "application/pdf",
-          "size_kb": 156
+          "mime_type": "application/pdf",
+          "size_bytes": 159800
         }
       ],
-      "is_automated": false,
-      "is_auto_reply": false
+      "in_reply_to": null,
+      "references": [],
+      "labels": [
+        "INBOX",
+        "IMPORTANT"
+      ],
+      "is_read": false,
+      "is_starred": true,
+      "signature": "Alex Morrison\nCustomer Success, Vanta\nalex.morrison@vanta.com"
     },
     {
-      "message_id": "msg_058",
-      "from_email": "nina@vectrix.io",
-      "from_name": "Nina Kowalski",
+      "message_id": "msg_059",
+      "from": {
+        "name": "Nina Kowalski",
+        "email": "nina@vectrix.io"
+      },
       "to": [
         {
-          "email": "priya@vectrix.io",
-          "name": "Priya Chandran"
+          "name": "Priya Chandran",
+          "email": "priya@vectrix.io"
         },
         {
-          "email": "marcus@vectrix.io",
-          "name": "Marcus Webb"
+          "name": "Marcus Webb",
+          "email": "marcus@vectrix.io"
         }
       ],
       "cc": [],
       "bcc": [],
       "date": "2026-01-15T14:30:00-08:00",
       "subject": "Fwd: Vanta SOC 2 Type II \u2014 we need to move on this",
-      "body": "Priya, Marcus,\n\nForwarding from our Vanta CSM. Key takeaway: if we want Type II done by June 30 (which we committed to Meridian), we need to engage an auditor now \u2014 the 6-month observation window is already running but auditors book out 2\u20133 months.\n\nAlso flagged: a few 'partial' controls from our Type I that still need remediation. Marcus \u2014 I think at least two of these are on the engineering side (access logging, encryption key rotation). Can we get on a call with Alex next week?\n\n\u2014 Nina",
+      "body_text": "Priya, Marcus,\n\nForwarding from our Vanta CSM. Key takeaway: if we want SOC 2 Type II done by June 30 (which we committed to Meridian), we need to engage an auditor now \u2014 the window is already running and auditors are booked 2\u20133 months out.\n\nAlso flagged: a few 'partial' controls from our Type I still need remediation. Marcus \u2014 I believe at least two are on the engineering side (access logging, encryption key rotation).\n\nCan we all get on a call with Alex next week?\n\n\u2014 Nina Kowalski\nOps & People, Vectrix Labs\nnina@vectrix.io",
+      "body_html": "<p>Priya, Marcus,</p>\n<p>Forwarding from our Vanta CSM. Key takeaway: if we want SOC 2 Type II done by June 30 (which we committed to Meridian), we need to engage an auditor now \u2014 the window is already running and auditors are booked 2\u20133 months out.</p>\n<p>Also flagged: a few 'partial' controls from our Type I still need remediation. Marcus \u2014 I believe at least two are on the engineering side (access logging, encryption key rotation).</p>\n<p>Can we all get on a call with Alex next week?</p>\n<p>\u2014 Nina Kowalski<br>Ops & People, Vectrix Labs<br>nina@vectrix.io</p>",
       "attachments": [],
-      "is_automated": false,
-      "is_auto_reply": false
+      "in_reply_to": "msg_058",
+      "references": [
+        "msg_058"
+      ],
+      "labels": [
+        "INBOX"
+      ],
+      "is_read": true,
+      "is_starred": true,
+      "signature": "Nina Kowalski\nOps & People, Vectrix Labs\nnina@vectrix.io"
     },
     {
-      "message_id": "msg_059",
-      "from_email": "priya@vectrix.io",
-      "from_name": "Priya Chandran",
+      "message_id": "msg_060",
+      "from": {
+        "name": "Priya Chandran",
+        "email": "priya@vectrix.io"
+      },
       "to": [
         {
-          "email": "nina@vectrix.io",
-          "name": "Nina Kowalski"
+          "name": "Nina Kowalski",
+          "email": "nina@vectrix.io"
         },
         {
-          "email": "marcus@vectrix.io",
-          "name": "Marcus Webb"
+          "name": "Marcus Webb",
+          "email": "marcus@vectrix.io"
         }
       ],
       "cc": [],
       "bcc": [],
       "date": "2026-01-15T16:05:00-08:00",
       "subject": "Re: Fwd: Vanta SOC 2 Type II \u2014 we need to move on this",
-      "body": "Yes \u2014 set up the call with Alex for next week. Marcus and I will both join.\n\nMarcus \u2014 let's use this as an opportunity to get the full open controls list. I don't want Meridian asking about this in the SOW call and us not knowing exactly where we stand.\n\n\u2014 P",
+      "body_text": "Yes \u2014 set up the call with Alex for next week. Marcus and I will both join.\n\nMarcus \u2014 before the call, can you pull the open engineering controls from the Vanta dashboard? I don't want Meridian asking about this in the Feb 19 SOW call and us not knowing exactly where we stand.\n\n\u2014 Priya Chandran\nCEO, Vectrix Labs\npriya@vectrix.io",
+      "body_html": "<p>Yes \u2014 set up the call with Alex for next week. Marcus and I will both join.</p>\n<p>Marcus \u2014 before the call, can you pull the open engineering controls from the Vanta dashboard? I don't want Meridian asking about this in the Feb 19 SOW call and us not knowing exactly where we stand.</p>\n<p>\u2014 Priya Chandran<br>CEO, Vectrix Labs<br>priya@vectrix.io</p>",
       "attachments": [],
-      "is_automated": false,
-      "is_auto_reply": false
+      "in_reply_to": "msg_059",
+      "references": [
+        "msg_058",
+        "msg_059"
+      ],
+      "labels": [
+        "INBOX"
+      ],
+      "is_read": true,
+      "is_starred": false,
+      "signature": "Priya Chandran\nCEO, Vectrix Labs\npriya@vectrix.io"
     }
   ]
 }

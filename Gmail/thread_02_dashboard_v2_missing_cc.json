@@ -6,117 +6,154 @@
     "missing_cc_looped_in_late",
     "email_contradicts_slack_decision"
   ],
-  "participants": [
-    "dana@vectrix.io",
-    "priya@vectrix.io",
-    "marcus@vectrix.io",
-    "tessa@vectrix.io"
-  ],
   "messages": [
     {
       "message_id": "msg_005",
-      "from_email": "dana@vectrix.io",
-      "from_name": "Dana Reeves",
+      "from": {
+        "name": "Dana Reeves",
+        "email": "dana@vectrix.io"
+      },
       "to": [
         {
-          "email": "priya@vectrix.io",
-          "name": "Priya Chandran"
+          "name": "Priya Chandran",
+          "email": "priya@vectrix.io"
         },
         {
-          "email": "marcus@vectrix.io",
-          "name": "Marcus Webb"
+          "name": "Marcus Webb",
+          "email": "marcus@vectrix.io"
         }
       ],
       "cc": [],
       "bcc": [],
       "date": "2026-01-28T14:32:00-08:00",
       "subject": "Dashboard v2 \u2014 product update + comparison mode",
-      "body": "Priya, Marcus,\n\nQuick product update ahead of Sprint 11 planning:\n\n- Core layout: Raj and I approved the 12-screen Figma set last week. Moving forward.\n- Saved views: Sofia is scoping. Two-sprint estimate.\n- Comparison mode (VEC-82): Marcus and I are aligned \u2014 comparison mode IS in scope for v2 launch. Backend changes needed, but we're committing to it. Three customers have specifically asked: Brainloop, Cascade, and one prospect. I am not willing to ship v2 without this feature.\n\nFull brief is in Drive: product/dashboard-v2-product-brief.md\n\n\u2014 Dana",
+      "body_text": "Priya, Marcus,\n\nQuick product update ahead of Sprint 11 planning:\n\n- Core layout: Raj and I approved the 12-screen Figma set last week. Moving forward.\n- Saved views: Sofia is scoping. Two-sprint estimate.\n- Comparison mode (VEC-82): Marcus and I are aligned \u2014 comparison mode IS in scope for v2 launch. Backend changes needed but we're committing to it. Three customers have asked: Brainloop, Cascade, and one prospect. I am not shipping v2 without this feature.\n\nFull brief is in Drive: product/dashboard-v2-product-brief.md\n\n\u2014 Dana Reeves\nHead of Product, Vectrix Labs\ndana@vectrix.io",
+      "body_html": "<p>Priya, Marcus,</p>\n<p>Quick product update ahead of Sprint 11 planning:</p>\n<p>- Core layout: Raj and I approved the 12-screen Figma set last week. Moving forward.<br>- Saved views: Sofia is scoping. Two-sprint estimate.<br>- Comparison mode (VEC-82): Marcus and I are aligned \u2014 comparison mode IS in scope for v2 launch. Backend changes needed but we're committing to it. Three customers have asked: Brainloop, Cascade, and one prospect. I am not shipping v2 without this feature.</p>\n<p>Full brief is in Drive: product/dashboard-v2-product-brief.md</p>\n<p>\u2014 Dana Reeves<br>Head of Product, Vectrix Labs<br>dana@vectrix.io</p>",
       "attachments": [
         {
           "filename": "dashboard-v2-product-brief.md",
-          "type": "text/markdown",
-          "size_kb": 8,
-          "source": "Google Drive link"
+          "mime_type": "text/markdown",
+          "size_bytes": 8240
         }
       ],
-      "is_automated": false,
-      "is_auto_reply": false,
-      "internal_note": "EDGE CASE 1: Tessa is not CC'd even though she is actively selling comparison mode to Cascade and Ridgeway. EDGE CASE 2: Dana says comparison mode is confirmed for v2. On Feb 17 in Slack, Marcus defers it to v2.1. This email becomes stale/contradicted."
+      "in_reply_to": null,
+      "references": [],
+      "labels": [
+        "INBOX",
+        "IMPORTANT"
+      ],
+      "is_read": true,
+      "is_starred": true,
+      "signature": "Dana Reeves\nHead of Product, Vectrix Labs\ndana@vectrix.io"
     },
     {
       "message_id": "msg_006",
-      "from_email": "tessa@vectrix.io",
-      "from_name": "Tessa Moreno",
+      "from": {
+        "name": "Tessa Moreno",
+        "email": "tessa@vectrix.io"
+      },
       "to": [
         {
-          "email": "dana@vectrix.io",
-          "name": "Dana Reeves"
+          "name": "Dana Reeves",
+          "email": "dana@vectrix.io"
         }
       ],
       "cc": [],
       "bcc": [],
       "date": "2026-01-29T09:11:00-08:00",
       "subject": "Re: Dashboard v2 \u2014 product update + comparison mode",
-      "body": "Dana,\n\nHey \u2014 I only saw this because Marcus mentioned it to me. Why wasn't I CC'd?\n\nI'm in active conversations with Maria Chen at Cascade specifically about comparison mode. She asked about it during onboarding and I told her it was coming in v2. I also have it in my notes from Jason Liu at Ridgeway \u2014 he listed it as a deal requirement.\n\nIf we're making v2 scope decisions I need to be in the room. Can you add me going forward?\n\n\u2014 T",
+      "body_text": "Dana,\n\nHey \u2014 I only saw this because Marcus mentioned it to me. Why wasn't I CC'd?\n\nI'm in active conversations with Maria Chen at Cascade specifically about comparison mode. She asked about it during onboarding and I told her it was coming in v2. I also have it in my notes from Jason Liu at Ridgeway \u2014 he listed it as a deal requirement.\n\nIf we're making v2 scope decisions I need to be in the loop. Can you add me going forward?\n\n\u2014 Tessa Moreno\nHead of Sales, Vectrix Labs\ntessa@vectrix.io",
+      "body_html": "<p>Dana,</p>\n<p>Hey \u2014 I only saw this because Marcus mentioned it to me. Why wasn't I CC'd?</p>\n<p>I'm in active conversations with Maria Chen at Cascade specifically about comparison mode. She asked about it during onboarding and I told her it was coming in v2. I also have it in my notes from Jason Liu at Ridgeway \u2014 he listed it as a deal requirement.</p>\n<p>If we're making v2 scope decisions I need to be in the loop. Can you add me going forward?</p>\n<p>\u2014 Tessa Moreno<br>Head of Sales, Vectrix Labs<br>tessa@vectrix.io</p>",
       "attachments": [],
-      "is_automated": false,
-      "is_auto_reply": false
+      "in_reply_to": "msg_005",
+      "references": [
+        "msg_005"
+      ],
+      "labels": [
+        "INBOX"
+      ],
+      "is_read": true,
+      "is_starred": false,
+      "signature": "Tessa Moreno\nHead of Sales, Vectrix Labs\ntessa@vectrix.io"
     },
     {
       "message_id": "msg_007",
-      "from_email": "dana@vectrix.io",
-      "from_name": "Dana Reeves",
+      "from": {
+        "name": "Dana Reeves",
+        "email": "dana@vectrix.io"
+      },
       "to": [
         {
-          "email": "priya@vectrix.io",
-          "name": "Priya Chandran"
+          "name": "Priya Chandran",
+          "email": "priya@vectrix.io"
         },
         {
-          "email": "marcus@vectrix.io",
-          "name": "Marcus Webb"
+          "name": "Marcus Webb",
+          "email": "marcus@vectrix.io"
         },
         {
-          "email": "tessa@vectrix.io",
-          "name": "Tessa Moreno"
+          "name": "Tessa Moreno",
+          "email": "tessa@vectrix.io"
         }
       ],
       "cc": [],
       "bcc": [],
       "date": "2026-01-29T11:45:00-08:00",
       "subject": "Re: Dashboard v2 \u2014 product update + comparison mode [Tessa added]",
-      "body": "Tessa \u2014 you're right, I'm sorry. Should have had you on this from the start.\n\nLooping you in now. Comparison mode (VEC-82) is confirmed for v2 scope as of yesterday's alignment with Marcus. Priya is on board. I'll make sure you're in all v2 decisions going forward.\n\n\u2014 Dana",
+      "body_text": "Tessa \u2014 you're right, I'm sorry. Should have had you on this from the start.\n\nLooping you in now. Comparison mode (VEC-82) is confirmed for v2 scope as of yesterday's alignment with Marcus. Priya is on board. I'll make sure you're in all v2 decisions going forward.\n\n\u2014 Dana Reeves\nHead of Product, Vectrix Labs\ndana@vectrix.io",
+      "body_html": "<p>Tessa \u2014 you're right, I'm sorry. Should have had you on this from the start.</p>\n<p>Looping you in now. Comparison mode (VEC-82) is confirmed for v2 scope as of yesterday's alignment with Marcus. Priya is on board. I'll make sure you're in all v2 decisions going forward.</p>\n<p>\u2014 Dana Reeves<br>Head of Product, Vectrix Labs<br>dana@vectrix.io</p>",
       "attachments": [],
-      "is_automated": false,
-      "is_auto_reply": false
+      "in_reply_to": "msg_006",
+      "references": [
+        "msg_005",
+        "msg_006"
+      ],
+      "labels": [
+        "INBOX"
+      ],
+      "is_read": true,
+      "is_starred": false,
+      "signature": "Dana Reeves\nHead of Product, Vectrix Labs\ndana@vectrix.io"
     },
     {
       "message_id": "msg_008",
-      "from_email": "tessa@vectrix.io",
-      "from_name": "Tessa Moreno",
+      "from": {
+        "name": "Tessa Moreno",
+        "email": "tessa@vectrix.io"
+      },
       "to": [
         {
-          "email": "dana@vectrix.io",
-          "name": "Dana Reeves"
+          "name": "Dana Reeves",
+          "email": "dana@vectrix.io"
         },
         {
-          "email": "priya@vectrix.io",
-          "name": "Priya Chandran"
+          "name": "Priya Chandran",
+          "email": "priya@vectrix.io"
         },
         {
-          "email": "marcus@vectrix.io",
-          "name": "Marcus Webb"
+          "name": "Marcus Webb",
+          "email": "marcus@vectrix.io"
         }
       ],
       "cc": [],
       "bcc": [],
       "date": "2026-01-30T08:22:00-08:00",
       "subject": "Re: Dashboard v2 \u2014 product update + comparison mode [Tessa added]",
-      "body": "Thanks. Good to know comparison mode is locked for v2 \u2014 I'll confirm that with Maria Chen this week.\n\nOne note from my Cascade conversations: Maria's specific ask is week-over-week comparison, not just custom date ranges. Worth making sure Raj and Sofia have that context from the Slack discussion I had with Marcus last week.\n\n\u2014 T",
+      "body_text": "Thanks for adding me. Good to know comparison mode is locked for v2 \u2014 I'll confirm that with Maria Chen this week.\n\nOne note from my Cascade conversations: Maria's specific ask is week-over-week comparison, not just custom date ranges. Worth making sure Raj and Sofia have that context from my Slack thread with Marcus last week.\n\n\u2014 Tessa Moreno\nHead of Sales, Vectrix Labs\ntessa@vectrix.io",
+      "body_html": "<p>Thanks for adding me. Good to know comparison mode is locked for v2 \u2014 I'll confirm that with Maria Chen this week.</p>\n<p>One note from my Cascade conversations: Maria's specific ask is week-over-week comparison, not just custom date ranges. Worth making sure Raj and Sofia have that context from my Slack thread with Marcus last week.</p>\n<p>\u2014 Tessa Moreno<br>Head of Sales, Vectrix Labs<br>tessa@vectrix.io</p>",
       "attachments": [],
-      "is_automated": false,
-      "is_auto_reply": false,
-      "internal_note": "Tessa references her Slack conversation with Marcus \u2014 she has cross-platform context that isn't in this email thread."
+      "in_reply_to": "msg_007",
+      "references": [
+        "msg_005",
+        "msg_006",
+        "msg_007"
+      ],
+      "labels": [
+        "INBOX"
+      ],
+      "is_read": true,
+      "is_starred": false,
+      "signature": "Tessa Moreno\nHead of Sales, Vectrix Labs\ntessa@vectrix.io"
     }
   ]
 }

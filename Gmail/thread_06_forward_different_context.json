@@ -2,89 +2,125 @@
   "thread_id": "thread_06",
   "subject": "Fwd: ClickHouse cost trajectory \u2014 thoughts?",
   "category": "internal",
-  "edge_cases": ["forwarded_chain_different_context"],
-  "participants": [
-    "marcus@vectrix.io",
-    "jordan@vectrix.io",
-    "david.kim@angelinvestor.com"
+  "edge_cases": [
+    "forwarded_chain_different_context"
   ],
   "messages": [
     {
       "message_id": "msg_020",
-      "from_email": "jordan@vectrix.io",
-      "from_name": "Jordan Okafor",
+      "from": {
+        "name": "Jordan Okafor",
+        "email": "jordan@vectrix.io"
+      },
       "to": [
         {
-          "email": "marcus@vectrix.io",
-          "name": "Marcus Webb"
+          "name": "Marcus Webb",
+          "email": "marcus@vectrix.io"
         }
       ],
       "cc": [],
       "bcc": [],
       "date": "2026-02-10T09:14:00-08:00",
       "subject": "ClickHouse cost trajectory \u2014 are we sure about this?",
-      "body": "Marcus,\n\nClickHouse Cloud hit $1,100 this month. That's up from $800 when we first provisioned it in November. I know we said it would grow with event volume but I want to make sure we have a ceiling in mind.\n\nAt 10% month-over-month growth, we're at $2,000/mo by September. You mentioned a $2K threshold before we evaluate self-hosting. Are we still using that number? Because at current growth we'll be there in 7 months.\n\nI'm not saying we made the wrong call \u2014 the performance gains are real. I just want to make sure we're tracking this and not getting surprised.\n\n\u2014 J",
+      "body_text": "Marcus,\n\nClickHouse Cloud hit $1,100 this month. Up from $800 when we provisioned in November. I know we said it would grow with volume, but I want to make sure we have a ceiling in mind.\n\nAt 10% month-over-month growth, we're at $2,000/mo by September. You mentioned a $2K threshold before we evaluate self-hosting. Are we still using that number? Because at current growth we'll be there in 7 months.\n\nI'm not saying we made the wrong call \u2014 the performance gains are real. I just want to make sure we're tracking this and not getting surprised.\n\n\u2014 Jordan Okafor\nDevOps / Infra, Vectrix Labs\njordan@vectrix.io",
+      "body_html": "<p>Marcus,</p>\n<p>ClickHouse Cloud hit $1,100 this month. Up from $800 when we provisioned in November. I know we said it would grow with volume, but I want to make sure we have a ceiling in mind.</p>\n<p>At 10% month-over-month growth, we're at $2,000/mo by September. You mentioned a $2K threshold before we evaluate self-hosting. Are we still using that number? Because at current growth we'll be there in 7 months.</p>\n<p>I'm not saying we made the wrong call \u2014 the performance gains are real. I just want to make sure we're tracking this and not getting surprised.</p>\n<p>\u2014 Jordan Okafor<br>DevOps / Infra, Vectrix Labs<br>jordan@vectrix.io</p>",
       "attachments": [],
-      "is_automated": false,
-      "is_auto_reply": false
+      "in_reply_to": null,
+      "references": [],
+      "labels": [
+        "INBOX"
+      ],
+      "is_read": true,
+      "is_starred": false,
+      "signature": "Jordan Okafor\nDevOps / Infra, Vectrix Labs\njordan@vectrix.io"
     },
     {
       "message_id": "msg_021",
-      "from_email": "marcus@vectrix.io",
-      "from_name": "Marcus Webb",
+      "from": {
+        "name": "Marcus Webb",
+        "email": "marcus@vectrix.io"
+      },
       "to": [
         {
-          "email": "jordan@vectrix.io",
-          "name": "Jordan Okafor"
+          "name": "Jordan Okafor",
+          "email": "jordan@vectrix.io"
         }
       ],
       "cc": [],
       "bcc": [],
       "date": "2026-02-10T10:32:00-08:00",
       "subject": "Re: ClickHouse cost trajectory \u2014 are we sure about this?",
-      "body": "Fair point. $2K threshold stands \u2014 we evaluate self-hosting if we consistently exceed $2K for two consecutive months. At that point the EC2 math starts to work again.\n\nTo your September estimate: I think you're modeling linear growth but event volume will grow faster than that as we add customers. That said, I want a proper cost model. Can you build a simple spreadsheet \u2014 projected ClickHouse cost at 10%, 20%, 30% MoM event growth? I want to share it with David Kim \u2014 he has experience with ClickHouse at scale and might have useful input on the self-hosting threshold.\n\n-M",
+      "body_text": "Fair point. $2K threshold stands \u2014 we evaluate self-hosting if we consistently exceed $2K for two consecutive months.\n\nI want a proper cost model though. Can you build a simple spreadsheet \u2014 projected ClickHouse cost at 10%, 20%, 30% MoM event growth? I want to share it with David Kim; he has experience with ClickHouse at scale and might have useful input on the self-hosting threshold.\n\n\u2014 Marcus Webb\nCTO, Vectrix Labs\nmarcus@vectrix.io",
+      "body_html": "<p>Fair point. $2K threshold stands \u2014 we evaluate self-hosting if we consistently exceed $2K for two consecutive months.</p>\n<p>I want a proper cost model though. Can you build a simple spreadsheet \u2014 projected ClickHouse cost at 10%, 20%, 30% MoM event growth? I want to share it with David Kim; he has experience with ClickHouse at scale and might have useful input on the self-hosting threshold.</p>\n<p>\u2014 Marcus Webb<br>CTO, Vectrix Labs<br>marcus@vectrix.io</p>",
       "attachments": [],
-      "is_automated": false,
-      "is_auto_reply": false
+      "in_reply_to": "msg_020",
+      "references": [
+        "msg_020"
+      ],
+      "labels": [
+        "INBOX"
+      ],
+      "is_read": true,
+      "is_starred": false,
+      "signature": "Marcus Webb\nCTO, Vectrix Labs\nmarcus@vectrix.io"
     },
     {
       "message_id": "msg_022",
-      "from_email": "marcus@vectrix.io",
-      "from_name": "Marcus Webb",
+      "from": {
+        "name": "Marcus Webb",
+        "email": "marcus@vectrix.io"
+      },
       "to": [
         {
-          "email": "david.kim@angelinvestor.com",
-          "name": "David Kim"
+          "name": "David Kim",
+          "email": "david.kim@angelinvestor.com"
         }
       ],
       "cc": [],
       "bcc": [],
       "date": "2026-02-11T08:45:00-08:00",
       "subject": "Fwd: ClickHouse cost trajectory \u2014 thoughts?",
-      "body": "David,\n\nForwarding a technical thread from our team \u2014 curious if you have any input based on what you've seen at scale.\n\nQuick context: we migrated from self-hosted TimescaleDB to ClickHouse Cloud in December. Write performance is dramatically better (p99 18ms at 52M events/day vs 340ms on TimescaleDB). The tradeoff is cost \u2014 we're at $1,100/mo now and projecting continued growth as we add customers.\n\nMy instinct is that the managed overhead savings justify ClickHouse Cloud up to ~$2K/mo, at which point we evaluate a self-hosted cluster. Have you seen other companies navigate this tradeoff well?\n\n[ignore Jordan's tone in the thread below \u2014 he's just being Jordan, he's actually right to flag it, I just want to make sure we're thinking about it clearly rather than reacting to a single month's number]\n\n\u2014 Marcus\n\n--- Forwarded thread: ClickHouse cost trajectory ---\n\n[Jordan's message and Marcus's reply are included below this point in the forward]",
+      "body_text": "David,\n\nForwarding a technical thread from our team \u2014 curious if you have any input based on what you've seen at scale.\n\nContext: we migrated from self-hosted TimescaleDB to ClickHouse Cloud in December. Write performance dramatically improved (p99 18ms vs 340ms on TimescaleDB). The tradeoff is cost \u2014 we're at $1,100/mo now and expect continued growth as we add customers.\n\nMy instinct is that managed overhead savings justify ClickHouse Cloud up to ~$2K/mo, then we evaluate a self-hosted cluster. Have you seen other companies navigate this tradeoff well?\n\n[ignore Jordan's tone in the thread below \u2014 he's just being Jordan, he's actually right to flag it, I just want to make sure we're thinking about it clearly rather than reacting to a single month's number]\n\n--- Forwarded thread below ---\n\n\u2014 Marcus Webb\nCTO, Vectrix Labs\nmarcus@vectrix.io",
+      "body_html": "<p>David,</p>\n<p>Forwarding a technical thread from our team \u2014 curious if you have any input based on what you've seen at scale.</p>\n<p>Context: we migrated from self-hosted TimescaleDB to ClickHouse Cloud in December. Write performance dramatically improved (p99 18ms vs 340ms on TimescaleDB). The tradeoff is cost \u2014 we're at $1,100/mo now and expect continued growth as we add customers.</p>\n<p>My instinct is that managed overhead savings justify ClickHouse Cloud up to ~$2K/mo, then we evaluate a self-hosted cluster. Have you seen other companies navigate this tradeoff well?</p>\n<p>[ignore Jordan's tone in the thread below \u2014 he's just being Jordan, he's actually right to flag it, I just want to make sure we're thinking about it clearly rather than reacting to a single month's number]</p>\n<p>--- Forwarded thread below ---</p>\n<p>\u2014 Marcus Webb<br>CTO, Vectrix Labs<br>marcus@vectrix.io</p>",
       "attachments": [],
-      "is_automated": false,
-      "is_auto_reply": false,
-      "internal_note": "EDGE CASE: Marcus forwarded an internal thread to an external investor. He adds 'ignore Jordan's tone' \u2014 framing Jordan's legitimate concern as personality rather than substance. David Kim now has visibility into the cost discussion and Jordan's concerns."
+      "in_reply_to": null,
+      "references": [],
+      "labels": [
+        "SENT"
+      ],
+      "is_read": true,
+      "is_starred": false,
+      "signature": "Marcus Webb\nCTO, Vectrix Labs\nmarcus@vectrix.io"
     },
     {
       "message_id": "msg_023",
-      "from_email": "david.kim@angelinvestor.com",
-      "from_name": "David Kim",
+      "from": {
+        "name": "David Kim",
+        "email": "david.kim@angelinvestor.com"
+      },
       "to": [
         {
-          "email": "marcus@vectrix.io",
-          "name": "Marcus Webb"
+          "name": "Marcus Webb",
+          "email": "marcus@vectrix.io"
         }
       ],
       "cc": [],
       "bcc": [],
       "date": "2026-02-11T14:20:00-08:00",
       "subject": "Re: Fwd: ClickHouse cost trajectory \u2014 thoughts?",
-      "body": "Marcus,\n\nTimely question. Short answer: your $2K threshold is reasonable but I'd push it to $2.5K before triggering a self-hosting evaluation \u2014 the engineering time to set up and maintain a ClickHouse cluster will cost you more than $500/mo in opportunity cost at your stage.\n\nLonger answer: the companies I've seen manage this well keep a running cost-per-million-events metric rather than watching total cost. As long as cost/event is flat or declining (which it should be as you get volume discounts), growing absolute cost is actually a good sign. Have Jordan track that instead of the raw dollar figure.\n\nHappy to jump on a call if useful.\n\n\u2014 David",
+      "body_text": "Marcus,\n\nTimely question. Short answer: your $2K threshold is reasonable but I'd push it to $2.5K before triggering a self-hosting evaluation \u2014 the engineering time to set up and maintain a ClickHouse cluster will cost you more than $500/mo in opportunity cost at your stage.\n\nLonger answer: the companies I've seen manage this well keep a running cost-per-million-events metric rather than watching total cost. As long as cost/event is flat or declining (which it should be as you get volume discounts), growing absolute cost is actually a good sign. Have Jordan track that instead of the raw dollar figure.\n\nHappy to jump on a call if useful.\n\n\u2014 David Kim\nAngel Investor\ndavid.kim@angelinvestor.com",
+      "body_html": "<p>Marcus,</p>\n<p>Timely question. Short answer: your $2K threshold is reasonable but I'd push it to $2.5K before triggering a self-hosting evaluation \u2014 the engineering time to set up and maintain a ClickHouse cluster will cost you more than $500/mo in opportunity cost at your stage.</p>\n<p>Longer answer: the companies I've seen manage this well keep a running cost-per-million-events metric rather than watching total cost. As long as cost/event is flat or declining (which it should be as you get volume discounts), growing absolute cost is actually a good sign. Have Jordan track that instead of the raw dollar figure.</p>\n<p>Happy to jump on a call if useful.</p>\n<p>\u2014 David Kim<br>Angel Investor<br>david.kim@angelinvestor.com</p>",
       "attachments": [],
-      "is_automated": false,
-      "is_auto_reply": false
+      "in_reply_to": "msg_022",
+      "references": [
+        "msg_022"
+      ],
+      "labels": [
+        "INBOX"
+      ],
+      "is_read": true,
+      "is_starred": false,
+      "signature": "David Kim\nAngel Investor\ndavid.kim@angelinvestor.com"
     }
   ]
 }

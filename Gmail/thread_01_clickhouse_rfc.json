@@ -2,124 +2,163 @@
   "thread_id": "thread_01",
   "subject": "ClickHouse Migration RFC \u2014 please review before Friday",
   "category": "internal",
-  "participants": [
-    "marcus@vectrix.io",
-    "liam@vectrix.io",
-    "jordan@vectrix.io",
-    "priya@vectrix.io"
-  ],
   "messages": [
     {
       "message_id": "msg_001",
-      "from_email": "marcus@vectrix.io",
-      "from_name": "Marcus Webb",
+      "from": {
+        "name": "Marcus Webb",
+        "email": "marcus@vectrix.io"
+      },
       "to": [
         {
-          "email": "liam@vectrix.io",
-          "name": "Liam Nakamura"
+          "name": "Liam Nakamura",
+          "email": "liam@vectrix.io"
         },
         {
-          "email": "jordan@vectrix.io",
-          "name": "Jordan Okafor"
+          "name": "Jordan Okafor",
+          "email": "jordan@vectrix.io"
         }
       ],
       "cc": [
         {
-          "email": "priya@vectrix.io",
-          "name": "Priya Chandran"
+          "name": "Priya Chandran",
+          "email": "priya@vectrix.io"
         }
       ],
       "bcc": [],
       "date": "2025-11-12T10:24:00-08:00",
       "subject": "ClickHouse Migration RFC \u2014 please review before Friday",
-      "body": "Liam, Jordan,\n\nI've uploaded the ClickHouse migration RFC to Drive (Engineering/Specs). Can you both review before Friday's sync? I want a go/no-go call by end of next week.\n\nTwo things I most want your eyes on:\n1. Schema design \u2014 the event_metadata column type decision (LowCardinality vs Nullable). I've proposed LowCardinality with null coercion on ingest, but I want Liam to sanity-check the write path.\n2. Retention change \u2014 moving from 180 to 90 days raw. Jordan already signed off on this from a cost perspective; want to make sure Liam is aligned.\n\nPriya is CC'd for visibility \u2014 no action needed from her.\n\n-M",
+      "body_text": "Liam, Jordan,\n\nI've uploaded the ClickHouse migration RFC to Drive (Engineering/Specs). Can you both review before Friday's sync? I want a go/no-go call by end of next week.\n\nTwo things I most want your eyes on:\n1. Schema design \u2014 the event_metadata column type (LowCardinality vs Nullable). I've proposed LowCardinality with null coercion on ingest, but want Liam to sanity-check the write path.\n2. Retention change \u2014 moving from 180 to 90 days raw. Jordan already signed off on this from a cost perspective; want to make sure Liam is aligned.\n\nPriya is CC'd for visibility \u2014 no action needed from her.\n\n\u2014 Marcus Webb\nCTO, Vectrix Labs\nmarcus@vectrix.io",
+      "body_html": "<p>Liam, Jordan,</p>\n<p>I've uploaded the ClickHouse migration RFC to Drive (Engineering/Specs). Can you both review before Friday's sync? I want a go/no-go call by end of next week.</p>\n<p>Two things I most want your eyes on:<br>1. Schema design \u2014 the event_metadata column type (LowCardinality vs Nullable). I've proposed LowCardinality with null coercion on ingest, but want Liam to sanity-check the write path.<br>2. Retention change \u2014 moving from 180 to 90 days raw. Jordan already signed off on this from a cost perspective; want to make sure Liam is aligned.</p>\n<p>Priya is CC'd for visibility \u2014 no action needed from her.</p>\n<p>\u2014 Marcus Webb<br>CTO, Vectrix Labs<br>marcus@vectrix.io</p>",
       "attachments": [],
-      "is_automated": false,
-      "is_auto_reply": false
+      "in_reply_to": null,
+      "references": [],
+      "labels": [
+        "INBOX"
+      ],
+      "is_read": true,
+      "is_starred": false,
+      "signature": "Marcus Webb\nCTO, Vectrix Labs\nmarcus@vectrix.io"
     },
     {
       "message_id": "msg_002",
-      "from_email": "liam@vectrix.io",
-      "from_name": "Liam Nakamura",
+      "from": {
+        "name": "Liam Nakamura",
+        "email": "liam@vectrix.io"
+      },
       "to": [
         {
-          "email": "marcus@vectrix.io",
-          "name": "Marcus Webb"
+          "name": "Marcus Webb",
+          "email": "marcus@vectrix.io"
         }
       ],
       "cc": [
         {
-          "email": "jordan@vectrix.io",
-          "name": "Jordan Okafor"
+          "name": "Jordan Okafor",
+          "email": "jordan@vectrix.io"
         },
         {
-          "email": "priya@vectrix.io",
-          "name": "Priya Chandran"
+          "name": "Priya Chandran",
+          "email": "priya@vectrix.io"
         }
       ],
       "bcc": [],
       "date": "2025-11-13T08:47:00-08:00",
       "subject": "Re: ClickHouse Migration RFC \u2014 please review before Friday",
-      "body": "Reviewed. Two things:\n\n1. LowCardinality for event_metadata is correct. One thing to watch: if cardinality exceeds ~10K distinct values, ClickHouse silently degrades it to a regular String. We should add a cardinality monitor post-launch.\n2. The ZSTD compression config says 'default' \u2014 I'd specify ZSTD(3) explicitly. The default has changed across ClickHouse versions and I don't want a silent regression after a Cloud update.\n\nEverything else looks solid. +1 to proceed.\n\n\u2014 L",
+      "body_text": "Reviewed. Two things:\n\n1. LowCardinality for event_metadata is correct. Watch out: if cardinality exceeds ~10K distinct values, ClickHouse silently degrades it to a regular String. We should add a cardinality monitor post-launch.\n2. The ZSTD compression config says 'default' \u2014 I'd specify ZSTD(3) explicitly. The default has changed across ClickHouse versions and a Cloud update could silently regress it.\n\nEverything else looks solid. +1 to proceed.\n\n\u2014 Liam Nakamura\nSenior Backend Engineer, Vectrix Labs\nliam@vectrix.io",
+      "body_html": "<p>Reviewed. Two things:</p>\n<p>1. LowCardinality for event_metadata is correct. Watch out: if cardinality exceeds ~10K distinct values, ClickHouse silently degrades it to a regular String. We should add a cardinality monitor post-launch.<br>2. The ZSTD compression config says 'default' \u2014 I'd specify ZSTD(3) explicitly. The default has changed across ClickHouse versions and a Cloud update could silently regress it.</p>\n<p>Everything else looks solid. +1 to proceed.</p>\n<p>\u2014 Liam Nakamura<br>Senior Backend Engineer, Vectrix Labs<br>liam@vectrix.io</p>",
       "attachments": [],
-      "is_automated": false,
-      "is_auto_reply": false
+      "in_reply_to": "msg_001",
+      "references": [
+        "msg_001"
+      ],
+      "labels": [
+        "INBOX"
+      ],
+      "is_read": true,
+      "is_starred": false,
+      "signature": "Liam Nakamura\nSenior Backend Engineer, Vectrix Labs\nliam@vectrix.io"
     },
     {
       "message_id": "msg_003",
-      "from_email": "jordan@vectrix.io",
-      "from_name": "Jordan Okafor",
+      "from": {
+        "name": "Jordan Okafor",
+        "email": "jordan@vectrix.io"
+      },
       "to": [
         {
-          "email": "marcus@vectrix.io",
-          "name": "Marcus Webb"
+          "name": "Marcus Webb",
+          "email": "marcus@vectrix.io"
         },
         {
-          "email": "liam@vectrix.io",
-          "name": "Liam Nakamura"
+          "name": "Liam Nakamura",
+          "email": "liam@vectrix.io"
         }
       ],
       "cc": [
         {
-          "email": "priya@vectrix.io",
-          "name": "Priya Chandran"
+          "name": "Priya Chandran",
+          "email": "priya@vectrix.io"
         }
       ],
       "bcc": [],
       "date": "2025-11-13T11:03:00-08:00",
       "subject": "Re: ClickHouse Migration RFC \u2014 please review before Friday",
-      "body": "Staging cluster is up in us-east-1. I'm running a replay of last week's Brainloop traffic against it and write latency looks good \u2014 p99 is 18ms at 52M events/day.\n\nOne flag: ClickHouse Cloud is quoting $800/mo for the tier I provisioned. That's roughly double the TimescaleDB EC2 instance. I know we projected this \u2014 just flagging so nobody is surprised when the first invoice lands.\n\n\u2014 J",
+      "body_text": "Staging cluster is up in us-east-1. I'm running a replay of last week's Brainloop traffic \u2014 write latency p99 is 18ms at 52M events/day, which is strong.\n\nOne flag: ClickHouse Cloud is quoting $800/mo for the tier I provisioned. That's roughly double the TimescaleDB EC2 instance. I know we projected this \u2014 just flagging so nobody is surprised when the first invoice lands.\n\n\u2014 Jordan Okafor\nDevOps / Infra, Vectrix Labs\njordan@vectrix.io",
+      "body_html": "<p>Staging cluster is up in us-east-1. I'm running a replay of last week's Brainloop traffic \u2014 write latency p99 is 18ms at 52M events/day, which is strong.</p>\n<p>One flag: ClickHouse Cloud is quoting $800/mo for the tier I provisioned. That's roughly double the TimescaleDB EC2 instance. I know we projected this \u2014 just flagging so nobody is surprised when the first invoice lands.</p>\n<p>\u2014 Jordan Okafor<br>DevOps / Infra, Vectrix Labs<br>jordan@vectrix.io</p>",
       "attachments": [],
-      "is_automated": false,
-      "is_auto_reply": false
+      "in_reply_to": "msg_002",
+      "references": [
+        "msg_001",
+        "msg_002"
+      ],
+      "labels": [
+        "INBOX"
+      ],
+      "is_read": true,
+      "is_starred": false,
+      "signature": "Jordan Okafor\nDevOps / Infra, Vectrix Labs\njordan@vectrix.io"
     },
     {
       "message_id": "msg_004",
-      "from_email": "marcus@vectrix.io",
-      "from_name": "Marcus Webb",
+      "from": {
+        "name": "Marcus Webb",
+        "email": "marcus@vectrix.io"
+      },
       "to": [
         {
-          "email": "liam@vectrix.io",
-          "name": "Liam Nakamura"
+          "name": "Liam Nakamura",
+          "email": "liam@vectrix.io"
         },
         {
-          "email": "jordan@vectrix.io",
-          "name": "Jordan Okafor"
+          "name": "Jordan Okafor",
+          "email": "jordan@vectrix.io"
         }
       ],
       "cc": [
         {
-          "email": "priya@vectrix.io",
-          "name": "Priya Chandran"
+          "name": "Priya Chandran",
+          "email": "priya@vectrix.io"
         }
       ],
       "bcc": [],
       "date": "2025-11-14T09:15:00-08:00",
       "subject": "Re: ClickHouse Migration RFC \u2014 please review before Friday",
-      "body": "Good catches both. Liam \u2014 updating RFC to ZSTD(3) explicitly and adding a cardinality monitor note. Jordan \u2014 the $800/mo is accounted for in the infra cost review from Oct 20. Break-even vs. TimescaleDB is around 45M events/day, which we'll hit by January.\n\nGreen light to proceed. Phase 1 starts next week. Jordan, can you have staging fully validated by Nov 22?\n\n-M",
+      "body_text": "Good catches both. Liam \u2014 updating RFC to ZSTD(3) explicitly and adding a cardinality monitor note. Jordan \u2014 the $800/mo is accounted for in the Oct 20 infra cost review. Break-even vs. TimescaleDB is around 45M events/day, which we'll hit by January.\n\nGreen light to proceed. Phase 1 starts next week. Jordan, can you have staging fully validated by Nov 22?\n\n\u2014 Marcus Webb\nCTO, Vectrix Labs\nmarcus@vectrix.io",
+      "body_html": "<p>Good catches both. Liam \u2014 updating RFC to ZSTD(3) explicitly and adding a cardinality monitor note. Jordan \u2014 the $800/mo is accounted for in the Oct 20 infra cost review. Break-even vs. TimescaleDB is around 45M events/day, which we'll hit by January.</p>\n<p>Green light to proceed. Phase 1 starts next week. Jordan, can you have staging fully validated by Nov 22?</p>\n<p>\u2014 Marcus Webb<br>CTO, Vectrix Labs<br>marcus@vectrix.io</p>",
       "attachments": [],
-      "is_automated": false,
-      "is_auto_reply": false
+      "in_reply_to": "msg_003",
+      "references": [
+        "msg_001",
+        "msg_002",
+        "msg_003"
+      ],
+      "labels": [
+        "INBOX"
+      ],
+      "is_read": true,
+      "is_starred": false,
+      "signature": "Marcus Webb\nCTO, Vectrix Labs\nmarcus@vectrix.io"
     }
   ]
 }
