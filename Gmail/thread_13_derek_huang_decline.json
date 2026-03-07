@@ -1,0 +1,114 @@
+{
+  "thread_id": "thread_13",
+  "subject": "Re: Offer \u2014 Senior Frontend Engineer at Vectrix Labs",
+  "category": "recruiting",
+  "participants": [
+    "marcus@vectrix.io",
+    "derek.huang@email.com",
+    "nina@vectrix.io",
+    "priya@vectrix.io"
+  ],
+  "messages": [
+    {
+      "message_id": "msg_046",
+      "from_email": "nina@vectrix.io",
+      "from_name": "Nina Kowalski",
+      "to": [
+        {
+          "email": "derek.huang@email.com",
+          "name": "Derek Huang"
+        }
+      ],
+      "cc": [
+        {
+          "email": "marcus@vectrix.io",
+          "name": "Marcus Webb"
+        }
+      ],
+      "bcc": [],
+      "date": "2026-01-20T10:00:00-08:00",
+      "subject": "Offer \u2014 Senior Frontend Engineer at Vectrix Labs",
+      "body": "Hi Derek,\n\nWe're thrilled to extend an offer for the Senior Frontend Engineer role at Vectrix Labs.\n\nOffer details:\n- Base salary: $145,000/year\n- Equity: 0.18% (75,000 options, 4-year vest, 1-year cliff, $0.04 exercise price)\n- Start date: February 3, 2026 (flexible)\n- Full benefits per the attached summary\n\nPlease review the attached offer letter. We'd love to have your decision by January 24.\n\n\u2014 Nina Kowalski\nOps & People, Vectrix Labs",
+      "attachments": [
+        {
+          "filename": "derek-huang-offer-letter.pdf",
+          "type": "application/pdf",
+          "size_kb": 198
+        },
+        {
+          "filename": "employee-benefits-summary.pdf",
+          "type": "application/pdf",
+          "size_kb": 312
+        }
+      ],
+      "is_automated": false,
+      "is_auto_reply": false
+    },
+    {
+      "message_id": "msg_047",
+      "from_email": "derek.huang@email.com",
+      "from_name": "Derek Huang",
+      "to": [
+        {
+          "email": "nina@vectrix.io",
+          "name": "Nina Kowalski"
+        }
+      ],
+      "cc": [],
+      "bcc": [],
+      "date": "2026-01-23T16:45:00-08:00",
+      "subject": "Re: Offer \u2014 Senior Frontend Engineer at Vectrix Labs",
+      "body": "Hi Nina,\n\nThank you so much for the offer and for the time the team spent with me. I have a lot of respect for what Marcus and the team are building.\n\nUnfortunately, I'm going to have to decline. I've accepted an offer elsewhere \u2014 the comp was closer to my target ($160K base) and the role is fully remote without any in-person expectations.\n\nI hope our paths cross again. Genuinely rooting for Vectrix.\n\n\u2014 Derek",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false
+    },
+    {
+      "message_id": "msg_048",
+      "from_email": "marcus@vectrix.io",
+      "from_name": "Marcus Webb",
+      "to": [
+        {
+          "email": "priya@vectrix.io",
+          "name": "Priya Chandran"
+        }
+      ],
+      "cc": [
+        {
+          "email": "nina@vectrix.io",
+          "name": "Nina Kowalski"
+        }
+      ],
+      "bcc": [],
+      "date": "2026-01-23T17:15:00-08:00",
+      "subject": "Derek Huang declined \u2014 we need to revisit the band",
+      "body": "Priya,\n\nDerek declined. He said comp was the issue \u2014 $145K wasn't close enough to his target and he got $160K elsewhere.\n\nThis is the second candidate in two months where we've lost at offer stage on comp. I think we need to move the band to $145K\u2013$165K and be willing to go to $158\u2013$165K for strong candidates. At $145K we're fighting with Series B companies on price and losing.\n\nAmanda at TalentBridge told me the current market rate for this role in SF is $155K\u2013$170K. We're at the bottom of that range.\n\nCan we get this approved so we can repost and move on? I want Anya Chen to be our next candidate \u2014 she's in TalentBridge's pipeline and her background is exactly what we need.\n\n\u2014 Marcus",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false
+    },
+    {
+      "message_id": "msg_049",
+      "from_email": "priya@vectrix.io",
+      "from_name": "Priya Chandran",
+      "to": [
+        {
+          "email": "marcus@vectrix.io",
+          "name": "Marcus Webb"
+        },
+        {
+          "email": "nina@vectrix.io",
+          "name": "Nina Kowalski"
+        }
+      ],
+      "cc": [],
+      "bcc": [],
+      "date": "2026-01-24T09:02:00-08:00",
+      "subject": "Re: Derek Huang declined \u2014 we need to revisit the band",
+      "body": "Approved. New band: $145K\u2013$165K. We can go to $160K without another approval cycle; above $160K ping me first.\n\nNina \u2014 please update the JD and the TalentBridge brief. Marcus \u2014 reach out to Amanda today about Anya Chen.\n\n\u2014 P",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false
+    }
+  ]
+}

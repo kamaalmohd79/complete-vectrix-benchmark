@@ -1,0 +1,100 @@
+{
+  "thread_id": "thread_12",
+  "subject": "Re: TalentBridge placement fee \u2014 renegotiation",
+  "category": "vendor",
+  "edge_cases": ["vendor_negotiation_unresolved"],
+  "participants": [
+    "nina@vectrix.io",
+    "amanda.reyes@talentbridge.com",
+    "priya@vectrix.io"
+  ],
+  "messages": [
+    {
+      "message_id": "msg_042",
+      "from_email": "amanda.reyes@talentbridge.com",
+      "from_name": "Amanda Reyes",
+      "to": [
+        {
+          "email": "nina@vectrix.io",
+          "name": "Nina Kowalski"
+        }
+      ],
+      "cc": [],
+      "bcc": [],
+      "date": "2026-01-10T10:00:00-08:00",
+      "subject": "TalentBridge \u2014 placement fee confirmation for upcoming searches",
+      "body": "Hi Nina,\n\nGreat working with Vectrix on the Sr. Frontend search. As we ramp up the candidate pipeline, I want to confirm the fee arrangement: our standard rate is 18% of first-year base salary, per our original agreement.\n\nFor the Sr. Frontend role (band $145K\u2013$165K), that puts the placement fee at approximately $26,100\u2013$29,700 depending on final offer.\n\nLet me know if you'd like to discuss before we proceed.\n\n\u2014 Amanda Reyes\nSenior Recruiter, TalentBridge",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false
+    },
+    {
+      "message_id": "msg_043",
+      "from_email": "nina@vectrix.io",
+      "from_name": "Nina Kowalski",
+      "to": [
+        {
+          "email": "amanda.reyes@talentbridge.com",
+          "name": "Amanda Reyes"
+        }
+      ],
+      "cc": [
+        {
+          "email": "priya@vectrix.io",
+          "name": "Priya Chandran"
+        }
+      ],
+      "bcc": [],
+      "date": "2026-01-10T14:22:00-08:00",
+      "subject": "Re: TalentBridge \u2014 placement fee confirmation",
+      "body": "Hi Amanda,\n\nThank you. We want to continue working with TalentBridge, but 18% is difficult at our current stage. We'd like to discuss a reduced rate.\n\nOur ask: 15% for the current Sr. Frontend placement, with the understanding that we'll be making at least one more hire (Customer Success Manager) in Q1 if the Meridian deal closes. Volume consideration.\n\nWe're a seed-stage company and every placement fee is meaningful. Would 15% work for this placement?\n\n\u2014 Nina",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false
+    },
+    {
+      "message_id": "msg_044",
+      "from_email": "amanda.reyes@talentbridge.com",
+      "from_name": "Amanda Reyes",
+      "to": [
+        {
+          "email": "nina@vectrix.io",
+          "name": "Nina Kowalski"
+        }
+      ],
+      "cc": [],
+      "bcc": [],
+      "date": "2026-01-11T09:45:00-08:00",
+      "subject": "Re: TalentBridge \u2014 placement fee confirmation",
+      "body": "Hi Nina,\n\nI appreciate the context. I can't go to 15% on a single placement \u2014 our floor for single-role searches is 17%.\n\nHowever, if you can confirm the CSM role in writing as a second placement, I can offer 16% across both. That would bring the Sr. Frontend fee to approximately $23,200\u2013$26,400 at the current band.\n\nIf the CSM role is contingent on the Meridian deal and you can't commit right now, we can discuss again when the deal closes.\n\n\u2014 Amanda",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false
+    },
+    {
+      "message_id": "msg_045",
+      "from_email": "nina@vectrix.io",
+      "from_name": "Nina Kowalski",
+      "to": [
+        {
+          "email": "amanda.reyes@talentbridge.com",
+          "name": "Amanda Reyes"
+        }
+      ],
+      "cc": [
+        {
+          "email": "priya@vectrix.io",
+          "name": "Priya Chandran"
+        }
+      ],
+      "bcc": [],
+      "date": "2026-01-12T10:30:00-08:00",
+      "subject": "Re: TalentBridge \u2014 placement fee confirmation",
+      "body": "Amanda,\n\nI understand. The CSM role is genuinely contingent on Meridian \u2014 I can't commit to it in writing today.\n\nCan we do 17% for the Sr. Frontend placement now, and revisit the full rate agreement once we have more clarity on the CSM timeline (end of Q1 at the latest)? I want to move forward with the candidate pipeline \u2014 I just want to make sure we're aligned on the rate before Anya Chen's final round.\n\n\u2014 Nina",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false,
+      "internal_note": "EDGE CASE: Thread ends without final written agreement on rate. 17% vs 16% is unresolved. The fee for Anya Chen placement is unclear."
+    }
+  ]
+}

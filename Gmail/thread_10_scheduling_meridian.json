@@ -1,0 +1,126 @@
+{
+  "thread_id": "thread_10",
+  "subject": "Re: Meridian SOW review \u2014 scheduling",
+  "category": "scheduling",
+  "participants": [
+    "tessa@vectrix.io",
+    "alan.fong@meridianhealth.com",
+    "nina@vectrix.io",
+    "priya@vectrix.io"
+  ],
+  "messages": [
+    {
+      "message_id": "msg_035",
+      "from_email": "tessa@vectrix.io",
+      "from_name": "Tessa Moreno",
+      "to": [
+        {
+          "email": "alan.fong@meridianhealth.com",
+          "name": "Dr. Alan Fong"
+        }
+      ],
+      "cc": [
+        {
+          "email": "priya@vectrix.io",
+          "name": "Priya Chandran"
+        },
+        {
+          "email": "nina@vectrix.io",
+          "name": "Nina Kowalski"
+        }
+      ],
+      "bcc": [],
+      "date": "2026-02-12T10:05:00-08:00",
+      "subject": "Meridian SOW review \u2014 let's find a time",
+      "body": "Dr. Fong,\n\nOur counsel (Orion Legal) has reviewed the SOW draft and we have a few redline items to discuss. Nothing blocking \u2014 two clauses we'd like to align on before execution.\n\nWould February 18 at 2pm PT work for a 45-minute call? Priya will join from our side.\n\n\u2014 Tessa",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false
+    },
+    {
+      "message_id": "msg_036",
+      "from_email": "alan.fong@meridianhealth.com",
+      "from_name": "Dr. Alan Fong",
+      "to": [
+        {
+          "email": "tessa@vectrix.io",
+          "name": "Tessa Moreno"
+        }
+      ],
+      "cc": [
+        {
+          "email": "priya@vectrix.io",
+          "name": "Priya Chandran"
+        }
+      ],
+      "bcc": [],
+      "date": "2026-02-12T14:22:00-08:00",
+      "subject": "Re: Meridian SOW review \u2014 let's find a time",
+      "body": "Hi Tessa,\n\nFeb 18 at 2pm PT doesn't work \u2014 I have a standing board prep that runs until 3pm.\n\nCan we do Feb 19 at 11am PT, or Feb 20 at 10am PT?\n\n\u2014 Alan",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false
+    },
+    {
+      "message_id": "msg_037",
+      "from_email": "tessa@vectrix.io",
+      "from_name": "Tessa Moreno",
+      "to": [
+        {
+          "email": "alan.fong@meridianhealth.com",
+          "name": "Dr. Alan Fong"
+        }
+      ],
+      "cc": [
+        {
+          "email": "priya@vectrix.io",
+          "name": "Priya Chandran"
+        },
+        {
+          "email": "nina@vectrix.io",
+          "name": "Nina Kowalski"
+        }
+      ],
+      "bcc": [],
+      "date": "2026-02-12T15:55:00-08:00",
+      "subject": "Re: Meridian SOW review \u2014 let's find a time",
+      "body": "Feb 19 at 11am PT works for us. I'll send a calendar invite.\n\n\u2014 Tessa",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false
+    },
+    {
+      "message_id": "msg_038",
+      "from_email": "nina@vectrix.io",
+      "from_name": "Nina Kowalski",
+      "to": [
+        {
+          "email": "alan.fong@meridianhealth.com",
+          "name": "Dr. Alan Fong"
+        },
+        {
+          "email": "tessa@vectrix.io",
+          "name": "Tessa Moreno"
+        },
+        {
+          "email": "priya@vectrix.io",
+          "name": "Priya Chandran"
+        }
+      ],
+      "cc": [],
+      "bcc": [],
+      "date": "2026-02-12T16:10:00-08:00",
+      "subject": "Calendar invite: Meridian SOW Review Call \u2014 Feb 19, 11am PT",
+      "body": "Sending the calendar invite now. Details below.\n\nTitle: Meridian Health Systems / Vectrix \u2014 SOW Review\nDate: Wednesday, February 19, 2026\nTime: 11:00am \u2013 11:45am PT\nZoom: https://vectrix.zoom.us/j/84726193048\nPasword: sow2026\n\nAgenda:\n1. Review two redline items from Orion Legal (SLA credits, termination clause)\n2. Per-org retention config timeline (VEC-47)\n3. SAML SSO activation timeline\n4. Next steps to contract execution\n\n\u2014 Nina",
+      "attachments": [
+        {
+          "filename": "meridian-sow-review-feb19.ics",
+          "type": "text/calendar",
+          "size_kb": 4
+        }
+      ],
+      "is_automated": false,
+      "is_auto_reply": false
+    }
+  ]
+}

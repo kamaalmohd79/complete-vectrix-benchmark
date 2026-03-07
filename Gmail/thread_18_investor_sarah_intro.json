@@ -1,0 +1,125 @@
+{
+  "thread_id": "thread_18",
+  "subject": "Intro: Vectrix Labs // Luminary Health Engineering",
+  "category": "investor",
+  "participants": [
+    "sarah.lindgren@angelinvestor.com",
+    "priya@vectrix.io",
+    "chloe.andrews@luminaryhealth.com",
+    "david.kim@angelinvestor.com"
+  ],
+  "messages": [
+    {
+      "message_id": "msg_064",
+      "from_email": "sarah.lindgren@angelinvestor.com",
+      "from_name": "Sarah Lindgren",
+      "to": [
+        {
+          "email": "priya@vectrix.io",
+          "name": "Priya Chandran"
+        },
+        {
+          "email": "chloe.andrews@luminaryhealth.com",
+          "name": "Chloe Andrews"
+        }
+      ],
+      "cc": [],
+      "bcc": [],
+      "date": "2026-01-25T10:00:00-08:00",
+      "subject": "Intro: Vectrix Labs // Luminary Health Engineering",
+      "body": "Priya, Chloe \u2014 happy to connect you both.\n\nPriya Chandran is the CEO of Vectrix Labs, which I've invested in. They build API observability tooling \u2014 endpoint-level latency tracking, anomaly detection, alerting. They're working with healthcare clients right now (Meridian Health is in their pipeline) and have solved the data residency and SOC 2 questions that come up in healthcare deals.\n\nChloe Andrews is CTO of Luminary Health, which provides remote patient monitoring software. Chloe \u2014 Vectrix might be a fit for your API reliability needs we discussed last week.\n\nI'll leave it to you two to take it from here!\n\n\u2014 Sarah",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false
+    },
+    {
+      "message_id": "msg_065",
+      "from_email": "priya@vectrix.io",
+      "from_name": "Priya Chandran",
+      "to": [
+        {
+          "email": "chloe.andrews@luminaryhealth.com",
+          "name": "Chloe Andrews"
+        }
+      ],
+      "cc": [
+        {
+          "email": "sarah.lindgren@angelinvestor.com",
+          "name": "Sarah Lindgren"
+        },
+        {
+          "email": "tessa@vectrix.io",
+          "name": "Tessa Moreno"
+        }
+      ],
+      "bcc": [],
+      "date": "2026-01-25T11:45:00-08:00",
+      "subject": "Re: Intro: Vectrix Labs // Luminary Health Engineering",
+      "body": "Hi Chloe,\n\nWonderful to meet you \u2014 thank you Sarah for the intro.\n\nA quick orientation: Vectrix gives your engineering team endpoint-level visibility into your production APIs \u2014 latency percentiles (P50/P95/P99), anomaly detection, and smart alerting to Slack or PagerDuty. Setup is 45 minutes with our SDK. For healthcare teams specifically, we store all data in AWS US regions only, hold SOC 2 Type I, and support SAML SSO via Clerk.\n\nWould a 20-minute call this week or next work? I'm looping in Tessa Moreno (our Head of Sales) so she can help coordinate.\n\n\u2014 Priya",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false
+    },
+    {
+      "message_id": "msg_066",
+      "from_email": "chloe.andrews@luminaryhealth.com",
+      "from_name": "Chloe Andrews",
+      "to": [
+        {
+          "email": "priya@vectrix.io",
+          "name": "Priya Chandran"
+        },
+        {
+          "email": "tessa@vectrix.io",
+          "name": "Tessa Moreno"
+        }
+      ],
+      "cc": [],
+      "bcc": [],
+      "date": "2026-01-26T09:30:00-08:00",
+      "subject": "Re: Intro: Vectrix Labs // Luminary Health Engineering",
+      "body": "Hi Priya,\n\nNice to meet you. Sarah mentioned you're working with Meridian \u2014 if you're navigating healthcare API compliance requirements, you've probably already solved the things we'd ask about.\n\nI'm free Thursday Jan 29 at 3pm PT or Friday Jan 30 at 10am PT. Either works.\n\n\u2014 Chloe Andrews\nCTO, Luminary Health",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false
+    },
+    {
+      "message_id": "msg_067",
+      "from_email": "david.kim@angelinvestor.com",
+      "from_name": "David Kim",
+      "to": [
+        {
+          "email": "priya@vectrix.io",
+          "name": "Priya Chandran"
+        }
+      ],
+      "cc": [],
+      "bcc": [],
+      "date": "2026-01-28T08:15:00-08:00",
+      "subject": "Checking in \u2014 Q1 trajectory",
+      "body": "Hi Priya,\n\nGreat board call last week. A few thoughts after sleeping on it:\n\n1. Meridian: the SOC 2 Type II timeline is the thing I'd watch most carefully. If their legal team starts asking for it as a contract condition precedent (not just a commitment), that's a 6-month blocker. Do you have a sense of how firm Rachel Simmons is on this?\n\n2. Dashboard v2: I'd make sure Cascade and Brainloop have both seen a demo before the public launch. Reference customers who've only seen the old product are a missed opportunity.\n\n3. Hiring: the Sr. Frontend search is taking longer than expected. Is the comp band the issue?\n\nHappy to be helpful however I can \u2014 just ping me.\n\n\u2014 David",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false
+    },
+    {
+      "message_id": "msg_068",
+      "from_email": "priya@vectrix.io",
+      "from_name": "Priya Chandran",
+      "to": [
+        {
+          "email": "david.kim@angelinvestor.com",
+          "name": "David Kim"
+        }
+      ],
+      "cc": [],
+      "bcc": [],
+      "date": "2026-01-28T10:30:00-08:00",
+      "subject": "Re: Checking in \u2014 Q1 trajectory",
+      "body": "David,\n\nAll three are fair observations.\n\n1. Rachel Simmons: she's been reasonable about the Type II timeline \u2014 she's accepted the June 30 commitment in the questionnaire responses. The contract protection she wants is a termination-for-cause right if we miss Sept 30. That's in the Orion Legal redlines now. I think it's acceptable.\n\n2. Dashboard v2 preview: I'll make sure Tessa sets up demos with Kevin Park and Maria Chen in the week before launch. Good call.\n\n3. Hiring: yes, comp was the issue \u2014 Derek Huang declined at $145K. We've raised the band to $145K\u2013$165K. Anya Chen is our lead candidate now; final panel is Feb 27. Strong signals from the take-home.\n\nThanks for staying close on this.\n\n\u2014 Priya",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false
+    }
+  ]
+}

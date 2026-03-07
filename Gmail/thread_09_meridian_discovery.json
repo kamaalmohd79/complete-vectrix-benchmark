@@ -1,0 +1,96 @@
+{
+  "thread_id": "thread_09",
+  "subject": "Re: Vectrix evaluation \u2014 Meridian Health Systems",
+  "category": "client",
+  "participants": [
+    "alan.fong@meridianhealth.com",
+    "priya@vectrix.io",
+    "tessa@vectrix.io",
+    "nina@vectrix.io"
+  ],
+  "messages": [
+    {
+      "message_id": "msg_032",
+      "from_email": "alan.fong@meridianhealth.com",
+      "from_name": "Dr. Alan Fong",
+      "to": [
+        {
+          "email": "priya@vectrix.io",
+          "name": "Priya Chandran"
+        }
+      ],
+      "cc": [],
+      "bcc": [],
+      "date": "2025-11-20T14:03:00-08:00",
+      "subject": "Vectrix evaluation \u2014 Meridian Health Systems",
+      "body": "Hi Priya,\n\nI'm Alan Fong, VP of Engineering at Meridian Health Systems. We found Vectrix through a Hacker News thread earlier this week and I've been exploring the platform for the last few days.\n\nWe run 85+ production APIs supporting clinical data workflows. We're currently using a combination of Datadog and in-house tooling for API monitoring, and neither is giving us the endpoint-level anomaly detection we need.\n\nBefore I escalate this internally, I want to understand a few things:\n1. Data residency \u2014 we have strict requirements that all data stay in US-based infrastructure.\n2. SSO \u2014 we're on Okta and would need SAML integration.\n3. Audit trail / retention \u2014 our compliance team requires 12-month data retention.\n4. SOC 2 status.\n\nIf those four are addressable, I'd like to set up a call.\n\n\u2014 Dr. Alan Fong\nVP Engineering, Meridian Health Systems",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false
+    },
+    {
+      "message_id": "msg_033",
+      "from_email": "priya@vectrix.io",
+      "from_name": "Priya Chandran",
+      "to": [
+        {
+          "email": "alan.fong@meridianhealth.com",
+          "name": "Dr. Alan Fong"
+        }
+      ],
+      "cc": [
+        {
+          "email": "tessa@vectrix.io",
+          "name": "Tessa Moreno"
+        }
+      ],
+      "bcc": [],
+      "date": "2025-11-20T17:42:00-08:00",
+      "subject": "Re: Vectrix evaluation \u2014 Meridian Health Systems",
+      "body": "Dr. Fong,\n\nThank you for reaching out. I'm glad you found us through HN \u2014 and your four requirements are exactly the right questions to ask.\n\nQuick answers:\n1. Data residency: All data stored and processed in AWS us-east-1 and us-west-2 (US only). No data leaves the US.\n2. SSO: We're mid-migration to Clerk, which supports SAML 2.0 and Okta integration natively. We can have SSO configured for your org within 30 days of contract.\n3. 12-month retention: Our standard retention is 90 days raw events. However, we support custom retention contracts for Enterprise \u2014 we've designed our infrastructure with per-org retention in mind (in development, targeting March 1).\n4. SOC 2: We hold SOC 2 Type I (issued October 2025). Type II audit is committed for Q2 2026.\n\nI'd love to set up a call this week or next. Tessa Moreno (CC'd), our Head of Sales, will reach out to find a time.\n\n\u2014 Priya Chandran\nCEO, Vectrix Labs",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false
+    },
+    {
+      "message_id": "msg_034",
+      "from_email": "nina@vectrix.io",
+      "from_name": "Nina Kowalski",
+      "to": [
+        {
+          "email": "rachel.simmons@meridianhealth.com",
+          "name": "Rachel Simmons"
+        }
+      ],
+      "cc": [
+        {
+          "email": "alan.fong@meridianhealth.com",
+          "name": "Dr. Alan Fong"
+        },
+        {
+          "email": "tessa@vectrix.io",
+          "name": "Tessa Moreno"
+        }
+      ],
+      "bcc": [],
+      "date": "2026-01-22T11:00:00-08:00",
+      "subject": "Vectrix Security Questionnaire \u2014 responses attached",
+      "body": "Dear Rachel,\n\nThank you for sending over Meridian's vendor security questionnaire (147 questions). I'm attaching our initial responses. We've completed approximately 60% of the questionnaire; the remaining questions (primarily SOC 2 controls evidence and detailed encryption specifics) are in progress and will be completed by February 14.\n\nA few items I want to flag proactively:\n- Q47 (SLA Credits): Our standard policy caps credits at 30% of monthly fee. We're aware this is below typical enterprise requirements and Priya is reviewing options.\n- Q61 (ClickHouse subprocessor): Our analytics database runs on ClickHouse Cloud, which uses AWS us-east-1 as its underlying infrastructure.\n- Q3 (SOC 2 Type II): We hold Type I. Type II audit is committed for completion by June 30, 2026.\n\nPlease let me know if you have questions.\n\n\u2014 Nina Kowalski\nOps & People, Vectrix Labs",
+      "attachments": [
+        {
+          "filename": "meridian-security-questionnaire.md",
+          "type": "text/markdown",
+          "size_kb": 42,
+          "source": "Google Drive \u2014 shared externally"
+        },
+        {
+          "filename": "vectrix-soc2-type1-summary.pdf",
+          "type": "application/pdf",
+          "size_kb": 218
+        }
+      ],
+      "is_automated": false,
+      "is_auto_reply": false
+    }
+  ]
+}

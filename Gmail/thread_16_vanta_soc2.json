@@ -1,0 +1,84 @@
+{
+  "thread_id": "thread_16",
+  "subject": "Re: Vanta \u2014 SOC 2 Type II audit timeline",
+  "category": "vendor",
+  "participants": [
+    "alex.morrison@vanta.com",
+    "nina@vectrix.io",
+    "priya@vectrix.io",
+    "marcus@vectrix.io"
+  ],
+  "messages": [
+    {
+      "message_id": "msg_057",
+      "from_email": "alex.morrison@vanta.com",
+      "from_name": "Alex Morrison",
+      "to": [
+        {
+          "email": "nina@vectrix.io",
+          "name": "Nina Kowalski"
+        }
+      ],
+      "cc": [],
+      "bcc": [],
+      "date": "2026-01-15T11:00:00-08:00",
+      "subject": "Vanta \u2014 your SOC 2 Type II readiness review",
+      "body": "Hi Nina,\n\nThank you for being a Vanta customer. Following up on your Type I completion in October \u2014 I want to help you plan your path to Type II.\n\nTo get Type II, you'll need:\n1. A minimum 6-month observation window (you're on track \u2014 observation started Oct 15)\n2. An auditor engaged before the observation window closes\n3. A few controls we flagged as 'partial' in the Type I that need remediation\n\nBased on your Oct 15 start, your earliest possible Type II completion is mid-April 2026. For a June 30 commitment to a customer, that's achievable.\n\nI'd love to schedule a 30-min call to walk through the open controls and auditor options. Are you or Priya available next week?\n\n\u2014 Alex Morrison\nCustomer Success, Vanta",
+      "attachments": [
+        {
+          "filename": "vectrix-soc2-typeii-readiness.pdf",
+          "type": "application/pdf",
+          "size_kb": 156
+        }
+      ],
+      "is_automated": false,
+      "is_auto_reply": false
+    },
+    {
+      "message_id": "msg_058",
+      "from_email": "nina@vectrix.io",
+      "from_name": "Nina Kowalski",
+      "to": [
+        {
+          "email": "priya@vectrix.io",
+          "name": "Priya Chandran"
+        },
+        {
+          "email": "marcus@vectrix.io",
+          "name": "Marcus Webb"
+        }
+      ],
+      "cc": [],
+      "bcc": [],
+      "date": "2026-01-15T14:30:00-08:00",
+      "subject": "Fwd: Vanta SOC 2 Type II \u2014 we need to move on this",
+      "body": "Priya, Marcus,\n\nForwarding from our Vanta CSM. Key takeaway: if we want Type II done by June 30 (which we committed to Meridian), we need to engage an auditor now \u2014 the 6-month observation window is already running but auditors book out 2\u20133 months.\n\nAlso flagged: a few 'partial' controls from our Type I that still need remediation. Marcus \u2014 I think at least two of these are on the engineering side (access logging, encryption key rotation). Can we get on a call with Alex next week?\n\n\u2014 Nina",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false
+    },
+    {
+      "message_id": "msg_059",
+      "from_email": "priya@vectrix.io",
+      "from_name": "Priya Chandran",
+      "to": [
+        {
+          "email": "nina@vectrix.io",
+          "name": "Nina Kowalski"
+        },
+        {
+          "email": "marcus@vectrix.io",
+          "name": "Marcus Webb"
+        }
+      ],
+      "cc": [],
+      "bcc": [],
+      "date": "2026-01-15T16:05:00-08:00",
+      "subject": "Re: Fwd: Vanta SOC 2 Type II \u2014 we need to move on this",
+      "body": "Yes \u2014 set up the call with Alex for next week. Marcus and I will both join.\n\nMarcus \u2014 let's use this as an opportunity to get the full open controls list. I don't want Meridian asking about this in the SOW call and us not knowing exactly where we stand.\n\n\u2014 P",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false
+    }
+  ]
+}

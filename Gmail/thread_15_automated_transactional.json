@@ -1,0 +1,75 @@
+{
+  "thread_id": "thread_15",
+  "subject": "[Confluent Cloud] Annual subscription renewal \u2014 action required",
+  "category": "automated",
+  "participants": [
+    "noreply@confluent.io",
+    "jordan@vectrix.io",
+    "marcus@vectrix.io"
+  ],
+  "messages": [
+    {
+      "message_id": "msg_054",
+      "from_email": "noreply@confluent.io",
+      "from_name": "Confluent Cloud",
+      "to": [
+        {
+          "email": "jordan@vectrix.io",
+          "name": "Jordan Okafor"
+        }
+      ],
+      "cc": [],
+      "bcc": [],
+      "date": "2026-02-01T08:00:00-08:00",
+      "subject": "[Confluent Cloud] Annual subscription renewal \u2014 action required",
+      "body": "Hi Jordan,\n\nYour Confluent Cloud annual subscription is set to renew on March 1, 2026.\n\nSubscription: Kafka \u2014 Standard Cluster (3 partitions)\nOrganization: Vectrix Labs\nAnnual amount: $5,040.00\nRenewal date: March 1, 2026\nPayment method: Visa ending 4821\n\nNo action is required if you'd like to continue with the same plan. If you need to upgrade, downgrade, or cancel, please log in at https://confluent.cloud before February 22, 2026.\n\nQuestions? Contact your account manager at enterprise@confluent.io.\n\n\u2014 Confluent Cloud",
+      "attachments": [
+        {
+          "filename": "confluent-renewal-notice-2026.pdf",
+          "type": "application/pdf",
+          "size_kb": 88
+        }
+      ],
+      "is_automated": true,
+      "is_auto_reply": false
+    },
+    {
+      "message_id": "msg_055",
+      "from_email": "jordan@vectrix.io",
+      "from_name": "Jordan Okafor",
+      "to": [
+        {
+          "email": "marcus@vectrix.io",
+          "name": "Marcus Webb"
+        }
+      ],
+      "cc": [],
+      "bcc": [],
+      "date": "2026-02-01T10:22:00-08:00",
+      "subject": "Fwd: Confluent renewal \u2014 $5,040 due March 1",
+      "body": "Marcus,\n\nForwarding the Confluent renewal. $5,040/year \u2014 same as last year. I think we should renew. We're not ready to self-host Kafka and the managed overhead is worth it at our volume.\n\nAlso separately: we had a GitHub Actions CI failure on the main branch at 2am last night \u2014 deploy to staging was blocked for about 3 hours. Fixed itself after a GitHub incident resolved. No customer impact but I'm going to add a fallback deploy path for staging so CI outages don't block us. Logging it as a process improvement.\n\n\u2014 J",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false
+    },
+    {
+      "message_id": "msg_056",
+      "from_email": "marcus@vectrix.io",
+      "from_name": "Marcus Webb",
+      "to": [
+        {
+          "email": "jordan@vectrix.io",
+          "name": "Jordan Okafor"
+        }
+      ],
+      "cc": [],
+      "bcc": [],
+      "date": "2026-02-01T11:05:00-08:00",
+      "subject": "Re: Confluent renewal \u2014 $5,040 due March 1",
+      "body": "Renew. Same plan.\n\nOn the CI thing \u2014 agreed on the fallback path. File a Linear ticket and we can scope it in Sprint 13.\n\n-M",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false
+    }
+  ]
+}

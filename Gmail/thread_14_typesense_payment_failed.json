@@ -1,0 +1,95 @@
+{
+  "thread_id": "thread_14",
+  "subject": "Re: [Typesense Cloud] Payment failed \u2014 action required",
+  "category": "automated",
+  "edge_cases": ["failed_payment_followup_chain"],
+  "participants": [
+    "billing@typesense.io",
+    "nina@vectrix.io",
+    "priya@vectrix.io"
+  ],
+  "messages": [
+    {
+      "message_id": "msg_050",
+      "from_email": "billing@typesense.io",
+      "from_name": "Typesense Cloud Billing",
+      "to": [
+        {
+          "email": "nina@vectrix.io",
+          "name": "Nina Kowalski"
+        }
+      ],
+      "cc": [],
+      "bcc": [],
+      "date": "2026-01-18T06:00:00-08:00",
+      "subject": "[Typesense Cloud] Payment failed \u2014 action required",
+      "body": "Hi there,\n\nWe were unable to process your payment for Typesense Cloud (account: vectrix-labs).\n\nAmount due: $59.00\nDate attempted: January 18, 2026\nFailure reason: Card declined\n\nPlease update your payment method at https://cloud.typesense.org/billing to avoid service interruption. Your account will be suspended after 7 days if payment is not received.\n\nIf you believe this is an error, contact support@typesense.io.\n\n\u2014 Typesense Cloud Billing\nhttps://cloud.typesense.org",
+      "attachments": [],
+      "is_automated": true,
+      "is_auto_reply": false
+    },
+    {
+      "message_id": "msg_051",
+      "from_email": "nina@vectrix.io",
+      "from_name": "Nina Kowalski",
+      "to": [
+        {
+          "email": "priya@vectrix.io",
+          "name": "Priya Chandran"
+        }
+      ],
+      "cc": [],
+      "bcc": [],
+      "date": "2026-01-18T09:14:00-08:00",
+      "subject": "Fwd: [Typesense Cloud] Payment failed \u2014 can you update the card?",
+      "body": "Priya,\n\nForwarding this \u2014 the Typesense Cloud payment failed. Our company card on file got a new expiry date last month and I think that's what happened.\n\nCan you log into the billing portal and update the card? The link is in the email below. Account will be suspended in 7 days if we don't fix it.\n\n\u2014 Nina\n\n---------- Forwarded message ----------\n[Typesense billing email below]",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false
+    },
+    {
+      "message_id": "msg_052",
+      "from_email": "priya@vectrix.io",
+      "from_name": "Priya Chandran",
+      "to": [
+        {
+          "email": "nina@vectrix.io",
+          "name": "Nina Kowalski"
+        }
+      ],
+      "cc": [],
+      "bcc": [],
+      "date": "2026-01-19T08:30:00-08:00",
+      "subject": "Re: Fwd: [Typesense Cloud] Payment failed \u2014 can you update the card?",
+      "body": "Done.\n\n\u2014 P",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false
+    },
+    {
+      "message_id": "msg_053",
+      "from_email": "billing@typesense.io",
+      "from_name": "Typesense Cloud Billing",
+      "to": [
+        {
+          "email": "nina@vectrix.io",
+          "name": "Nina Kowalski"
+        }
+      ],
+      "cc": [],
+      "bcc": [],
+      "date": "2026-01-19T09:05:00-08:00",
+      "subject": "[Typesense Cloud] Payment successful \u2014 invoice #INV-2026-0118",
+      "body": "Hi there,\n\nYour payment has been successfully processed.\n\nAmount: $59.00\nDate: January 19, 2026\nInvoice: INV-2026-0118\n\nThank you for updating your billing information. Your account is in good standing.\n\nDownload invoice: https://cloud.typesense.org/invoices/INV-2026-0118\n\n\u2014 Typesense Cloud Billing",
+      "attachments": [
+        {
+          "filename": "typesense-invoice-jan2026.pdf",
+          "type": "application/pdf",
+          "size_kb": 45
+        }
+      ],
+      "is_automated": true,
+      "is_auto_reply": false
+    }
+  ]
+}

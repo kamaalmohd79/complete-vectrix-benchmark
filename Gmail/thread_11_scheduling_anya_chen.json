@@ -1,0 +1,89 @@
+{
+  "thread_id": "thread_11",
+  "subject": "Interview scheduling \u2014 Anya Chen, Sr. Frontend Engineer",
+  "category": "scheduling",
+  "participants": [
+    "marcus@vectrix.io",
+    "anya.chen@gmail.com",
+    "nina@vectrix.io"
+  ],
+  "messages": [
+    {
+      "message_id": "msg_039",
+      "from_email": "marcus@vectrix.io",
+      "from_name": "Marcus Webb",
+      "to": [
+        {
+          "email": "anya.chen@gmail.com",
+          "name": "Anya Chen"
+        }
+      ],
+      "cc": [
+        {
+          "email": "nina@vectrix.io",
+          "name": "Nina Kowalski"
+        }
+      ],
+      "bcc": [],
+      "date": "2026-02-14T09:00:00-08:00",
+      "subject": "Interview scheduling \u2014 Sr. Frontend Engineer role at Vectrix",
+      "body": "Hi Anya,\n\nThank you for completing the take-home assignment. We were genuinely impressed \u2014 the P95/P99 latency chart implementation was exactly the kind of thinking we're looking for.\n\nWe'd like to move forward with the final panel, which consists of:\n- Technical deep dive (60 min): Marcus Webb + Liam Nakamura\n- Product/culture panel (60 min): Dana Reeves + Priya Chandran\n\nWe can combine into a half-day on the same day, or run them back to back with a short break. Would February 27 work? We're flexible on the time slot.\n\nNina Kowalski (CC'd) manages our scheduling \u2014 she'll coordinate once we have a date confirmed.\n\n\u2014 Marcus Webb\nCTO, Vectrix Labs",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false
+    },
+    {
+      "message_id": "msg_040",
+      "from_email": "anya.chen@gmail.com",
+      "from_name": "Anya Chen",
+      "to": [
+        {
+          "email": "marcus@vectrix.io",
+          "name": "Marcus Webb"
+        },
+        {
+          "email": "nina@vectrix.io",
+          "name": "Nina Kowalski"
+        }
+      ],
+      "cc": [],
+      "bcc": [],
+      "date": "2026-02-14T11:30:00-08:00",
+      "subject": "Re: Interview scheduling \u2014 Sr. Frontend Engineer role at Vectrix",
+      "body": "Hi Marcus,\n\nThank you \u2014 I'm glad the take-home landed well. I had a lot of fun with the latency chart problem.\n\nFeb 27 works well for me. I'd prefer the combined half-day if possible \u2014 I can do 10am\u20131pm PT with a 15-minute break between the two panels. Does that work for your team?\n\n\u2014 Anya",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false
+    },
+    {
+      "message_id": "msg_041",
+      "from_email": "nina@vectrix.io",
+      "from_name": "Nina Kowalski",
+      "to": [
+        {
+          "email": "anya.chen@gmail.com",
+          "name": "Anya Chen"
+        }
+      ],
+      "cc": [
+        {
+          "email": "marcus@vectrix.io",
+          "name": "Marcus Webb"
+        }
+      ],
+      "bcc": [],
+      "date": "2026-02-15T09:15:00-08:00",
+      "subject": "Re: Interview scheduling \u2014 calendar invite sent",
+      "body": "Hi Anya,\n\nPerfect \u2014 10am\u20131pm PT on Feb 27 is confirmed. Sending the calendar invite now.\n\nSchedule:\n- 10:00\u201311:00am: Technical deep dive (Marcus Webb + Liam Nakamura) \u2014 Zoom\n- 11:00\u201311:15am: Break\n- 11:15am\u201312:15pm: Product/culture panel (Dana Reeves + Priya Chandran) \u2014 Zoom\n\nZoom link is in the invite. Please let me know if you need anything \u2014 happy to answer any logistics questions.\n\n\u2014 Nina\nOps & People, Vectrix Labs",
+      "attachments": [
+        {
+          "filename": "vectrix-interview-feb27-anya-chen.ics",
+          "type": "text/calendar",
+          "size_kb": 5
+        }
+      ],
+      "is_automated": false,
+      "is_auto_reply": false
+    }
+  ]
+}

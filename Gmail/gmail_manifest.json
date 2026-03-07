@@ -1,0 +1,402 @@
+{
+  "corpus": "gmail",
+  "generated": "2026-02-28",
+  "total_threads": 18,
+  "total_messages": 68,
+  "date_range": {
+    "earliest": "2025-11-12",
+    "latest": "2026-02-28"
+  },
+  "thread_type_summary": {
+    "internal": 6,
+    "client": 3,
+    "vendor": 2,
+    "scheduling": 2,
+    "automated": 2,
+    "recruiting": 1,
+    "investor": 2
+  },
+  "edge_cases": {
+    "reply_all_accident": "thread_03 \u2014 Caleb replies-all to internal pricing thread; Jason Liu (Ridgeway Financial) is CC'd and sees internal MRR targets, Meridian deal details, and pricing floor discussion. Tessa warns Caleb privately, then smooths it over with Jason separately.",
+    "missing_cc_looped_in_late": "thread_02 \u2014 Dana sends v2 product update to Priya and Marcus but not Tessa, who is actively selling comparison mode to Cascade. Tessa pushes back, Dana apologizes and re-sends with Tessa added.",
+    "email_contradicts_slack_decision": "thread_02 \u2014 Dana's Jan 28 email confirms comparison mode 'IS in scope for v2 launch.' On Feb 17 in Slack (#engineering), Marcus defers it to v2.1. The email is now stale/contradicted \u2014 tests Authority/Version Resolution.",
+    "ooo_auto_reply": "thread_07 \u2014 Priya is OOO Dec 23\u2013Jan 2. Kevin Park (Brainloop) emails her about the Dec 23 P1 incident and gets an auto-reply. He then emails Marcus directly and gets a full response.",
+    "forwarded_chain_different_context": "thread_06 \u2014 Marcus forwards internal ClickHouse cost thread to David Kim (angel investor). The original thread includes Jordan expressing concern about cost growth. Marcus adds 'ignore Jordan's tone, he's just being Jordan' \u2014 reframing a legitimate concern as personality.",
+    "vendor_negotiation_unresolved": "thread_12 \u2014 TalentBridge fee negotiation. Nina asks for 15%, Amanda counters 16% for two placements or 17% for one. Nina proposes 17% for Sr. Frontend now and revisits for CSM. Thread ends without a written agreement \u2014 17% vs 16% is unresolved.",
+    "failed_payment_followup_chain": "thread_14 \u2014 Typesense Cloud sends automated 'payment failed' email. Nina forwards to Priya asking her to update the card. Priya replies 'Done.' next day. Typesense sends payment confirmation."
+  },
+  "threads": [
+    {
+      "thread_id": "thread_01",
+      "filename": "thread_01_clickhouse_rfc.json",
+      "subject": "ClickHouse Migration RFC \u2014 please review before Friday",
+      "category": "internal",
+      "message_count": 4,
+      "participants": [
+        "marcus@vectrix.io",
+        "liam@vectrix.io",
+        "jordan@vectrix.io",
+        "priya@vectrix.io"
+      ],
+      "edge_cases": [],
+      "has_attachments": false,
+      "has_automated": false,
+      "date_range": {
+        "earliest": "2025-11-12T10:24:00-08:00",
+        "latest": "2025-11-14T09:15:00-08:00"
+      }
+    },
+    {
+      "thread_id": "thread_02",
+      "filename": "thread_02_dashboard_v2_missing_cc.json",
+      "subject": "Dashboard v2 \u2014 product update + comparison mode",
+      "category": "internal",
+      "message_count": 4,
+      "participants": [
+        "dana@vectrix.io",
+        "priya@vectrix.io",
+        "marcus@vectrix.io",
+        "tessa@vectrix.io"
+      ],
+      "edge_cases": [
+        "missing_cc_looped_in_late",
+        "email_contradicts_slack_decision"
+      ],
+      "has_attachments": true,
+      "has_automated": false,
+      "date_range": {
+        "earliest": "2026-01-28T14:32:00-08:00",
+        "latest": "2026-01-30T08:22:00-08:00"
+      }
+    },
+    {
+      "thread_id": "thread_03",
+      "filename": "thread_03_pricing_reply_all.json",
+      "subject": "Q1 pricing strategy \u2014 internal",
+      "category": "internal",
+      "message_count": 5,
+      "participants": [
+        "tessa@vectrix.io",
+        "priya@vectrix.io",
+        "marcus@vectrix.io",
+        "dana@vectrix.io",
+        "caleb@vectrix.io",
+        "jason.liu@ridgewayfinancial.com"
+      ],
+      "edge_cases": ["reply_all_accident"],
+      "has_attachments": false,
+      "has_automated": false,
+      "date_range": {
+        "earliest": "2026-02-05T10:14:00-08:00",
+        "latest": "2026-02-05T14:33:00-08:00"
+      }
+    },
+    {
+      "thread_id": "thread_04",
+      "filename": "thread_04_on_call_rotation.json",
+      "subject": "On-call rotation \u2014 formalizing for Q1",
+      "category": "internal",
+      "message_count": 3,
+      "participants": [
+        "priya@vectrix.io",
+        "marcus@vectrix.io",
+        "jordan@vectrix.io",
+        "liam@vectrix.io"
+      ],
+      "edge_cases": [],
+      "has_attachments": false,
+      "has_automated": false,
+      "date_range": {
+        "earliest": "2025-12-26T10:05:00-08:00",
+        "latest": "2025-12-27T11:02:00-08:00"
+      }
+    },
+    {
+      "thread_id": "thread_05",
+      "filename": "thread_05_auth_migration.json",
+      "subject": "Clerk auth migration \u2014 kicking off Jan 13",
+      "category": "internal",
+      "message_count": 3,
+      "participants": [
+        "marcus@vectrix.io",
+        "liam@vectrix.io",
+        "sofia@vectrix.io"
+      ],
+      "edge_cases": [],
+      "has_attachments": false,
+      "has_automated": false,
+      "date_range": {
+        "earliest": "2026-01-13T09:00:00-08:00",
+        "latest": "2026-01-14T10:08:00-08:00"
+      }
+    },
+    {
+      "thread_id": "thread_06",
+      "filename": "thread_06_forward_different_context.json",
+      "subject": "Fwd: ClickHouse cost trajectory \u2014 thoughts?",
+      "category": "internal",
+      "message_count": 4,
+      "participants": [
+        "marcus@vectrix.io",
+        "jordan@vectrix.io",
+        "david.kim@angelinvestor.com"
+      ],
+      "edge_cases": ["forwarded_chain_different_context"],
+      "has_attachments": false,
+      "has_automated": false,
+      "date_range": {
+        "earliest": "2026-02-10T09:14:00-08:00",
+        "latest": "2026-02-11T14:20:00-08:00"
+      }
+    },
+    {
+      "thread_id": "thread_07",
+      "filename": "thread_07_brainloop_ooo_incident.json",
+      "subject": "Vectrix dashboard outage last night \u2014 what happened?",
+      "category": "client",
+      "message_count": 4,
+      "participants": [
+        "kevin.park@brainloop.io",
+        "priya@vectrix.io",
+        "marcus@vectrix.io",
+        "jordan@vectrix.io"
+      ],
+      "edge_cases": ["ooo_auto_reply"],
+      "has_attachments": false,
+      "has_automated": true,
+      "date_range": {
+        "earliest": "2025-12-24T07:42:00-08:00",
+        "latest": "2025-12-24T10:15:00-08:00"
+      }
+    },
+    {
+      "thread_id": "thread_08",
+      "filename": "thread_08_cascade_onboarding.json",
+      "subject": "Vectrix onboarding \u2014 getting started",
+      "category": "client",
+      "message_count": 4,
+      "participants": [
+        "maria.chen@cascadesystems.io",
+        "tessa@vectrix.io",
+        "marcus@vectrix.io"
+      ],
+      "edge_cases": [],
+      "has_attachments": true,
+      "has_automated": false,
+      "date_range": {
+        "earliest": "2026-01-09T09:00:00-08:00",
+        "latest": "2026-01-15T14:05:00-08:00"
+      }
+    },
+    {
+      "thread_id": "thread_09",
+      "filename": "thread_09_meridian_discovery.json",
+      "subject": "Re: Vectrix evaluation \u2014 Meridian Health Systems",
+      "category": "client",
+      "message_count": 3,
+      "participants": [
+        "alan.fong@meridianhealth.com",
+        "priya@vectrix.io",
+        "tessa@vectrix.io",
+        "nina@vectrix.io"
+      ],
+      "edge_cases": [],
+      "has_attachments": true,
+      "has_automated": false,
+      "date_range": {
+        "earliest": "2025-11-20T14:03:00-08:00",
+        "latest": "2026-01-22T11:00:00-08:00"
+      }
+    },
+    {
+      "thread_id": "thread_10",
+      "filename": "thread_10_scheduling_meridian.json",
+      "subject": "Re: Meridian SOW review \u2014 scheduling",
+      "category": "scheduling",
+      "message_count": 4,
+      "participants": [
+        "tessa@vectrix.io",
+        "alan.fong@meridianhealth.com",
+        "nina@vectrix.io",
+        "priya@vectrix.io"
+      ],
+      "edge_cases": [],
+      "has_attachments": true,
+      "has_automated": false,
+      "date_range": {
+        "earliest": "2026-02-12T10:05:00-08:00",
+        "latest": "2026-02-12T16:10:00-08:00"
+      }
+    },
+    {
+      "thread_id": "thread_11",
+      "filename": "thread_11_scheduling_anya_chen.json",
+      "subject": "Interview scheduling \u2014 Anya Chen, Sr. Frontend Engineer",
+      "category": "scheduling",
+      "message_count": 3,
+      "participants": [
+        "marcus@vectrix.io",
+        "anya.chen@gmail.com",
+        "nina@vectrix.io"
+      ],
+      "edge_cases": [],
+      "has_attachments": true,
+      "has_automated": false,
+      "date_range": {
+        "earliest": "2026-02-14T09:00:00-08:00",
+        "latest": "2026-02-15T09:15:00-08:00"
+      }
+    },
+    {
+      "thread_id": "thread_12",
+      "filename": "thread_12_talentbridge_fee_negotiation.json",
+      "subject": "Re: TalentBridge placement fee \u2014 renegotiation",
+      "category": "vendor",
+      "message_count": 4,
+      "participants": [
+        "nina@vectrix.io",
+        "amanda.reyes@talentbridge.com",
+        "priya@vectrix.io"
+      ],
+      "edge_cases": ["vendor_negotiation_unresolved"],
+      "has_attachments": false,
+      "has_automated": false,
+      "date_range": {
+        "earliest": "2026-01-10T10:00:00-08:00",
+        "latest": "2026-01-12T10:30:00-08:00"
+      }
+    },
+    {
+      "thread_id": "thread_13",
+      "filename": "thread_13_derek_huang_decline.json",
+      "subject": "Re: Offer \u2014 Senior Frontend Engineer at Vectrix Labs",
+      "category": "recruiting",
+      "message_count": 4,
+      "participants": [
+        "marcus@vectrix.io",
+        "derek.huang@email.com",
+        "nina@vectrix.io",
+        "priya@vectrix.io"
+      ],
+      "edge_cases": [],
+      "has_attachments": true,
+      "has_automated": false,
+      "date_range": {
+        "earliest": "2026-01-20T10:00:00-08:00",
+        "latest": "2026-01-24T09:02:00-08:00"
+      }
+    },
+    {
+      "thread_id": "thread_14",
+      "filename": "thread_14_typesense_payment_failed.json",
+      "subject": "Re: [Typesense Cloud] Payment failed \u2014 action required",
+      "category": "automated",
+      "message_count": 4,
+      "participants": [
+        "billing@typesense.io",
+        "nina@vectrix.io",
+        "priya@vectrix.io"
+      ],
+      "edge_cases": ["failed_payment_followup_chain"],
+      "has_attachments": true,
+      "has_automated": true,
+      "date_range": {
+        "earliest": "2026-01-18T06:00:00-08:00",
+        "latest": "2026-01-19T09:05:00-08:00"
+      }
+    },
+    {
+      "thread_id": "thread_15",
+      "filename": "thread_15_automated_transactional.json",
+      "subject": "[Confluent Cloud] Annual subscription renewal \u2014 action required",
+      "category": "automated",
+      "message_count": 3,
+      "participants": [
+        "noreply@confluent.io",
+        "jordan@vectrix.io",
+        "marcus@vectrix.io"
+      ],
+      "edge_cases": [],
+      "has_attachments": true,
+      "has_automated": true,
+      "date_range": {
+        "earliest": "2026-02-01T08:00:00-08:00",
+        "latest": "2026-02-01T11:05:00-08:00"
+      }
+    },
+    {
+      "thread_id": "thread_16",
+      "filename": "thread_16_vanta_soc2.json",
+      "subject": "Re: Vanta \u2014 SOC 2 Type II audit timeline",
+      "category": "vendor",
+      "message_count": 3,
+      "participants": [
+        "alex.morrison@vanta.com",
+        "nina@vectrix.io",
+        "priya@vectrix.io",
+        "marcus@vectrix.io"
+      ],
+      "edge_cases": [],
+      "has_attachments": true,
+      "has_automated": false,
+      "date_range": {
+        "earliest": "2026-01-15T11:00:00-08:00",
+        "latest": "2026-01-15T16:05:00-08:00"
+      }
+    },
+    {
+      "thread_id": "thread_17",
+      "filename": "thread_17_investor_amira_patel.json",
+      "subject": "Re: Vectrix Q4 update \u2014 Threshold Ventures",
+      "category": "investor",
+      "message_count": 4,
+      "participants": ["amira.patel@thresholdventures.com", "priya@vectrix.io"],
+      "edge_cases": [],
+      "has_attachments": true,
+      "has_automated": false,
+      "date_range": {
+        "earliest": "2025-12-29T09:30:00-08:00",
+        "latest": "2026-01-09T14:05:00-08:00"
+      }
+    },
+    {
+      "thread_id": "thread_18",
+      "filename": "thread_18_investor_sarah_intro.json",
+      "subject": "Intro: Vectrix Labs // Luminary Health Engineering",
+      "category": "investor",
+      "message_count": 5,
+      "participants": [
+        "sarah.lindgren@angelinvestor.com",
+        "priya@vectrix.io",
+        "chloe.andrews@luminaryhealth.com",
+        "david.kim@angelinvestor.com"
+      ],
+      "edge_cases": [],
+      "has_attachments": false,
+      "has_automated": false,
+      "date_range": {
+        "earliest": "2026-01-25T10:00:00-08:00",
+        "latest": "2026-01-28T10:30:00-08:00"
+      }
+    }
+  ],
+  "cross_references": {
+    "slack": [
+      "thread_02 (comparison mode) contradicts #engineering Slack on Feb 17 \u2014 Dana email says in scope, Slack defers to v2.1",
+      "thread_03 (pricing) \u2014 Caleb's Ridgeway quote ($99+usage) referenced in Slack #sales",
+      "thread_07 (Dec 23 incident) \u2014 Jordan's solo on-call mentioned in #ops Slack",
+      "thread_08 (Cascade onboarding) \u2014 Maria Chen's comparison mode request also in Slack DM Tessa\u2194Caleb",
+      "thread_13 (Derek Huang) \u2014 salary band decision referenced in Slack DM Marcus\u2194Priya"
+    ],
+    "google_drive": [
+      "thread_01 (ClickHouse RFC) \u2014 references clickhouse-migration-rfc.md in Drive",
+      "thread_02 (Dashboard v2) \u2014 references dashboard-v2-product-brief.md in Drive",
+      "thread_05 (Auth migration) \u2014 references auth-provider-comparison.md in Drive",
+      "thread_08 (Cascade onboarding) \u2014 vectrix-enterprise-onboarding-guide.pdf attached",
+      "thread_09 (Meridian) \u2014 references meridian-security-questionnaire.md (shared externally)",
+      "thread_10 (Scheduling) \u2014 references meridian-sow-redlined.pdf",
+      "thread_13 (Derek Huang) \u2014 references employee-benefits-summary.pdf attached to offer",
+      "thread_17 (Investor) \u2014 references investor-update-q4-2025.pptx and metrics-dashboard.xlsx"
+    ]
+  }
+}

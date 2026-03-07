@@ -1,0 +1,100 @@
+{
+  "thread_id": "thread_07",
+  "subject": "Vectrix dashboard outage last night \u2014 what happened?",
+  "category": "client",
+  "edge_cases": ["ooo_auto_reply"],
+  "participants": [
+    "kevin.park@brainloop.io",
+    "priya@vectrix.io",
+    "marcus@vectrix.io",
+    "jordan@vectrix.io"
+  ],
+  "messages": [
+    {
+      "message_id": "msg_024",
+      "from_email": "kevin.park@brainloop.io",
+      "from_name": "Kevin Park",
+      "to": [
+        {
+          "email": "priya@vectrix.io",
+          "name": "Priya Chandran"
+        }
+      ],
+      "cc": [],
+      "bcc": [],
+      "date": "2025-12-24T07:42:00-08:00",
+      "subject": "Vectrix dashboard outage last night \u2014 what happened?",
+      "body": "Hi Priya,\n\nOur team was working late last night (Dec 23) and the Vectrix dashboard went down around 10:30pm PT for roughly 90 minutes. No alerts came through to our Slack integration either \u2014 our on-call engineer had no idea there was a problem until a customer reported an issue.\n\nThis is the first outage we've experienced since signing up in October. Can someone walk me through what happened and what the plan is?\n\nThanks,\nKevin Park\nHead of Engineering, Brainloop",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false
+    },
+    {
+      "message_id": "msg_025",
+      "from_email": "priya@vectrix.io",
+      "from_name": "Priya Chandran (Out of Office)",
+      "to": [
+        {
+          "email": "kevin.park@brainloop.io",
+          "name": "Kevin Park"
+        }
+      ],
+      "cc": [],
+      "bcc": [],
+      "date": "2025-12-24T07:42:08-08:00",
+      "subject": "Out of Office: Vectrix dashboard outage last night \u2014 what happened?",
+      "body": "Hi,\n\nI'm out of the office December 23 through January 2 with limited email access.\n\nFor urgent product or infrastructure issues, please contact Marcus Webb at marcus@vectrix.io.\n\nI'll respond to your message when I return January 3.\n\nBest,\nPriya Chandran\nCEO, Vectrix Labs",
+      "attachments": [],
+      "is_automated": true,
+      "is_auto_reply": true,
+      "auto_reply_metadata": {
+        "ooo_start": "2025-12-23",
+        "ooo_end": "2026-01-02",
+        "redirect_to": "marcus@vectrix.io"
+      }
+    },
+    {
+      "message_id": "msg_026",
+      "from_email": "kevin.park@brainloop.io",
+      "from_name": "Kevin Park",
+      "to": [
+        {
+          "email": "marcus@vectrix.io",
+          "name": "Marcus Webb"
+        }
+      ],
+      "cc": [],
+      "bcc": [],
+      "date": "2025-12-24T07:58:00-08:00",
+      "subject": "Following up on last night's Vectrix outage",
+      "body": "Hi Marcus,\n\nReaching out directly \u2014 Priya is out. Can you fill me in on what happened last night? I need to be able to explain it to our VP.\n\nMain questions:\n1. What caused the outage?\n2. Why didn't our Slack alerts fire?\n3. What changes are coming?\n\nKevin",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false
+    },
+    {
+      "message_id": "msg_027",
+      "from_email": "marcus@vectrix.io",
+      "from_name": "Marcus Webb",
+      "to": [
+        {
+          "email": "kevin.park@brainloop.io",
+          "name": "Kevin Park"
+        }
+      ],
+      "cc": [
+        {
+          "email": "jordan@vectrix.io",
+          "name": "Jordan Okafor"
+        }
+      ],
+      "bcc": [],
+      "date": "2025-12-24T10:15:00-08:00",
+      "subject": "Re: Following up on last night's Vectrix outage",
+      "body": "Hi Kevin,\n\nThank you for reaching out, and I apologize for the disruption. Here's the full picture:\n\nRoot cause: A rate limiter bug in our deploy at 10:15pm PT caused it to reject all inbound API requests. Jordan caught it at 11:45pm and rolled back the deploy. Service fully restored at 11:58pm \u2014 approximately 90 minutes of downtime.\n\nWhy your Slack alerts didn't fire: Our alert evaluation runs through the same API layer that was rate-limited. When the limiter blocked requests, alerts stopped evaluating too. This is a design flaw \u2014 alert evaluation should be isolated from API traffic. We're fixing it and shipping the fix in our next release (target: Jan 6).\n\nWhat we're doing:\n1. Decouple alert evaluation from the API layer (ships Jan 6)\n2. Add pre-deploy smoke tests for rate limiter config changes\n3. Formalize on-call rotation \u2014 Jordan was the sole engineer on-call Dec 23. That won't happen again.\n\nFormal post-mortem will be in your customer portal by December 27.\n\nAgain, I'm sorry. This shouldn't have happened, and the alert failure is particularly unacceptable \u2014 that's the thing we're there for.\n\n\u2014 Marcus Webb\nCTO, Vectrix Labs",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false
+    }
+  ]
+}

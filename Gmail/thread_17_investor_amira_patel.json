@@ -1,0 +1,100 @@
+{
+  "thread_id": "thread_17",
+  "subject": "Re: Vectrix Q4 update \u2014 Threshold Ventures",
+  "category": "investor",
+  "participants": ["amira.patel@thresholdventures.com", "priya@vectrix.io"],
+  "messages": [
+    {
+      "message_id": "msg_060",
+      "from_email": "amira.patel@thresholdventures.com",
+      "from_name": "Amira Patel",
+      "to": [
+        {
+          "email": "priya@vectrix.io",
+          "name": "Priya Chandran"
+        }
+      ],
+      "cc": [],
+      "bcc": [],
+      "date": "2025-12-29T09:30:00-08:00",
+      "subject": "Vectrix Q4 update \u2014 please send board materials before Jan 10",
+      "body": "Hi Priya,\n\nHappy holidays. Looking forward to your Q4 update. Can you send the board deck and metrics package before January 10? David Kim and Sarah Lindgren will also be reviewing.\n\nFor the package, we'd like to see:\n- MRR and customer count (monthly, Sep\u2013Dec)\n- Cash runway update\n- Key wins and misses\n- Q1 priorities and targets\n- Cap table update if anything has changed since your seed close\n\nAlso \u2014 I heard you're close to landing a healthcare enterprise customer. I'd love a brief note on that deal separately if you're comfortable sharing.\n\n\u2014 Amira Patel\nPartner, Threshold Ventures",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false
+    },
+    {
+      "message_id": "msg_061",
+      "from_email": "priya@vectrix.io",
+      "from_name": "Priya Chandran",
+      "to": [
+        {
+          "email": "amira.patel@thresholdventures.com",
+          "name": "Amira Patel"
+        }
+      ],
+      "cc": [],
+      "bcc": [],
+      "date": "2025-12-30T11:22:00-08:00",
+      "subject": "Re: Vectrix Q4 update \u2014 board materials",
+      "body": "Amira,\n\nHappy holidays. Yes \u2014 materials coming before Jan 10.\n\nQuick preview since you asked:\n- MRR at Dec close: $8,200 (up from $1,200 in September \u2014 6.8x in 4 months)\n- 7 paying customers, 0 churn\n- Biggest Q4 win: Cascade Systems signed Enterprise at $2,400/mo (closed Jan 8 \u2014 technically Q1 but it was a Q4 pipeline result)\n- The healthcare enterprise deal is Meridian Health Systems \u2014 VP Engineering found us on HN. $2,800/mo, 12-month contract. Currently in legal review with our counsel (Orion Legal). Target close: mid-March.\n\nI'll have the full deck and metrics package to you by January 8.\n\n\u2014 Priya",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false
+    },
+    {
+      "message_id": "msg_062",
+      "from_email": "priya@vectrix.io",
+      "from_name": "Priya Chandran",
+      "to": [
+        {
+          "email": "amira.patel@thresholdventures.com",
+          "name": "Amira Patel"
+        }
+      ],
+      "cc": [],
+      "bcc": [],
+      "date": "2026-01-08T09:00:00-08:00",
+      "subject": "Re: Vectrix Q4 update \u2014 materials attached",
+      "body": "Amira,\n\nQ4 board package attached. Highlights on page 3.\n\nA few things I'll call out that aren't in the deck:\n\n1. We had our first P1 incident on Dec 23 \u2014 a rate limiter bug took the dashboard down for ~90 minutes. Jordan was solo on-call during the holiday. We've since formalized an on-call rotation and fixed the alert isolation issue. Full post-mortem is attached.\n2. We closed a seed extension of $400K in December from David Kim (angel) to extend runway to approximately 18 months.\n3. Meridian is real \u2014 I was on a call with their VP of Engineering and VP of IT Security this week. They're serious buyers and the requirements (SSO, US data residency, 12-month retention, SOC 2 Type II) are all addressable.\n\nHappy to jump on a call this week if useful.\n\n\u2014 Priya",
+      "attachments": [
+        {
+          "filename": "vectrix-q4-board-deck.pdf",
+          "type": "application/pdf",
+          "size_kb": 1240
+        },
+        {
+          "filename": "vectrix-dec23-incident-postmortem.pdf",
+          "type": "application/pdf",
+          "size_kb": 88
+        },
+        {
+          "filename": "vectrix-metrics-q4-2025.xlsx",
+          "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "size_kb": 76
+        }
+      ],
+      "is_automated": false,
+      "is_auto_reply": false
+    },
+    {
+      "message_id": "msg_063",
+      "from_email": "amira.patel@thresholdventures.com",
+      "from_name": "Amira Patel",
+      "to": [
+        {
+          "email": "priya@vectrix.io",
+          "name": "Priya Chandran"
+        }
+      ],
+      "cc": [],
+      "bcc": [],
+      "date": "2026-01-09T14:05:00-08:00",
+      "subject": "Re: Vectrix Q4 update \u2014 materials attached",
+      "body": "Priya,\n\nThis is excellent. 6.8x MRR growth in four months is the kind of number we love to see.\n\nA few questions after reviewing the deck:\n1. Meridian: what's the most likely reason this deal doesn't close? I want to understand the risk.\n2. Dashboard v2: is the March launch date firm? Any customer commitments that depend on it?\n3. Runway at 18 months assumes no new hires. What's the hiring plan?\n\nLet's do a call January 15 at 2pm PT. I'll have David Kim and Sarah Lindgren dial in.\n\n\u2014 Amira",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false
+    }
+  ]
+}

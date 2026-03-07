@@ -1,0 +1,147 @@
+{
+  "thread_id": "thread_03",
+  "subject": "Q1 pricing strategy \u2014 internal",
+  "category": "internal",
+  "edge_cases": ["reply_all_accident"],
+  "participants": [
+    "tessa@vectrix.io",
+    "priya@vectrix.io",
+    "marcus@vectrix.io",
+    "dana@vectrix.io",
+    "caleb@vectrix.io",
+    "jason.liu@ridgewayfinancial.com"
+  ],
+  "messages": [
+    {
+      "message_id": "msg_009",
+      "from_email": "tessa@vectrix.io",
+      "from_name": "Tessa Moreno",
+      "to": [
+        {
+          "email": "priya@vectrix.io",
+          "name": "Priya Chandran"
+        },
+        {
+          "email": "marcus@vectrix.io",
+          "name": "Marcus Webb"
+        },
+        {
+          "email": "dana@vectrix.io",
+          "name": "Dana Reeves"
+        },
+        {
+          "email": "caleb@vectrix.io",
+          "name": "Caleb Whitford"
+        }
+      ],
+      "cc": [
+        {
+          "email": "jason.liu@ridgewayfinancial.com",
+          "name": "Jason Liu"
+        }
+      ],
+      "bcc": [],
+      "date": "2026-02-05T10:14:00-08:00",
+      "subject": "Q1 pricing strategy \u2014 internal",
+      "body": "Team,\n\nA few notes on how the new pricing is landing three weeks in:\n\n- Growth ($19/mo) is converting faster than Pro ($29) was. 11 new logos since Jan 22.\n- Enterprise ($99+usage) is still early \u2014 Cascade at $2,400/mo is our only reference deal.\n- Key problem: prospects anchor on Datadog pricing. When we say $19/mo they assume it's a lite tier. We need tighter messaging on what's included.\n\nFor the MRR target ($22K by Mar 31): at current Growth conversion we need ~8 more Growth customers OR one more Enterprise close. Meridian at $2,800 would close the gap alone.\n\n\u2014 Tessa\n\n[Note: Jason Liu at Ridgeway is CC'd here by mistake \u2014 I meant to include him on a separate re-engagement note. Please disregard for this thread.]",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false,
+      "internal_note": "Tessa accidentally included Jason Liu on this internal strategy thread."
+    },
+    {
+      "message_id": "msg_010",
+      "from_email": "caleb@vectrix.io",
+      "from_name": "Caleb Whitford",
+      "to": [
+        {
+          "email": "tessa@vectrix.io",
+          "name": "Tessa Moreno"
+        },
+        {
+          "email": "priya@vectrix.io",
+          "name": "Priya Chandran"
+        },
+        {
+          "email": "marcus@vectrix.io",
+          "name": "Marcus Webb"
+        },
+        {
+          "email": "dana@vectrix.io",
+          "name": "Dana Reeves"
+        }
+      ],
+      "cc": [
+        {
+          "email": "jason.liu@ridgewayfinancial.com",
+          "name": "Jason Liu"
+        }
+      ],
+      "bcc": [],
+      "date": "2026-02-05T11:02:00-08:00",
+      "subject": "Re: Q1 pricing strategy \u2014 internal",
+      "body": "Agreed on the Datadog anchoring. More data: when I quoted Ridgeway at $99+usage last month, Jason pushed back saying their Datadog contract is $8K/mo for API coverage and was surprised we were that much cheaper. I think we can charge more for Enterprise and frame it as a discount.\n\nAlso \u2014 for Meridian, are we flexible on $2,800 if they push back? I know Tessa is leading that deal but I want to know our floor for my conversations.\n\n\u2014 Caleb",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false,
+      "internal_note": "EDGE CASE: Caleb reply-alled to everyone INCLUDING Jason Liu at Ridgeway Financial. Jason now sees: (1) Vectrix MRR targets, (2) that Ridgeway was quoted $99+usage, (3) internal discussion of the Meridian deal, (4) that Vectrix may be flexible on Enterprise pricing."
+    },
+    {
+      "message_id": "msg_011",
+      "from_email": "tessa@vectrix.io",
+      "from_name": "Tessa Moreno",
+      "to": [
+        {
+          "email": "caleb@vectrix.io",
+          "name": "Caleb Whitford"
+        }
+      ],
+      "cc": [],
+      "bcc": [],
+      "date": "2026-02-05T11:18:00-08:00",
+      "subject": "Re: Q1 pricing strategy \u2014 [PRIVATE to you]",
+      "body": "Caleb \u2014 hey. Can you call me in the next 10 minutes?\n\nJason Liu was on that CC. You just replied-all to a prospect. He can see everything you wrote \u2014 our MRR targets, our Meridian deal, and that we have pricing flexibility. Please don't reply to that thread again.\n\nNot entirely your fault \u2014 I shouldn't have had him on the CC. But be more careful going forward.\n\n\u2014 T",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false
+    },
+    {
+      "message_id": "msg_012",
+      "from_email": "tessa@vectrix.io",
+      "from_name": "Tessa Moreno",
+      "to": [
+        {
+          "email": "jason.liu@ridgewayfinancial.com",
+          "name": "Jason Liu"
+        }
+      ],
+      "cc": [],
+      "bcc": [],
+      "date": "2026-02-05T11:47:00-08:00",
+      "subject": "Following up \u2014 Ridgeway and Vectrix next steps",
+      "body": "Hi Jason,\n\nYou were accidentally included on an internal thread from our side earlier today \u2014 apologies for any confusion.\n\nI wanted to reach out separately anyway. Since our last conversation in December, we've launched new pricing (Enterprise starts at $99/mo + usage \u2014 more predictable for a team your size) and completed our SAML SSO rollout via Clerk, which I recall was on your security checklist.\n\nWould you be open to a 30-minute call next week to revisit?\n\n\u2014 Tessa Moreno\nHead of Sales, Vectrix Labs",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false
+    },
+    {
+      "message_id": "msg_013",
+      "from_email": "jason.liu@ridgewayfinancial.com",
+      "from_name": "Jason Liu",
+      "to": [
+        {
+          "email": "tessa@vectrix.io",
+          "name": "Tessa Moreno"
+        }
+      ],
+      "cc": [],
+      "bcc": [],
+      "date": "2026-02-05T14:33:00-08:00",
+      "subject": "Re: Following up \u2014 Ridgeway and Vectrix next steps",
+      "body": "Hi Tessa,\n\nNo worries on the email mix-up \u2014 it happens. And the SSO timing is actually good, our security team just added that as a vendor requirement. Tuesday afternoon next week works if you have availability.\n\n\u2014 Jason Liu\nEngineering Manager, Ridgeway Financial",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false
+    }
+  ]
+}

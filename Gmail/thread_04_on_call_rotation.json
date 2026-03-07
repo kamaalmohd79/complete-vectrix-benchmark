@@ -1,0 +1,94 @@
+{
+  "thread_id": "thread_04",
+  "subject": "On-call rotation \u2014 formalizing for Q1",
+  "category": "internal",
+  "participants": [
+    "priya@vectrix.io",
+    "marcus@vectrix.io",
+    "jordan@vectrix.io",
+    "liam@vectrix.io"
+  ],
+  "messages": [
+    {
+      "message_id": "msg_014",
+      "from_email": "priya@vectrix.io",
+      "from_name": "Priya Chandran",
+      "to": [
+        {
+          "email": "marcus@vectrix.io",
+          "name": "Marcus Webb"
+        },
+        {
+          "email": "jordan@vectrix.io",
+          "name": "Jordan Okafor"
+        },
+        {
+          "email": "liam@vectrix.io",
+          "name": "Liam Nakamura"
+        }
+      ],
+      "cc": [],
+      "bcc": [],
+      "date": "2025-12-26T10:05:00-08:00",
+      "subject": "On-call rotation \u2014 formalizing for Q1",
+      "body": "Marcus, Jordan, Liam,\n\nHappy holidays. Keeping this brief.\n\nAfter what Jordan went through Dec 23, we are not doing solo on-call again. Q1 needs a formal rotation \u2014 minimum two engineers in any on-call window.\n\nMarcus \u2014 can you draft something for the Jan 6 all-hands?\n\n\u2014 P",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false
+    },
+    {
+      "message_id": "msg_015",
+      "from_email": "marcus@vectrix.io",
+      "from_name": "Marcus Webb",
+      "to": [
+        {
+          "email": "priya@vectrix.io",
+          "name": "Priya Chandran"
+        },
+        {
+          "email": "jordan@vectrix.io",
+          "name": "Jordan Okafor"
+        },
+        {
+          "email": "liam@vectrix.io",
+          "name": "Liam Nakamura"
+        }
+      ],
+      "cc": [],
+      "bcc": [],
+      "date": "2025-12-27T09:30:00-08:00",
+      "subject": "Re: On-call rotation \u2014 formalizing for Q1",
+      "body": "Draft Q1 rotation:\n\nWeek 1 (Jan 5\u201311): Jordan primary, Liam backup\nWeek 2 (Jan 12\u201318): Liam primary, Marcus backup\nWeek 3 (Jan 19\u201325): Marcus primary, Jordan backup\nWeek 4 (Jan 26\u2013Feb 1): Jordan primary, Liam backup\n... repeat.\n\nRules:\n- P1: Both primary and backup paged simultaneously if primary doesn't ack in 10 min\n- No one is sole primary on company holidays \u2014 double staffing required\n- Max 7 consecutive days on-call for anyone\n\nJordan \u2014 does this work for you?\n\n-M",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false
+    },
+    {
+      "message_id": "msg_016",
+      "from_email": "jordan@vectrix.io",
+      "from_name": "Jordan Okafor",
+      "to": [
+        {
+          "email": "marcus@vectrix.io",
+          "name": "Marcus Webb"
+        },
+        {
+          "email": "priya@vectrix.io",
+          "name": "Priya Chandran"
+        },
+        {
+          "email": "liam@vectrix.io",
+          "name": "Liam Nakamura"
+        }
+      ],
+      "cc": [],
+      "bcc": [],
+      "date": "2025-12-27T11:02:00-08:00",
+      "subject": "Re: On-call rotation \u2014 formalizing for Q1",
+      "body": "This works. Thank you both \u2014 genuinely.\n\nOne ask: put the holiday rule in writing in the rotation doc, not just here in email. Dec 23 shouldn't be something someone has to rediscover.\n\n\u2014 J",
+      "attachments": [],
+      "is_automated": false,
+      "is_auto_reply": false
+    }
+  ]
+}
